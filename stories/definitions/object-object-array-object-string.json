@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Object",
+  "description": "An object schema",
+  "properties": {
+    "array": {
+      "type": "array",
+      "title": "Array (Items is an object)",
+      "description": "An array schema",
+      "items": {
+        "type": "string",
+        "title": "String",
+        "description": "A string schema"
+      }
+    }
+  }
+}

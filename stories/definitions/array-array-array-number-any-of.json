@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Array (Items is an array)",
+  "description": "An array schema",
+  "items": [
+    {
+      "type": "number",
+      "title": "Number (Any Of)",
+      "description": "A number schema",
+      "anyOf": [
+        { "const": 1, "title": "One", "description": "The value \"1\"" },
+        { "const": 2, "title": "Two", "description": "The value \"2\"" },
+        { "const": 3, "title": "Three", "description": "The value \"3\"" }
+      ]
+    }
+  ]
+}

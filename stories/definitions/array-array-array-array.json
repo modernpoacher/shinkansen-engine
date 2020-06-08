@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Array (Items is an array)",
+  "description": "An array schema",
+  "items": [
+    {
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "string",
+          "title": "String",
+          "description": "A string schema"
+        },
+        {
+          "type": "number",
+          "title": "Number",
+          "description": "A number schema"
+        },
+        {
+          "type": "boolean",
+          "title": "Boolean",
+          "description": "A boolean schema"
+        },
+        {
+          "type": "null",
+          "title": "Null",
+          "description": "A null schema"
+        }
+      ]
+    }
+  ]
+}

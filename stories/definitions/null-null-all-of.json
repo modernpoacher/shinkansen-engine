@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "null",
+  "title": "Null (All Of)",
+  "description": "A null schema",
+  "allOf": [
+    { "title": "Null", "description": "A \"null\" value" }
+  ]
+}

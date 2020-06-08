@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Array (Items is an object)",
+  "description": "An array schema",
+  "items": {
+    "type": "boolean",
+    "title": "Boolean",
+    "description": "A boolean schema"
+  }
+}

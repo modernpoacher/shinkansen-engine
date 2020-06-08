@@ -1,0 +1,12 @@
+.DS_Store
+
+.circleci
+
+.storybook
+.editorconfig
+.eslintignore
+.eslintrc
+
+# NPM
+.npmignore
+.npmrc

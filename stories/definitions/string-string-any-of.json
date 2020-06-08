@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "string",
+  "title": "String (Any Of)",
+  "description": "A string schema",
+  "anyOf": [
+    { "const": "one", "title": "One", "description": "The value \"one\"" },
+    { "const": "two", "title": "Two", "description": "The value \"two\"" },
+    { "const": "three", "title": "Three", "description": "The value \"three\"" }
+  ]
+}

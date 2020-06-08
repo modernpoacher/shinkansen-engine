@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "string",
+  "title": "String (All Of)",
+  "description": "A string schema",
+  "allOf": [
+    { "minLength": 0, "title": "String", "description": "A \"string\" value" },
+    { "maxLength": 9 }
+  ]
+}
