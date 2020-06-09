@@ -32,12 +32,12 @@
     "pre-commit": "npm run lint && npm run babel && git add lib"
   },
   "dependencies": {
-    "shinkansen-cogs": "1.5.2",
+    "shinkansen-cogs": "1.5.3",
     "shinkansen-gears": "1.0.9",
-    "shinkansen-pinion": "1.0.4",
+    "shinkansen-pinion": "1.0.5",
     "shinkansen-rails": "1.0.8",
     "shinkansen-signals": "1.0.8",
-    "shinkansen-sprockets": "1.0.2",
+    "shinkansen-sprockets": "1.0.3",
     "shinkansen-transmission": "2.1.5"
   },
   "devDependencies": {
