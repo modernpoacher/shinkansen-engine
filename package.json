@@ -34,7 +34,7 @@
   "dependencies": {
     "shinkansen-cogs": "1.5.3",
     "shinkansen-gears": "1.0.9",
-    "shinkansen-pantograph": "1.0.9",
+    "shinkansen-pantograph": "1.0.10",
     "shinkansen-pinion": "1.0.8",
     "shinkansen-rails": "1.0.8",
     "shinkansen-signals": "1.0.8",
