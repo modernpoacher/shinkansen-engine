@@ -35,10 +35,10 @@
     "shinkansen-cogs": "1.5.3",
     "shinkansen-gears": "1.0.9",
     "shinkansen-pantograph": "1.0.11",
-    "shinkansen-pinion": "1.0.9",
+    "shinkansen-pinion": "1.0.10",
     "shinkansen-rails": "1.0.8",
     "shinkansen-signals": "1.0.8",
-    "shinkansen-sprockets": "1.0.4",
+    "shinkansen-sprockets": "1.0.5",
     "shinkansen-transmission": "2.1.7"
   },
   "devDependencies": {
