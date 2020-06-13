@@ -13,3 +13,6 @@
 
 # Storybook
 stories
+
+# Jest
+jest.config.js
