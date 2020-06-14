@@ -22,6 +22,7 @@
     "prepublishOnly": "npm run lint:fix && npm run babel",
     "prebuild": "npm run clean",
     "build": "npm run babel",
+    "build:watch": "npm run babel:watch",
     "clean": "rimraf lib",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
@@ -32,14 +33,14 @@
     "pre-commit": "npm run lint && npm run babel && git add lib"
   },
   "dependencies": {
-    "shinkansen-cogs": "1.5.3",
-    "shinkansen-gears": "1.0.9",
-    "shinkansen-pantograph": "1.0.11",
-    "shinkansen-pinion": "1.0.10",
-    "shinkansen-rails": "1.0.8",
-    "shinkansen-signals": "1.0.8",
-    "shinkansen-sprockets": "1.0.5",
-    "shinkansen-transmission": "2.1.7"
+    "shinkansen-cogs": "1.5.4",
+    "shinkansen-gears": "1.0.10",
+    "shinkansen-pantograph": "1.0.12",
+    "shinkansen-pinion": "1.0.11",
+    "shinkansen-rails": "1.0.9",
+    "shinkansen-signals": "1.0.9",
+    "shinkansen-sprockets": "1.0.6",
+    "shinkansen-transmission": "2.1.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
