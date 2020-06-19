@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-engine",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Shinkansen Engine",
   "main": "./index.js",
   "keywords": [
