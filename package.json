@@ -33,13 +33,13 @@
     "pre-commit": "npm run lint && npm run babel && git add lib"
   },
   "dependencies": {
-    "shinkansen-cogs": "1.5.14",
-    "shinkansen-gears": "1.0.13",
+    "shinkansen-cogs": "1.5.15",
+    "shinkansen-gears": "1.0.14",
     "shinkansen-pantograph": "1.0.15",
-    "shinkansen-pinion": "1.0.19",
+    "shinkansen-pinion": "1.0.21",
     "shinkansen-rails": "1.0.11",
     "shinkansen-signals": "1.0.11",
-    "shinkansen-sprockets": "1.0.17",
+    "shinkansen-sprockets": "1.0.18",
     "shinkansen-transmission": "2.1.10"
   },
   "devDependencies": {
@@ -59,7 +59,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "eslint": "^7.3.0",
+    "eslint": "^7.3.1",
     "eslint-config-standard": "^14.1.1",
     "eslint-import-resolver-babel-module": "^5.1.2",
     "eslint-plugin-import": "^2.21.2",
