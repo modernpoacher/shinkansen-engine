@@ -1,3 +1,7 @@
+.circleci
+.github
+node_modules
+
 lib
 
 **/*.snap
