@@ -40,10 +40,10 @@
     "shinkansen-cogs": "1.5.16",
     "shinkansen-gears": "1.0.15",
     "shinkansen-pantograph": "1.0.16",
-    "shinkansen-pinion": "1.0.22",
+    "shinkansen-pinion": "1.0.24",
     "shinkansen-rails": "1.0.12",
     "shinkansen-signals": "1.0.12",
-    "shinkansen-sprockets": "1.0.19",
+    "shinkansen-sprockets": "1.0.20",
     "shinkansen-transmission": "2.1.11"
   },
   "devDependencies": {
@@ -71,7 +71,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.2",
+    "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
