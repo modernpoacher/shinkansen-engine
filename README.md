@@ -2,4 +2,4 @@
 
 # Shinkansen Engine
 
-*Engine* implements Shinkansen for Zashiki.
+*Engine* implements Shinkansen for Zashiki Karakuri.
