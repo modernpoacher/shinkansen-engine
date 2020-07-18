@@ -1,4 +1,4 @@
-## @modernpoacher/shinkansen-engine
+## shinkansen-engine
 
 # Shinkansen Engine
 
