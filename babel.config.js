@@ -53,6 +53,7 @@ const plugins = [
       cwd: 'babelrc',
       alias: {
         'shinkansen-engine': './src',
+        build: './build',
         stories: './stories'
       }
     }
