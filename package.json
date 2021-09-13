@@ -44,7 +44,7 @@
     "debug": "^4.3.2",
     "shinkansen-cogs": "1.5.23",
     "shinkansen-gears": "1.0.22",
-    "shinkansen-pantograph": "1.0.22",
+    "shinkansen-pantograph": "1.1.0",
     "shinkansen-pinion": "1.0.35",
     "shinkansen-rails": "1.0.17",
     "shinkansen-signals": "1.1.1",
