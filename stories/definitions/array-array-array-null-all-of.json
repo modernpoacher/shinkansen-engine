@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Array (Items is an array)",
+  "description": "An array schema",
+  "items": [
+    {
+      "type": "null",
+      "title": "Null (All Of)",
+      "description": "A null schema",
+      "allOf": [
+        { "title": "Null", "description": "A \"null\" value" }
+      ]
+    }
+  ]
+}

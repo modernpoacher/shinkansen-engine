@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import debug from 'debug'
 
 import {
   Pinion,
   Gears
 } from 'shinkansen-engine/components'
-
-const log = debug('shinkansen:engine')
-
-log('`engine` is awake')
 
 export default class Engine extends Component {
   render () {
