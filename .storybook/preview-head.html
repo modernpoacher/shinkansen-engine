@@ -927,5 +927,80 @@ main {
     line-height: 2rem
   }
 }
+
+#root .shinkansen-gears {
+  margin: 2rem 0;
+  padding: 0
+}
+
+#root .shinkansen-gears li {
+  display: inline-block;
+  margin-right: .5rem
+}
+
+#root .shinkansen-gears li a {
+  background-color: transparent;
+  border: 2px solid #24548a;
+  border-radius: 4px;
+  color: #24548a;
+  display: block;
+  font-family: proxima-nova,sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  outline-color: transparent;
+  outline-offset: 2px;
+  outline-style: auto;
+  outline-width: 1px;
+  padding: 8px 16px;
+  position: relative;
+  text-align: center
+}
+
+@media only screen and (max-width:767px) {
+  #root .shinkansen-gears li a {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+}
+
+#root .shinkansen-gears li a.disabled {
+  background-color: #d8d8d8;
+  border: 2px solid #d8d8d8
+}
+
+#root .shinkansen-gears li a span {
+  display: block
+}
+
+#root .shinkansen-gears li a:link {
+  color: #24548a;
+  text-decoration: none
+}
+
+#root .shinkansen-gears li a:hover {
+  color: #24548a;
+  text-decoration: underline
+}
+
+#root .shinkansen-gears li a:visited {
+  color: #24548a
+}
+
+#root .shinkansen-gears li a:active,
+#root .shinkansen-gears li a:focus {
+  background-color: #24548a;
+  color: #fff
+}
+
+#root .shinkansen-gears li a:focus {
+  outline-color: #fd0;
+  text-decoration: underline
+}
+
+#root .shinkansen-gears li:last-of-type {
+  margin-right: auto
+}
 /*# sourceMappingURL=preview-head.css.map */
 </style>
