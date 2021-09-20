@@ -8,7 +8,7 @@ import {
   currentDir
 } from 'build/gulp/paths'
 
-const log = debug('shinkansen-pinion:handle-error')
+const log = debug('shinkansen-engine:handle-error')
 
 log('`handleError` is awake')
 

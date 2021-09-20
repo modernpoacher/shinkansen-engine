@@ -36,7 +36,7 @@
     "lint": "eslint . .storybook",
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test jest --collect-coverage false --pass-with-no-tests --verbose --run-in-band",
-    "storybook": "npm run build && npm run transform && start-storybook -p 6008",
+    "storybook": "npm run build && npm run transform && start-storybook -p 6010",
     "pre-commit": "npm run lint && npm test && npm run build && npm run transform && git add lib .storybook"
   },
   "dependencies": {

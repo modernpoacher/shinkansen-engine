@@ -1,19 +1,22 @@
 import React from 'react'
+
 import {
   MemoryRouter
 } from 'react-router-dom'
 
 import Gears from 'shinkansen-engine/components/gears'
 
+const REVERSE = {
+  alpha: 'alpha',
+  omega: 'omega'
+}
+
 const FORWARD = {
   alpha: 'alpha',
   omega: 'omega'
 }
 
-const REVERSE = {
-  alpha: 'alpha',
-  omega: 'omega'
-}
+const EXCLUDE = {}
 
 export default {
   title: 'Components/Gears',
@@ -24,37 +27,40 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    reverse: 'REVERSE',
+    forward: 'FORWARD',
+    pattern: '/:alpha/:omega'
+  },
+  argTypes: {
+    reverse: {
+      options: ['REVERSE', 'EXCLUDE'],
+      mapping: { REVERSE, EXCLUDE },
+      control: {
+        type: 'radio',
+        labels: {
+          REVERSE: 'Include',
+          EXCLUDE: 'Exclude'
+        }
+      }
+    },
+    forward: {
+      options: ['FORWARD', 'EXCLUDE'],
+      mapping: { FORWARD, EXCLUDE },
+      control: {
+        type: 'radio',
+        labels: {
+          FORWARD: 'Include',
+          EXCLUDE: 'Exclude'
+        }
+      }
+    }
+  }
 }
 
-export const ReverseForward = () => (
+export const Default = (args) => (
   <Gears
-    reverse={REVERSE}
-    forward={FORWARD}
+    {...args}
   />
 )
-
-ReverseForward.storyName = 'Reverse and Forward'
-ReverseForward.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const Reverse = () => (
-  <Gears
-    reverse={REVERSE}
-  />
-)
-
-Reverse.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const Forward = () => (
-  <Gears
-    forward={FORWARD}
-  />
-)
-
-Forward.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
