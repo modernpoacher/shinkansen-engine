@@ -16,6 +16,14 @@ import NUMBER_NUMBER_ANY_OF from 'stories/definitions/number-number-any-of'
 import NUMBER_NUMBER_ONE_OF from 'stories/definitions/number-number-one-of'
 import NUMBER_NUMBER_ALL_OF from 'stories/definitions/number-number-all-of'
 
+const NUMBER = {
+  NUMBER_NUMBER: toZashiki(NUMBER_NUMBER, fromDocumentToHash(3, NUMBER_NUMBER)),
+  NUMBER_NUMBER_ENUM: toZashiki(NUMBER_NUMBER_ENUM, fromDocumentToHash(3, NUMBER_NUMBER_ENUM)),
+  NUMBER_NUMBER_ANY_OF: toZashiki(NUMBER_NUMBER_ANY_OF, fromDocumentToHash(3, NUMBER_NUMBER_ANY_OF)),
+  NUMBER_NUMBER_ONE_OF: toZashiki(NUMBER_NUMBER_ONE_OF, fromDocumentToHash(3, NUMBER_NUMBER_ONE_OF)),
+  NUMBER_NUMBER_ALL_OF: toZashiki(NUMBER_NUMBER_ALL_OF, fromDocumentToHash(3, NUMBER_NUMBER_ALL_OF))
+}
+
 const GEARS = {
   forward: {
     alpha: 'alpha',
@@ -36,65 +44,44 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    pinion: 'NUMBER_NUMBER',
+    params: 'DEFAULT'
+  },
+  argTypes: {
+    pinion: {
+      options: Object.keys(NUMBER),
+      mapping: NUMBER,
+      control: {
+        type: 'radio',
+        labels: {
+          NUMBER_NUMBER: 'Number',
+          NUMBER_NUMBER_ENUM: 'Number - Enum',
+          NUMBER_NUMBER_ANY_OF: 'Number - Any Of',
+          NUMBER_NUMBER_ONE_OF: 'Number - One Of',
+          NUMBER_NUMBER_ALL_OF: 'Number - All Of'
+        }
+      }
+    },
+    params: {
+      options: ['DEFAULT', 'ERROR'],
+      mapping: { DEFAULT: {}, ERROR: { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] } },
+      control: {
+        type: 'radio',
+        labels: {
+          DEFAULT: 'Default',
+          ERROR: 'Error'
+        }
+      }
+    },
+    gears: { control: null }
+  }
 }
 
-export const NumberNumber = () => (
+export const Default = (args) => (
   <Engine
-    pinion={toZashiki(NUMBER_NUMBER, fromDocumentToHash(3, NUMBER_NUMBER))}
+    {...args}
     gears={GEARS}
   />
 )
-
-NumberNumber.storyName = 'Number'
-NumberNumber.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NumberNumberEnum = () => (
-  <Engine
-    pinion={toZashiki(NUMBER_NUMBER_ENUM, fromDocumentToHash(3, NUMBER_NUMBER_ENUM))}
-    gears={GEARS}
-  />
-)
-
-NumberNumberEnum.storyName = 'Number - Enum'
-NumberNumberEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NumberNumberAnyOf = () => (
-  <Engine
-    pinion={toZashiki(NUMBER_NUMBER_ANY_OF, fromDocumentToHash(3, NUMBER_NUMBER_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-NumberNumberAnyOf.storyName = 'Number - Any Of'
-NumberNumberAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NumberNumberOneOf = () => (
-  <Engine
-    pinion={toZashiki(NUMBER_NUMBER_ONE_OF, fromDocumentToHash(3, NUMBER_NUMBER_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-NumberNumberOneOf.storyName = 'Number - One Of'
-NumberNumberOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NumberNumberAllOf = () => (
-  <Engine
-    pinion={toZashiki(NUMBER_NUMBER_ALL_OF, fromDocumentToHash(3, NUMBER_NUMBER_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-NumberNumberAllOf.storyName = 'Number - All Of'
-NumberNumberAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}

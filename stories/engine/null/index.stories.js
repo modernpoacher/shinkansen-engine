@@ -16,6 +16,14 @@ import NULL_NULL_ANY_OF from 'stories/definitions/null-null-any-of'
 import NULL_NULL_ONE_OF from 'stories/definitions/null-null-one-of'
 import NULL_NULL_ALL_OF from 'stories/definitions/null-null-all-of'
 
+const NULL = {
+  NULL_NULL: toZashiki(NULL_NULL, fromDocumentToHash(null, NULL_NULL)),
+  NULL_NULL_ENUM: toZashiki(NULL_NULL_ENUM, fromDocumentToHash(null, NULL_NULL_ENUM)),
+  NULL_NULL_ANY_OF: toZashiki(NULL_NULL_ANY_OF, fromDocumentToHash(null, NULL_NULL_ANY_OF)),
+  NULL_NULL_ONE_OF: toZashiki(NULL_NULL_ONE_OF, fromDocumentToHash(null, NULL_NULL_ONE_OF)),
+  NULL_NULL_ALL_OF: toZashiki(NULL_NULL_ALL_OF, fromDocumentToHash(null, NULL_NULL_ALL_OF))
+}
+
 const GEARS = {
   forward: {
     alpha: 'alpha',
@@ -36,65 +44,44 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    pinion: 'NULL_NULL',
+    params: 'DEFAULT'
+  },
+  argTypes: {
+    pinion: {
+      options: Object.keys(NULL),
+      mapping: NULL,
+      control: {
+        type: 'radio',
+        labels: {
+          NULL_NULL: 'Null',
+          NULL_NULL_ENUM: 'Null - Enum',
+          NULL_NULL_ANY_OF: 'Null - Any Of',
+          NULL_NULL_ONE_OF: 'Null - One Of',
+          NULL_NULL_ALL_OF: 'Null - All Of'
+        }
+      }
+    },
+    params: {
+      options: ['DEFAULT', 'ERROR'],
+      mapping: { DEFAULT: {}, ERROR: { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] } },
+      control: {
+        type: 'radio',
+        labels: {
+          DEFAULT: 'Default',
+          ERROR: 'Error'
+        }
+      }
+    },
+    gears: { control: null }
+  }
 }
 
-export const NullNull = () => (
+export const Default = (args) => (
   <Engine
-    pinion={toZashiki(NULL_NULL, fromDocumentToHash(null, NULL_NULL))}
+    {...args}
     gears={GEARS}
   />
 )
-
-NullNull.storyName = 'Null'
-NullNull.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NullNullEnum = () => (
-  <Engine
-    pinion={toZashiki(NULL_NULL_ENUM, fromDocumentToHash(null, NULL_NULL_ENUM))}
-    gears={GEARS}
-  />
-)
-
-NullNullEnum.storyName = 'Null - Enum'
-NullNullEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NullNullAnyOf = () => (
-  <Engine
-    pinion={toZashiki(NULL_NULL_ANY_OF, fromDocumentToHash(null, NULL_NULL_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-NullNullAnyOf.storyName = 'Null - Any Of'
-NullNullAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NullNullOneOf = () => (
-  <Engine
-    pinion={toZashiki(NULL_NULL_ONE_OF, fromDocumentToHash(null, NULL_NULL_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-NullNullOneOf.storyName = 'Null - One Of'
-NullNullOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const NullNullAllOf = () => (
-  <Engine
-    pinion={toZashiki(NULL_NULL_ALL_OF, fromDocumentToHash(null, NULL_NULL_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-NullNullAllOf.storyName = 'Null - All Of'
-NullNullAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}

@@ -16,7 +16,13 @@ import STRING_STRING_ANY_OF from 'stories/definitions/string-string-any-of'
 import STRING_STRING_ONE_OF from 'stories/definitions/string-string-one-of'
 import STRING_STRING_ALL_OF from 'stories/definitions/string-string-all-of'
 
-const PARAMS = {}
+const STRING = {
+  STRING_STRING: toZashiki(STRING_STRING, fromDocumentToHash('string', STRING_STRING)),
+  STRING_STRING_ENUM: toZashiki(STRING_STRING_ENUM, fromDocumentToHash('Three', STRING_STRING_ENUM)),
+  STRING_STRING_ANY_OF: toZashiki(STRING_STRING_ANY_OF, fromDocumentToHash('three', STRING_STRING_ANY_OF)),
+  STRING_STRING_ONE_OF: toZashiki(STRING_STRING_ONE_OF, fromDocumentToHash('three', STRING_STRING_ONE_OF)),
+  STRING_STRING_ALL_OF: toZashiki(STRING_STRING_ALL_OF, fromDocumentToHash('string', STRING_STRING_ALL_OF))
+}
 
 export default {
   title: 'Components/Pinion/String',
@@ -27,65 +33,42 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    pinion: 'STRING_STRING',
+    params: 'DEFAULT'
+  },
+  argTypes: {
+    pinion: {
+      options: Object.keys(STRING),
+      mapping: STRING,
+      control: {
+        type: 'radio',
+        labels: {
+          STRING_STRING: 'String',
+          STRING_STRING_ENUM: 'String - Enum',
+          STRING_STRING_ANY_OF: 'String - Any Of',
+          STRING_STRING_ONE_OF: 'String - One Of',
+          STRING_STRING_ALL_OF: 'String - All Of'
+        }
+      }
+    },
+    params: {
+      options: ['DEFAULT', 'ERROR'],
+      mapping: { DEFAULT: {}, ERROR: { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] } },
+      control: {
+        type: 'radio',
+        labels: {
+          DEFAULT: 'Default',
+          ERROR: 'Error'
+        }
+      }
+    }
+  }
 }
 
-export const StringString = () => (
+export const Default = (args) => (
   <Pinion
-    pinion={toZashiki(STRING_STRING, fromDocumentToHash('string', STRING_STRING))}
-    params={PARAMS}
+    {...args}
   />
 )
-
-StringString.storyName = 'String'
-StringString.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const StringStringEnum = () => (
-  <Pinion
-    pinion={toZashiki(STRING_STRING_ENUM, fromDocumentToHash('Three', STRING_STRING_ENUM))}
-    params={PARAMS}
-  />
-)
-
-StringStringEnum.storyName = 'String - Enum'
-StringStringEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const StringStringAnyOf = () => (
-  <Pinion
-    pinion={toZashiki(STRING_STRING_ANY_OF, fromDocumentToHash('three', STRING_STRING_ANY_OF))}
-    params={PARAMS}
-  />
-)
-
-StringStringAnyOf.storyName = 'String - Any Of'
-StringStringAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const StringStringOneOf = () => (
-  <Pinion
-    pinion={toZashiki(STRING_STRING_ONE_OF, fromDocumentToHash('three', STRING_STRING_ONE_OF))}
-    params={PARAMS}
-  />
-)
-
-StringStringOneOf.storyName = 'String - One Of'
-StringStringOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const StringStringAllOf = () => (
-  <Pinion
-    pinion={toZashiki(STRING_STRING_ALL_OF, fromDocumentToHash('string', STRING_STRING_ALL_OF))}
-    params={PARAMS}
-  />
-)
-
-StringStringAllOf.storyName = 'String - All Of'
-StringStringAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}

@@ -82,6 +82,80 @@ import OBJECT_NULL_ANY_OF from 'stories/definitions/object-null-any-of'
 import OBJECT_NULL_ONE_OF from 'stories/definitions/object-null-one-of'
 import OBJECT_NULL_ALL_OF from 'stories/definitions/object-null-all-of'
 
+const OBJECT = {
+  OBJECT_STRING: toZashiki(OBJECT_STRING, fromDocumentToHash({ string: 'string' }, OBJECT_STRING)),
+  OBJECT_STRING_ENUM: toZashiki(OBJECT_STRING_ENUM, fromDocumentToHash({ string: 'Three' }, OBJECT_STRING_ENUM)),
+  OBJECT_STRING_ANY_OF: toZashiki(OBJECT_STRING_ANY_OF, fromDocumentToHash({ string: 'three' }, OBJECT_STRING_ANY_OF)),
+  OBJECT_STRING_ONE_OF: toZashiki(OBJECT_STRING_ONE_OF, fromDocumentToHash({ string: 'three' }, OBJECT_STRING_ONE_OF)),
+  OBJECT_STRING_ALL_OF: toZashiki(OBJECT_STRING_ALL_OF, fromDocumentToHash({ string: 'string' }, OBJECT_STRING_ALL_OF)),
+
+  OBJECT_NUMBER: toZashiki(OBJECT_NUMBER, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER)),
+  OBJECT_NUMBER_ENUM: toZashiki(OBJECT_NUMBER_ENUM, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ENUM)),
+  OBJECT_NUMBER_ANY_OF: toZashiki(OBJECT_NUMBER_ANY_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ANY_OF)),
+  OBJECT_NUMBER_ONE_OF: toZashiki(OBJECT_NUMBER_ONE_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ONE_OF)),
+  OBJECT_NUMBER_ALL_OF: toZashiki(OBJECT_NUMBER_ALL_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ALL_OF)),
+
+  OBJECT_ARRAY_OBJECT_STRING: toZashiki(OBJECT_ARRAY_OBJECT_STRING, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_OBJECT_STRING)),
+  OBJECT_ARRAY_OBJECT_STRING_ENUM: toZashiki(OBJECT_ARRAY_OBJECT_STRING_ENUM, fromDocumentToHash({ array: ['Three'] }, OBJECT_ARRAY_OBJECT_STRING_ENUM)),
+  OBJECT_ARRAY_OBJECT_STRING_ANY_OF: toZashiki(OBJECT_ARRAY_OBJECT_STRING_ANY_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_OBJECT_STRING_ANY_OF)),
+  OBJECT_ARRAY_OBJECT_STRING_ONE_OF: toZashiki(OBJECT_ARRAY_OBJECT_STRING_ONE_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_OBJECT_STRING_ONE_OF)),
+  OBJECT_ARRAY_OBJECT_STRING_ALL_OF: toZashiki(OBJECT_ARRAY_OBJECT_STRING_ALL_OF, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_OBJECT_STRING_ALL_OF)),
+
+  OBJECT_ARRAY_OBJECT_NUMBER: toZashiki(OBJECT_ARRAY_OBJECT_NUMBER, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER)),
+  OBJECT_ARRAY_OBJECT_NUMBER_ENUM: toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ENUM, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ENUM)),
+  OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF: toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF)),
+  OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF: toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF)),
+  OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF: toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF)),
+
+  OBJECT_ARRAY_OBJECT_BOOLEAN: toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN)),
+  OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM: toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM)),
+  OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF: toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF)),
+  OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF: toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF)),
+  OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF: toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF)),
+
+  OBJECT_ARRAY_OBJECT_NULL: toZashiki(OBJECT_ARRAY_OBJECT_NULL, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL)),
+  OBJECT_ARRAY_OBJECT_NULL_ENUM: toZashiki(OBJECT_ARRAY_OBJECT_NULL_ENUM, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ENUM)),
+  OBJECT_ARRAY_OBJECT_NULL_ANY_OF: toZashiki(OBJECT_ARRAY_OBJECT_NULL_ANY_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ANY_OF)),
+  OBJECT_ARRAY_OBJECT_NULL_ONE_OF: toZashiki(OBJECT_ARRAY_OBJECT_NULL_ONE_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ONE_OF)),
+  OBJECT_ARRAY_OBJECT_NULL_ALL_OF: toZashiki(OBJECT_ARRAY_OBJECT_NULL_ALL_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ALL_OF)),
+
+  OBJECT_ARRAY_ARRAY_STRING: toZashiki(OBJECT_ARRAY_ARRAY_STRING, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_ARRAY_STRING)),
+  OBJECT_ARRAY_ARRAY_STRING_ENUM: toZashiki(OBJECT_ARRAY_ARRAY_STRING_ENUM, fromDocumentToHash({ array: ['Three'] }, OBJECT_ARRAY_ARRAY_STRING_ENUM)),
+  OBJECT_ARRAY_ARRAY_STRING_ANY_OF: toZashiki(OBJECT_ARRAY_ARRAY_STRING_ANY_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_ARRAY_STRING_ANY_OF)),
+  OBJECT_ARRAY_ARRAY_STRING_ONE_OF: toZashiki(OBJECT_ARRAY_ARRAY_STRING_ONE_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_ARRAY_STRING_ONE_OF)),
+  OBJECT_ARRAY_ARRAY_STRING_ALL_OF: toZashiki(OBJECT_ARRAY_ARRAY_STRING_ALL_OF, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_ARRAY_STRING_ALL_OF)),
+
+  OBJECT_ARRAY_ARRAY_NUMBER: toZashiki(OBJECT_ARRAY_ARRAY_NUMBER, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER)),
+  OBJECT_ARRAY_ARRAY_NUMBER_ENUM: toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ENUM, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ENUM)),
+  OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF: toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF)),
+  OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF: toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF)),
+  OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF: toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF)),
+
+  OBJECT_ARRAY_ARRAY_BOOLEAN: toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN)),
+  OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM: toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM)),
+  OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF: toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF)),
+  OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF: toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF)),
+  OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF: toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF)),
+
+  OBJECT_ARRAY_ARRAY_NULL: toZashiki(OBJECT_ARRAY_ARRAY_NULL, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL)),
+  OBJECT_ARRAY_ARRAY_NULL_ENUM: toZashiki(OBJECT_ARRAY_ARRAY_NULL_ENUM, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ENUM)),
+  OBJECT_ARRAY_ARRAY_NULL_ANY_OF: toZashiki(OBJECT_ARRAY_ARRAY_NULL_ANY_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ANY_OF)),
+  OBJECT_ARRAY_ARRAY_NULL_ONE_OF: toZashiki(OBJECT_ARRAY_ARRAY_NULL_ONE_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ONE_OF)),
+  OBJECT_ARRAY_ARRAY_NULL_ALL_OF: toZashiki(OBJECT_ARRAY_ARRAY_NULL_ALL_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ALL_OF)),
+
+  OBJECT_BOOLEAN: toZashiki(OBJECT_BOOLEAN, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN)),
+  OBJECT_BOOLEAN_ENUM: toZashiki(OBJECT_BOOLEAN_ENUM, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ENUM)),
+  OBJECT_BOOLEAN_ANY_OF: toZashiki(OBJECT_BOOLEAN_ANY_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ANY_OF)),
+  OBJECT_BOOLEAN_ONE_OF: toZashiki(OBJECT_BOOLEAN_ONE_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ONE_OF)),
+  OBJECT_BOOLEAN_ALL_OF: toZashiki(OBJECT_BOOLEAN_ALL_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ALL_OF)),
+
+  OBJECT_NULL: toZashiki(OBJECT_NULL, fromDocumentToHash({ null: null }, OBJECT_NULL)),
+  OBJECT_NULL_ENUM: toZashiki(OBJECT_NULL_ENUM, fromDocumentToHash({ null: null }, OBJECT_NULL_ENUM)),
+  OBJECT_NULL_ANY_OF: toZashiki(OBJECT_NULL_ANY_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ANY_OF)),
+  OBJECT_NULL_ONE_OF: toZashiki(OBJECT_NULL_ONE_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ONE_OF)),
+  OBJECT_NULL_ALL_OF: toZashiki(OBJECT_NULL_ALL_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ALL_OF))
+}
+
 const GEARS = {
   forward: {
     alpha: 'alpha',
@@ -102,725 +176,125 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    pinion: 'OBJECT_STRING',
+    params: 'DEFAULT'
+  },
+  argTypes: {
+    pinion: {
+      options: Object.keys(OBJECT),
+      mapping: OBJECT,
+      control: {
+        type: 'radio',
+        labels: {
+          OBJECT_STRING: 'Object - String',
+          OBJECT_STRING_ENUM: 'Object - String - Enum',
+          OBJECT_STRING_ANY_OF: 'Object - String - Any Of',
+          OBJECT_STRING_ONE_OF: 'Object - String - One Of',
+          OBJECT_STRING_ALL_OF: 'Object - String - All Of',
+          OBJECT_NUMBER: 'Object - Number',
+          OBJECT_NUMBER_ENUM: 'Object - Number - Enum',
+          OBJECT_NUMBER_ANY_OF: 'Object - Number - Any Of',
+          OBJECT_NUMBER_ONE_OF: 'Object - Number - One Of',
+          OBJECT_NUMBER_ALL_OF: 'Object - Number - All Of',
+          OBJECT_ARRAY_OBJECT_STRING: 'Object - Array (Items is an object) - String',
+          OBJECT_ARRAY_OBJECT_STRING_ENUM: 'Object - Array (Items is an object) - String - Enum',
+          OBJECT_ARRAY_OBJECT_STRING_ANY_OF: 'Object - Array (Items is an object) - String - Any Of',
+          OBJECT_ARRAY_OBJECT_STRING_ONE_OF: 'Object - Array (Items is an object) - String - One Of',
+          OBJECT_ARRAY_OBJECT_STRING_ALL_OF: 'Object - Array (Items is an object) - String - All Of',
+          OBJECT_ARRAY_OBJECT_NUMBER: 'Object - Array (Items is an object) - Number',
+          OBJECT_ARRAY_OBJECT_NUMBER_ENUM: 'Object - Array (Items is an object) - Number - Enum',
+          OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF: 'Object - Array (Items is an object) - Number - Any Of',
+          OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF: 'Object - Array (Items is an object) - Number - One Of',
+          OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF: 'Object - Array (Items is an object) - Number - All Of',
+          OBJECT_ARRAY_OBJECT_BOOLEAN: 'Object - Array (Items is an object) - Boolean',
+          OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM: 'Object - Array (Items is an object) - Boolean - Enum',
+          OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF: 'Object - Array (Items is an object) - Boolean - Any Of',
+          OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF: 'Object - Array (Items is an object) - Boolean - One Of',
+          OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF: 'Object - Array (Items is an object) - Boolean - All Of',
+          OBJECT_ARRAY_OBJECT_NULL: 'Object - Array (Items is an object) - Null',
+          OBJECT_ARRAY_OBJECT_NULL_ENUM: 'Object - Array (Items is an object) - Null - Enum',
+          OBJECT_ARRAY_OBJECT_NULL_ANY_OF: 'Object - Array (Items is an object) - Null - Any Of',
+          OBJECT_ARRAY_OBJECT_NULL_ONE_OF: 'Object - Array (Items is an object) - Null - One Of',
+          OBJECT_ARRAY_OBJECT_NULL_ALL_OF: 'Object - Array (Items is an object) - Null - All Of',
+          OBJECT_ARRAY_ARRAY_STRING: 'Object - Array (Items is an array) - String',
+          OBJECT_ARRAY_ARRAY_STRING_ENUM: 'Object - Array (Items is an array) - String - Enum',
+          OBJECT_ARRAY_ARRAY_STRING_ANY_OF: 'Object - Array (Items is an array) - String - Any Of',
+          OBJECT_ARRAY_ARRAY_STRING_ONE_OF: 'Object - Array (Items is an array) - String - One Of',
+          OBJECT_ARRAY_ARRAY_STRING_ALL_OF: 'Object - Array (Items is an array) - String - All Of',
+          OBJECT_ARRAY_ARRAY_NUMBER: 'Object - Array (Items is an array) - Number',
+          OBJECT_ARRAY_ARRAY_NUMBER_ENUM: 'Object - Array (Items is an array) - Number - Enum',
+          OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF: 'Object - Array (Items is an array) - Number - Any Of',
+          OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF: 'Object - Array (Items is an array) - Number - One Of',
+          OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF: 'Object - Array (Items is an array) - Number - All Of',
+          OBJECT_ARRAY_ARRAY_BOOLEAN: 'Object - Array (Items is an array) - Boolean',
+          OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM: 'Object - Array (Items is an array) - Boolean - Enum',
+          OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF: 'Object - Array (Items is an array) - Boolean - Any Of',
+          OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF: 'Object - Array (Items is an array) - Boolean - One Of',
+          OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF: 'Object - Array (Items is an array) - Boolean - All Of',
+          OBJECT_ARRAY_ARRAY_NULL: 'Object - Array (Items is an array) - Null',
+          OBJECT_ARRAY_ARRAY_NULL_ENUM: 'Object - Array (Items is an array) - Null - Enum',
+          OBJECT_ARRAY_ARRAY_NULL_ANY_OF: 'Object - Array (Items is an array) - Null - Any Of',
+          OBJECT_ARRAY_ARRAY_NULL_ONE_OF: 'Object - Array (Items is an array) - Null - One Of',
+          OBJECT_ARRAY_ARRAY_NULL_ALL_OF: 'Object - Array (Items is an array) - Null - All Of',
+          OBJECT_BOOLEAN: 'Object - Boolean',
+          OBJECT_BOOLEAN_ENUM: 'Object - Boolean - Enum',
+          OBJECT_BOOLEAN_ANY_OF: 'Object - Boolean - Any Of',
+          OBJECT_BOOLEAN_ONE_OF: 'Object - Boolean - One Of',
+          OBJECT_BOOLEAN_ALL_OF: 'Object - Boolean - All Of',
+          OBJECT_NULL: 'Object - Null',
+          OBJECT_NULL_ENUM: 'Object - Null - Enum',
+          OBJECT_NULL_ANY_OF: 'Object - Null - Any Of',
+          OBJECT_NULL_ONE_OF: 'Object - Null - One Of',
+          OBJECT_NULL_ALL_OF: 'Object - Null - All Of'
+        }
+      }
+    },
+    params: {
+      options: ['DEFAULT', 'ERROR'],
+      mapping: { DEFAULT: {}, ERROR: { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] } },
+      control: {
+        type: 'radio',
+        labels: {
+          DEFAULT: 'Default',
+          ERROR: 'Error'
+        }
+      }
+    },
+    gears: { control: null }
+  }
 }
 
-export const ObjectString = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_STRING, fromDocumentToHash({ string: 'string' }, OBJECT_STRING))}
-    gears={GEARS}
-  />
-)
+const hasError = (params) => Reflect.has(params, 'errors')
+const getError = ({ meta: { schema: { properties = {} } = {} } = {} }) => {
+  let error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] }
 
-ObjectString.storyName = 'Object - String'
-ObjectString.parameters = {
-  controls: { hideNoControlsWarning: true }
+  if (Reflect.has(properties, 'string')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/string' }] }
+
+  if (Reflect.has(properties, 'number')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/number' }] }
+
+  if (Reflect.has(properties, 'array')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/array/0' }] }
+
+  if (Reflect.has(properties, 'boolean')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/boolean' }] }
+
+  if (Reflect.has(properties, 'null')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/null' }] }
+
+  return error
 }
 
-export const ObjectStringEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_STRING_ENUM, fromDocumentToHash({ string: 'Three' }, OBJECT_STRING_ENUM))}
-    gears={GEARS}
-  />
-)
+export const Default = ({ pinion, params: P }) => {
+  const params = hasError(P) ? getError(pinion) : P
 
-ObjectStringEnum.storyName = 'Object - String - Enum'
-ObjectStringEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
+  return (
+    <Engine
+      pinion={pinion}
+      params={params}
+      gears={GEARS}
+    />
+  )
 }
 
-export const ObjectStringAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_STRING_ANY_OF, fromDocumentToHash({ string: 'three' }, OBJECT_STRING_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectStringAnyOf.storyName = 'Object - String - Any Of'
-ObjectStringAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectStringOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_STRING_ONE_OF, fromDocumentToHash({ string: 'three' }, OBJECT_STRING_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectStringOneOf.storyName = 'Object - String - One Of'
-ObjectStringOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectStringAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_STRING_ALL_OF, fromDocumentToHash({ string: 'string' }, OBJECT_STRING_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectStringAllOf.storyName = 'Object - String - All Of'
-ObjectStringAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNumber = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NUMBER, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER))}
-    gears={GEARS}
-  />
-)
-
-ObjectNumber.storyName = 'Object - Number'
-ObjectNumber.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNumberEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NUMBER_ENUM, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectNumberEnum.storyName = 'Object - Number - Enum'
-ObjectNumberEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNumberAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NUMBER_ANY_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNumberAnyOf.storyName = 'Object - Number - Any Of'
-ObjectNumberAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNumberOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NUMBER_ONE_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNumberOneOf.storyName = 'Object - Number - One Of'
-ObjectNumberOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNumberAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NUMBER_ALL_OF, fromDocumentToHash({ number: 3 }, OBJECT_NUMBER_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNumberAllOf.storyName = 'Object - Number - All Of'
-ObjectNumberAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectString = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_STRING, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_OBJECT_STRING))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectString.storyName = 'Object - Array (Items is an object) - String'
-ObjectArrayItemsIsAnObjectString.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectStringEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_STRING_ENUM, fromDocumentToHash({ array: ['Three'] }, OBJECT_ARRAY_OBJECT_STRING_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectStringEnum.storyName = 'Object - Array (Items is an object) - String - Enum'
-ObjectArrayItemsIsAnObjectStringEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectStringAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_STRING_ANY_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_OBJECT_STRING_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectStringAnyOf.storyName = 'Object - Array (Items is an object) - String - Any Of'
-ObjectArrayItemsIsAnObjectStringAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectStringOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_STRING_ONE_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_OBJECT_STRING_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectStringOneOf.storyName = 'Object - Array (Items is an object) - String - One Of'
-ObjectArrayItemsIsAnObjectStringOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectStringAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_STRING_ALL_OF, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_OBJECT_STRING_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectStringAllOf.storyName = 'Object - Array (Items is an object) - String - All Of'
-ObjectArrayItemsIsAnObjectStringAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNumber = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NUMBER, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNumber.storyName = 'Object - Array (Items is an object) - Number'
-ObjectArrayItemsIsAnObjectNumber.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNumberEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ENUM, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNumberEnum.storyName = 'Object - Array (Items is an object) - Number - Enum'
-ObjectArrayItemsIsAnObjectNumberEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNumberAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNumberAnyOf.storyName = 'Object - Array (Items is an object) - Number - Any Of'
-ObjectArrayItemsIsAnObjectNumberAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNumberOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNumberOneOf.storyName = 'Object - Array (Items is an object) - Number - One Of'
-ObjectArrayItemsIsAnObjectNumberOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNumberAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_OBJECT_NUMBER_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNumberAllOf.storyName = 'Object - Array (Items is an object) - Number - All Of'
-ObjectArrayItemsIsAnObjectNumberAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectBoolean = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectBoolean.storyName = 'Object - Array (Items is an object) - Boolean'
-ObjectArrayItemsIsAnObjectBoolean.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectBooleanEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectBooleanEnum.storyName = 'Object - Array (Items is an object) - Boolean - Enum'
-ObjectArrayItemsIsAnObjectBooleanEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectBooleanAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectBooleanAnyOf.storyName = 'Object - Array (Items is an object) - Boolean - Any Of'
-ObjectArrayItemsIsAnObjectBooleanAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectBooleanOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectBooleanOneOf.storyName = 'Object - Array (Items is an object) - Boolean - One Of'
-ObjectArrayItemsIsAnObjectBooleanOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectBooleanAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_OBJECT_BOOLEAN_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectBooleanAllOf.storyName = 'Object - Array (Items is an object) - Boolean - All Of'
-ObjectArrayItemsIsAnObjectBooleanAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNull = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NULL, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNull.storyName = 'Object - Array (Items is an object) - Null'
-ObjectArrayItemsIsAnObjectNull.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNullEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NULL_ENUM, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNullEnum.storyName = 'Object - Array (Items is an object) - Null - Enum'
-ObjectArrayItemsIsAnObjectNullEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNullAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NULL_ANY_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNullAnyOf.storyName = 'Object - Array (Items is an object) - Null - Any Of'
-ObjectArrayItemsIsAnObjectNullAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNullOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NULL_ONE_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNullOneOf.storyName = 'Object - Array (Items is an object) - Null - One Of'
-ObjectArrayItemsIsAnObjectNullOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnObjectNullAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_OBJECT_NULL_ALL_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_OBJECT_NULL_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnObjectNullAllOf.storyName = 'Object - Array (Items is an object) - Null - All Of'
-ObjectArrayItemsIsAnObjectNullAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayString = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_STRING, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_ARRAY_STRING))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayString.storyName = 'Object - Array (Items is an array) - String'
-ObjectArrayItemsIsAnArrayString.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayStringEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_STRING_ENUM, fromDocumentToHash({ array: ['Three'] }, OBJECT_ARRAY_ARRAY_STRING_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayStringEnum.storyName = 'Object - Array (Items is an array) - String - Enum'
-ObjectArrayItemsIsAnArrayStringEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayStringAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_STRING_ANY_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_ARRAY_STRING_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayStringAnyOf.storyName = 'Object - Array (Items is an array) - String - Any Of'
-ObjectArrayItemsIsAnArrayStringAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayStringOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_STRING_ONE_OF, fromDocumentToHash({ array: ['three'] }, OBJECT_ARRAY_ARRAY_STRING_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayStringOneOf.storyName = 'Object - Array (Items is an array) - String - One Of'
-ObjectArrayItemsIsAnArrayStringOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayStringAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_STRING_ALL_OF, fromDocumentToHash({ array: ['string'] }, OBJECT_ARRAY_ARRAY_STRING_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayStringAllOf.storyName = 'Object - Array (Items is an array) - String - All Of'
-ObjectArrayItemsIsAnArrayStringAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNumber = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NUMBER, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNumber.storyName = 'Object - Array (Items is an array) - Number'
-ObjectArrayItemsIsAnArrayNumber.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNumberEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ENUM, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNumberEnum.storyName = 'Object - Array (Items is an array) - Number - Enum'
-ObjectArrayItemsIsAnArrayNumberEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNumberAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNumberAnyOf.storyName = 'Object - Array (Items is an array) - Number - Any Of'
-ObjectArrayItemsIsAnArrayNumberAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNumberOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNumberOneOf.storyName = 'Object - Array (Items is an array) - Number - One Of'
-ObjectArrayItemsIsAnArrayNumberOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNumberAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF, fromDocumentToHash({ array: [3] }, OBJECT_ARRAY_ARRAY_NUMBER_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNumberAllOf.storyName = 'Object - Array (Items is an array) - Number - All Of'
-ObjectArrayItemsIsAnArrayNumberAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayBoolean = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayBoolean.storyName = 'Object - Array (Items is an array) - Boolean'
-ObjectArrayItemsIsAnArrayBoolean.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayBooleanEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayBooleanEnum.storyName = 'Object - Array (Items is an array) - Boolean - Enum'
-ObjectArrayItemsIsAnArrayBooleanEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayBooleanAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayBooleanAnyOf.storyName = 'Object - Array (Items is an array) - Boolean - Any Of'
-ObjectArrayItemsIsAnArrayBooleanAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayBooleanOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayBooleanOneOf.storyName = 'Object - Array (Items is an array) - Boolean - One Of'
-ObjectArrayItemsIsAnArrayBooleanOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayBooleanAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF, fromDocumentToHash({ array: [false] }, OBJECT_ARRAY_ARRAY_BOOLEAN_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayBooleanAllOf.storyName = 'Object - Array (Items is an array) - Boolean - All Of'
-ObjectArrayItemsIsAnArrayBooleanAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNull = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NULL, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNull.storyName = 'Object - Array (Items is an array) - Null'
-ObjectArrayItemsIsAnArrayNull.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNullEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NULL_ENUM, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNullEnum.storyName = 'Object - Array (Items is an array) - Null - Enum'
-ObjectArrayItemsIsAnArrayNullEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNullAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NULL_ANY_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNullAnyOf.storyName = 'Object - Array (Items is an array) - Null - Any Of'
-ObjectArrayItemsIsAnArrayNullAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNullOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NULL_ONE_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNullOneOf.storyName = 'Object - Array (Items is an array) - Null - One Of'
-ObjectArrayItemsIsAnArrayNullOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectArrayItemsIsAnArrayNullAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_ARRAY_ARRAY_NULL_ALL_OF, fromDocumentToHash({ array: [null] }, OBJECT_ARRAY_ARRAY_NULL_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectArrayItemsIsAnArrayNullAllOf.storyName = 'Object - Array (Items is an array) - Null - All Of'
-ObjectArrayItemsIsAnArrayNullAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectBoolean = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_BOOLEAN, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN))}
-    gears={GEARS}
-  />
-)
-
-ObjectBoolean.storyName = 'Object - Boolean'
-ObjectBoolean.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectBooleanEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_BOOLEAN_ENUM, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectBooleanEnum.storyName = 'Object - Boolean - Enum'
-ObjectBooleanEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectBooleanAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_BOOLEAN_ANY_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectBooleanAnyOf.storyName = 'Object - Boolean - Any Of'
-ObjectBooleanAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectBooleanOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_BOOLEAN_ONE_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectBooleanOneOf.storyName = 'Object - Boolean - One Of'
-ObjectBooleanOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectBooleanAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_BOOLEAN_ALL_OF, fromDocumentToHash({ boolean: false }, OBJECT_BOOLEAN_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectBooleanAllOf.storyName = 'Object - Boolean - All Of'
-ObjectBooleanAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNull = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NULL, fromDocumentToHash({ null: null }, OBJECT_NULL))}
-    gears={GEARS}
-  />
-)
-
-ObjectNull.storyName = 'Object - Null'
-ObjectNull.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNullEnum = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NULL_ENUM, fromDocumentToHash({ null: null }, OBJECT_NULL_ENUM))}
-    gears={GEARS}
-  />
-)
-
-ObjectNullEnum.storyName = 'Object - Null - Enum'
-ObjectNullEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNullAnyOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NULL_ANY_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ANY_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNullAnyOf.storyName = 'Object - Null - Any Of'
-ObjectNullAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNullOneOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NULL_ONE_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ONE_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNullOneOf.storyName = 'Object - Null - One Of'
-ObjectNullOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const ObjectNullAllOf = () => (
-  <Engine
-    pinion={toZashiki(OBJECT_NULL_ALL_OF, fromDocumentToHash({ null: null }, OBJECT_NULL_ALL_OF))}
-    gears={GEARS}
-  />
-)
-
-ObjectNullAllOf.storyName = 'Object - Null - All Of'
-ObjectNullAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
+Default.propTypes = {
+  ...Engine.propTypes
 }

@@ -16,7 +16,13 @@ import BOOLEAN_BOOLEAN_ANY_OF from 'stories/definitions/boolean-boolean-any-of'
 import BOOLEAN_BOOLEAN_ONE_OF from 'stories/definitions/boolean-boolean-one-of'
 import BOOLEAN_BOOLEAN_ALL_OF from 'stories/definitions/boolean-boolean-all-of'
 
-const PARAMS = {}
+const BOOLEAN = {
+  BOOLEAN_BOOLEAN: toZashiki(BOOLEAN_BOOLEAN, fromDocumentToHash(false, BOOLEAN_BOOLEAN)),
+  BOOLEAN_BOOLEAN_ENUM: toZashiki(BOOLEAN_BOOLEAN_ENUM, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ENUM)),
+  BOOLEAN_BOOLEAN_ANY_OF: toZashiki(BOOLEAN_BOOLEAN_ANY_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ANY_OF)),
+  BOOLEAN_BOOLEAN_ONE_OF: toZashiki(BOOLEAN_BOOLEAN_ONE_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ONE_OF)),
+  BOOLEAN_BOOLEAN_ALL_OF: toZashiki(BOOLEAN_BOOLEAN_ALL_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ALL_OF))
+}
 
 export default {
   title: 'Components/Pinion/Boolean',
@@ -27,65 +33,42 @@ export default {
         <Story />
       </MemoryRouter>
     )
-  ]
+  ],
+  args: {
+    pinion: 'BOOLEAN_BOOLEAN',
+    params: 'DEFAULT'
+  },
+  argTypes: {
+    pinion: {
+      options: Object.keys(BOOLEAN),
+      mapping: BOOLEAN,
+      control: {
+        type: 'radio',
+        labels: {
+          BOOLEAN_BOOLEAN: 'Boolean',
+          BOOLEAN_BOOLEAN_ENUM: 'Boolean - Enum',
+          BOOLEAN_BOOLEAN_ANY_OF: 'Boolean - Any Of',
+          BOOLEAN_BOOLEAN_ONE_OF: 'Boolean - One Of',
+          BOOLEAN_BOOLEAN_ALL_OF: 'Boolean - All Of'
+        }
+      }
+    },
+    params: {
+      options: ['DEFAULT', 'ERROR'],
+      mapping: { DEFAULT: {}, ERROR: { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] } },
+      control: {
+        type: 'radio',
+        labels: {
+          DEFAULT: 'Default',
+          ERROR: 'Error'
+        }
+      }
+    }
+  }
 }
 
-export const BooleanBoolean = () => (
+export const Default = (args) => (
   <Pinion
-    pinion={toZashiki(BOOLEAN_BOOLEAN, fromDocumentToHash(false, BOOLEAN_BOOLEAN))}
-    params={PARAMS}
+    {...args}
   />
 )
-
-BooleanBoolean.storyName = 'Boolean'
-BooleanBoolean.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const BooleanBooleanEnum = () => (
-  <Pinion
-    pinion={toZashiki(BOOLEAN_BOOLEAN_ENUM, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ENUM))}
-    params={PARAMS}
-  />
-)
-
-BooleanBooleanEnum.storyName = 'Boolean - Enum'
-BooleanBooleanEnum.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const BooleanBooleanAnyOf = () => (
-  <Pinion
-    pinion={toZashiki(BOOLEAN_BOOLEAN_ANY_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ANY_OF))}
-    params={PARAMS}
-  />
-)
-
-BooleanBooleanAnyOf.storyName = 'Boolean - Any Of'
-BooleanBooleanAnyOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const BooleanBooleanOneOf = () => (
-  <Pinion
-    pinion={toZashiki(BOOLEAN_BOOLEAN_ONE_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ONE_OF))}
-    params={PARAMS}
-  />
-)
-
-BooleanBooleanOneOf.storyName = 'Boolean - One Of'
-BooleanBooleanOneOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
-
-export const BooleanBooleanAllOf = () => (
-  <Pinion
-    pinion={toZashiki(BOOLEAN_BOOLEAN_ALL_OF, fromDocumentToHash(false, BOOLEAN_BOOLEAN_ALL_OF))}
-    params={PARAMS}
-  />
-)
-
-BooleanBooleanAllOf.storyName = 'Boolean - All Of'
-BooleanBooleanAllOf.parameters = {
-  controls: { hideNoControlsWarning: true }
-}
