@@ -49,10 +49,15 @@ const plugins = [
   ],
   [
     'module-resolver', {
-      root: ['./src'],
+      root: [
+        '.'
+      ],
       cwd: 'babelrc',
       alias: {
-        'shinkansen-engine': './src',
+        /**
+         *  Storybook
+         */
+        'shinkansen-engine/gears': './src/components/gears/index.cjs',
         build: './build',
         stories: './stories'
       }
@@ -64,9 +69,8 @@ module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-    compact: true,
-    comments: false,
     presets,
-    plugins
+    plugins,
+    ignore: [/core-js/]
   }
 }

@@ -1,7 +1,0 @@
-export { default as Cogs } from './cogs'
-export { default as Gears } from './gears'
-export { default as Pantograph } from './pantograph'
-export { default as Pinion } from './pinion'
-export { default as Rails } from './rails'
-export { default as Signals } from './signals'
-export { default as Sprockets } from './sprockets'

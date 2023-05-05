@@ -3,5 +3,21 @@ module.exports = {
   verbose: true,
   rootDir: '.',
   collectCoverage: true,
-  coverageDirectory: './coverage'
+  coverageDirectory: './coverage',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(mjs?|mts?|jsx?|js?|tsx?|ts?)$',
+  transform: {
+    '^.+\\.jsx$': 'babel-jest',
+    '^.+\\.mjs$': 'babel-jest'
+  },
+  moduleFileExtensions: ['js', 'jsx', 'mjs', 'cjs'],
+  transformIgnorePatterns: [
+    '/node_modules\\/(?!shinkansen-cogs)\\/',
+    '/node_modules\\/(?!shinkansen-sprockets)\\/',
+    '/node_modules\\/(?!shinkansen-gears)\\/',
+    '/node_modules\\/(?!shinkansen-pinion)\\/',
+    '/node_modules\\/(?!shinkansen-rails)\\/',
+    '/node_modules\\/(?!shinkansen-signals)\\/',
+    '/node_modules\\/(?!shinkansen-pantograph)\\/',
+    '/node_modules\\/(?!shinkansen-transmission)\\/'
+  ]
 }

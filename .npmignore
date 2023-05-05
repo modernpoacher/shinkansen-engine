@@ -10,17 +10,19 @@
 
 .depsrc
 
-# NPM
-.npmignore
+# User-defined NPM configuration
 .npmrc
+
+# User-defined NVM configuration
+.nvmrc
 
 # Build
 build
-gulpfile.js
+gulpfile.mjs
 
 # Jest
 __tests__
-jest.config.js
+jest.config.cjs
 
 # Coverage
 coverage
