@@ -6,7 +6,7 @@ const {
   Gears
 } = require('shinkansen-gears')
 
-const log = debug('shinksansen-engine')
+const log = debug('shinksansen-engine/components/gears')
 
 log('`shinkansen` is awake')
 

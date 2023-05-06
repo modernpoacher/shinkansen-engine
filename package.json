@@ -47,7 +47,7 @@
     "shinkansen-cogs": "1.5.53",
     "shinkansen-gears": "1.0.41",
     "shinkansen-pantograph": "1.1.9",
-    "shinkansen-pinion": "1.0.51",
+    "shinkansen-pinion": "1.0.52",
     "shinkansen-rails": "1.0.25",
     "shinkansen-signals": "1.1.10",
     "shinkansen-sprockets": "1.0.53",
@@ -133,13 +133,23 @@
     "./components/gears/forward": "./src/components/gears/forward/index.cjs",
     "./components/gears/reverse": "./src/components/gears/forward/index.cjs",
     "./components/gears": "./src/components/gears/index.cjs",
+    "./components/pinion/check-answers": {
+      "require": "./src/components/pinion/check-answers/index.cjs",
+      "import": "./src/components/pinion/check-answers/index.mjs"
+    },
+    "./components/pinion/common/text-content": "./src/components/pinion/common/text-content/index.cjs",
+    "./components/pinion/common": "./src/components/pinion/common/index.mjs",
+    "./components/pinion/error-summary": {
+      "require": "./src/components/pinion/error-summary/index.cjs",
+      "import": "./src/components/pinion/error-summary/index.mjs"
+    },
     "./components/pinion": "./src/components/pinion/index.cjs",
     "./components/rails": "./src/components/rails/index.cjs",
     "./components/signals": "./src/components/signals/index.cjs",
     "./components/pantograph": "./src/components/pantograph/index.cjs",
     "./transformers/pinion/check-answers": "./src/transformers/pinion/check-answers/index.mjs",
     "./transformers/pinion/common": "./src/transformers/pinion/common/index.mjs",
-    "./transformers/pinion/error-summary": "./src/transformers/pinion/error-summary/index.mjs",
+    "./transformers/pinion/error-message": "./src/transformers/pinion/error-message/index.mjs",
     "./transformers/pinion": "./src/transformers/pinion/index.mjs",
     "./transformers/transmission/from-document-to-hash": "./src/transformers/transmission/from-document-to-hash/index.mjs",
     "./transformers/transmission/from-hash-to-document": "./src/transformers/transmission/from-hash-to-document/index.mjs",
