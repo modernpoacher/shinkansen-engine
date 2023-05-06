@@ -1,5 +1,7 @@
 require('@babel/register')({ ignore: [] })
 
+const debug = require('debug')
+
 const Engine = require('./engine/index.cjs')
 
 const Cogs = require('./components/cogs/index.cjs')
@@ -13,6 +15,10 @@ const Pantograph = require('./components/pantograph/index.cjs')
 const { default: fromDocumentToHash } = require('./transformers/transmission/from-document-to-hash/index.mjs')
 const { default: fromHashToDocument } = require('./transformers/transmission/from-hash-to-document/index.mjs')
 const { default: toZashiki } = require('./transformers/transmission/to-zashiki/index.mjs')
+
+const log = debug('shinksansen-engine')
+
+log('`shinkansen` is awake')
 
 module.exports.Engine = Engine
 

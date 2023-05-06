@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import Pinion from '#pinion'
-import Gears from '#gears'
+import Pinion from 'shinkansen-engine/components/pinion'
+import Gears from 'shinkansen-engine/components/gears'
 
 export default class Engine extends Component {
   render () {

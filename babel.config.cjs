@@ -49,17 +49,13 @@ const plugins = [
   ],
   [
     'module-resolver', {
-      root: [
-        '.'
-      ],
-      cwd: 'babelrc',
       alias: {
         /**
-         *  Storybook
+         *  Storybook - Engine
          */
-        'shinkansen-engine/gears': './src/components/gears/index.cjs',
-        build: './build',
-        stories: './stories'
+        'shinkansen-engine/components/gears': './src/components/gears/index.cjs',
+        'shinkansen-engine/components/pinion': './src/components/pinion/index.cjs',
+        'shinkansen-engine': './src/index.cjs'
       }
     }
   ]
@@ -71,6 +67,6 @@ module.exports = (api) => {
   return {
     presets,
     plugins,
-    ignore: [/core-js/]
+    ignore: [/node_modules\/(?!shinkansen-)/]
   }
 }
