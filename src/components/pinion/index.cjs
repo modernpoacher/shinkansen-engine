@@ -3,8 +3,8 @@ require('@babel/register')({ ignore: [] })
 const debug = require('debug')
 
 const {
-  default: Pinion
-} = require('shinkansen-pinion/pinion')
+  Pinion
+} = require('shinkansen-pinion')
 
 const log = debug('shinksansen-engine')
 
