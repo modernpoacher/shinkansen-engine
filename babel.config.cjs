@@ -196,17 +196,33 @@ const plugins = [
         'shinkansen-pinion/transformers/error-message': './node_modules/shinkansen-pinion/src/transformers/error-message/index.mjs',
         'shinkansen-pinion/transformers': './node_modules/shinkansen-pinion/src/transformers/index.mjs',
         'shinkansen-pinion/pinion': './node_modules/shinkansen-pinion/src/pinion/index.cjs',
-
+        /**
+         *  Storybook - Rails
+         */
         'shinkansen-rails': './node_modules/shinkansen-rails/src/index.mjs',
+        /**
+         *  Storybook - Signals
+         */
         'shinkansen-signals': './node_modules/shinkansen-signals/src/index.mjs',
-
         /**
          *  Storybook - Engine
          */
+        'shinkansen-engine/components/cogs': './src/components/cogs/index.cjs',
+        'shinkansen-engine/components/sprockets': './src/components/sprockets/index.cjs',
         'shinkansen-engine/components/gears': './src/components/gears/index.cjs',
         'shinkansen-engine/components/pinion': './src/components/pinion/index.cjs',
         'shinkansen-engine/engine': './src/engine/index.cjs',
         'shinkansen-engine': './src/index.cjs',
+        '#stories/state/checkbox': './stories/state/checkbox/index.jsx',
+        '#stories/state/email': './stories/state/email/index.jsx',
+        '#stories/state/number': './stories/state/number/index.jsx',
+        '#stories/state/password': './stories/state/password/index.jsx',
+        '#stories/state/radio': './stories/state/radio/index.jsx',
+        '#stories/state/select': './stories/state/select/index.jsx',
+        '#stories/state/text': './stories/state/text/index.jsx',
+        '#stories/state/textarea': './stories/state/textarea/index.jsx',
+        '#stories/state': './stories/state/index.jsx',
+        '#stories/errors': './stories/errors.mjs',
         '#stories': './stories'
       }
     }

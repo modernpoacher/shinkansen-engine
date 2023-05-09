@@ -32,7 +32,7 @@ const NULL = {
 }
 
 export default {
-  title: 'Components/Engine/Null',
+  title: 'Stories/Engine/Null',
   component: Engine,
   decorators: [
     (Story) => (

@@ -5,5 +5,22 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/
     }
+  },
+  options: {
+    storySort: {
+      order: [
+        'Stories',
+        [
+          'Engine',
+          'Components',
+          [
+            'Cogs',
+            'Sprockets',
+            'Gears',
+            'Pinion'
+          ]
+        ]
+      ]
+    }
   }
 }

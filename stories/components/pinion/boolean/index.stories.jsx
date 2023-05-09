@@ -20,7 +20,7 @@ const BOOLEAN = {
 }
 
 export default {
-  title: 'Components/Pinion/Boolean',
+  title: 'Stories/Components/Pinion/Boolean',
   component: Pinion,
   decorators: [
     (Story) => (

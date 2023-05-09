@@ -43,13 +43,13 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.5.67",
+    "shinkansen-cogs": "1.5.68",
     "shinkansen-gears": "1.0.62",
     "shinkansen-pantograph": "1.1.19",
-    "shinkansen-pinion": "1.0.67",
+    "shinkansen-pinion": "1.0.69",
     "shinkansen-rails": "1.0.35",
     "shinkansen-signals": "1.1.18",
-    "shinkansen-sprockets": "1.0.65",
+    "shinkansen-sprockets": "1.0.66",
     "shinkansen-transmission": "2.2.27"
   },
   "devDependencies": {
@@ -139,11 +139,13 @@
       "require": "./src/components/pinion/check-answers/index.cjs",
       "import": "./src/components/pinion/check-answers/index.mjs"
     },
-    "./components/pinion/common/text-content": "./src/components/pinion/common/text-content/index.cjs",
-    "./components/pinion/common": "./src/components/pinion/common/index.mjs",
     "./components/pinion/error-summary": {
       "require": "./src/components/pinion/error-summary/index.cjs",
       "import": "./src/components/pinion/error-summary/index.mjs"
+    },
+    "./components/pinion/fieldset": {
+      "require": "./src/components/pinion/fieldset/index.cjs",
+      "import": "./src/components/pinion/fieldset/index.mjs"
     },
     "./components/pinion": "./src/components/pinion/index.cjs",
     "./components/rails": "./src/components/rails/index.cjs",

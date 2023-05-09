@@ -32,7 +32,7 @@ const NUMBER = {
 }
 
 export default {
-  title: 'Components/Engine/Number',
+  title: 'Stories/Engine/Number',
   component: Engine,
   decorators: [
     (Story) => (

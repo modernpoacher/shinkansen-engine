@@ -32,7 +32,7 @@ const BOOLEAN = {
 }
 
 export default {
-  title: 'Components/Engine/Boolean',
+  title: 'Stories/Engine/Boolean',
   component: Engine,
   decorators: [
     (Story) => (

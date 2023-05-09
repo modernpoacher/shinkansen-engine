@@ -153,7 +153,7 @@ const OBJECT = {
 }
 
 export default {
-  title: 'Components/Engine/Object',
+  title: 'Stories/Engine/Object',
   component: Engine,
   decorators: [
     (Story) => (

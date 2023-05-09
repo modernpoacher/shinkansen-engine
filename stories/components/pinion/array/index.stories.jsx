@@ -97,7 +97,7 @@ const ARRAY = {
 }
 
 export default {
-  title: 'Components/Pinion/Array',
+  title: 'Stories/Components/Pinion/Array',
   component: Pinion,
   decorators: [
     (Story) => (

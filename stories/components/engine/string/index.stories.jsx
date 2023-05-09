@@ -32,7 +32,7 @@ const STRING = {
 }
 
 export default {
-  title: 'Components/Engine/String',
+  title: 'Stories/Engine/String',
   component: Engine,
   decorators: [
     (Story) => (

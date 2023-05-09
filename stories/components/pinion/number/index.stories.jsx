@@ -20,7 +20,7 @@ const NUMBER = {
 }
 
 export default {
-  title: 'Components/Pinion/Number',
+  title: 'Stories/Components/Pinion/Number',
   component: Pinion,
   decorators: [
     (Story) => (

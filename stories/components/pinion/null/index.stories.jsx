@@ -20,7 +20,7 @@ const NULL = {
 }
 
 export default {
-  title: 'Components/Pinion/Null',
+  title: 'Stories/Components/Pinion/Null',
   component: Pinion,
   decorators: [
     (Story) => (

@@ -110,7 +110,7 @@ const ARRAY = {
 }
 
 export default {
-  title: 'Components/Engine/Array',
+  title: 'Stories/Engine/Array',
   component: Engine,
   decorators: [
     (Story) => (
