@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "object",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "title": "Object",
+      "description": "An object schema",
+      "properties": {
+        "array": {
+          "type": "array",
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "items": {
+            "type": "string",
+            "title": "String (One Of)",
+            "description": "A string schema",
+            "oneOf": [
+              {
+                "const": "one",
+                "title": "One",
+                "description": "The value \"one\""
+              },
+              {
+                "const": "two",
+                "title": "Two",
+                "description": "The value \"two\""
+              },
+              {
+                "const": "three",
+                "title": "Three",
+                "description": "The value \"three\""
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "elements": {
+    "title": "Object",
+    "description": "An object schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/array",
+          "type": "array",
+          "parentUri": "#/",
+          "schema": {
+            "type": "array",
+            "title": "Array (Items is an object)",
+            "description": "An array schema",
+            "items": {
+              "type": "string",
+              "title": "String (One Of)",
+              "description": "A string schema",
+              "oneOf": [
+                {
+                  "const": "one",
+                  "title": "One",
+                  "description": "The value \"one\""
+                },
+                {
+                  "const": "two",
+                  "title": "Two",
+                  "description": "The value \"two\""
+                },
+                {
+                  "const": "three",
+                  "title": "Three",
+                  "description": "The value \"three\""
+                }
+              ]
+            }
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": "Object",
+            "description": "An object schema",
+            "properties": {
+              "array": {
+                "type": "array",
+                "title": "Array (Items is an object)",
+                "description": "An array schema",
+                "items": {
+                  "type": "string",
+                  "title": "String (One Of)",
+                  "description": "A string schema",
+                  "oneOf": [
+                    {
+                      "const": "one",
+                      "title": "One",
+                      "description": "The value \"one\""
+                    },
+                    {
+                      "const": "two",
+                      "title": "Two",
+                      "description": "The value \"two\""
+                    },
+                    {
+                      "const": "three",
+                      "title": "Three",
+                      "description": "The value \"three\""
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "isRequired": false,
+          "name": "array"
+        },
+        "elements": {
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "fields": [
+            {
+              "meta": {
+                "uri": "#/array/0",
+                "type": "string",
+                "parentUri": "#/array",
+                "schema": {
+                  "type": "string",
+                  "title": "String (One Of)",
+                  "description": "A string schema",
+                  "oneOf": [
+                    {
+                      "const": "one",
+                      "title": "One",
+                      "description": "The value \"one\""
+                    },
+                    {
+                      "const": "two",
+                      "title": "Two",
+                      "description": "The value \"two\""
+                    },
+                    {
+                      "const": "three",
+                      "title": "Three",
+                      "description": "The value \"three\""
+                    }
+                  ]
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "title": "Object",
+                  "description": "An object schema",
+                  "properties": {
+                    "array": {
+                      "type": "array",
+                      "title": "Array (Items is an object)",
+                      "description": "An array schema",
+                      "items": {
+                        "type": "string",
+                        "title": "String (One Of)",
+                        "description": "A string schema",
+                        "oneOf": [
+                          {
+                            "const": "one",
+                            "title": "One",
+                            "description": "The value \"one\""
+                          },
+                          {
+                            "const": "two",
+                            "title": "Two",
+                            "description": "The value \"two\""
+                          },
+                          {
+                            "const": "three",
+                            "title": "Three",
+                            "description": "The value \"three\""
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "selectedItems": [
+                  2
+                ],
+                "items": [
+                  {
+                    "meta": {
+                      "uri": "#/array/0/0",
+                      "type": "string",
+                      "parentUri": "#/array/0",
+                      "value": "one",
+                      "schema": {
+                        "const": "one",
+                        "title": "One",
+                        "description": "The value \"one\""
+                      },
+                      "rootSchema": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "type": "object",
+                        "title": "Object",
+                        "description": "An object schema",
+                        "properties": {
+                          "array": {
+                            "type": "array",
+                            "title": "Array (Items is an object)",
+                            "description": "An array schema",
+                            "items": {
+                              "type": "string",
+                              "title": "String (One Of)",
+                              "description": "A string schema",
+                              "oneOf": [
+                                {
+                                  "const": "one",
+                                  "title": "One",
+                                  "description": "The value \"one\""
+                                },
+                                {
+                                  "const": "two",
+                                  "title": "Two",
+                                  "description": "The value \"two\""
+                                },
+                                {
+                                  "const": "three",
+                                  "title": "Three",
+                                  "description": "The value \"three\""
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "item": 0,
+                      "selectedItems": [
+                        2
+                      ]
+                    },
+                    "elements": {
+                      "title": "One",
+                      "description": "The value \"one\"",
+                      "field": {
+                        "value": "one",
+                        "selectedItems": [
+                          2
+                        ],
+                        "id": "#/array/0/0"
+                      }
+                    }
+                  },
+                  {
+                    "meta": {
+                      "uri": "#/array/0/1",
+                      "type": "string",
+                      "parentUri": "#/array/0",
+                      "value": "two",
+                      "schema": {
+                        "const": "two",
+                        "title": "Two",
+                        "description": "The value \"two\""
+                      },
+                      "rootSchema": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "type": "object",
+                        "title": "Object",
+                        "description": "An object schema",
+                        "properties": {
+                          "array": {
+                            "type": "array",
+                            "title": "Array (Items is an object)",
+                            "description": "An array schema",
+                            "items": {
+                              "type": "string",
+                              "title": "String (One Of)",
+                              "description": "A string schema",
+                              "oneOf": [
+                                {
+                                  "const": "one",
+                                  "title": "One",
+                                  "description": "The value \"one\""
+                                },
+                                {
+                                  "const": "two",
+                                  "title": "Two",
+                                  "description": "The value \"two\""
+                                },
+                                {
+                                  "const": "three",
+                                  "title": "Three",
+                                  "description": "The value \"three\""
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "item": 1,
+                      "selectedItems": [
+                        2
+                      ]
+                    },
+                    "elements": {
+                      "title": "Two",
+                      "description": "The value \"two\"",
+                      "field": {
+                        "value": "two",
+                        "selectedItems": [
+                          2
+                        ],
+                        "id": "#/array/0/1"
+                      }
+                    }
+                  },
+                  {
+                    "meta": {
+                      "uri": "#/array/0/2",
+                      "type": "string",
+                      "parentUri": "#/array/0",
+                      "value": "three",
+                      "schema": {
+                        "const": "three",
+                        "title": "Three",
+                        "description": "The value \"three\""
+                      },
+                      "rootSchema": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "type": "object",
+                        "title": "Object",
+                        "description": "An object schema",
+                        "properties": {
+                          "array": {
+                            "type": "array",
+                            "title": "Array (Items is an object)",
+                            "description": "An array schema",
+                            "items": {
+                              "type": "string",
+                              "title": "String (One Of)",
+                              "description": "A string schema",
+                              "oneOf": [
+                                {
+                                  "const": "one",
+                                  "title": "One",
+                                  "description": "The value \"one\""
+                                },
+                                {
+                                  "const": "two",
+                                  "title": "Two",
+                                  "description": "The value \"two\""
+                                },
+                                {
+                                  "const": "three",
+                                  "title": "Three",
+                                  "description": "The value \"three\""
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "item": 2,
+                      "selectedItems": [
+                        2
+                      ]
+                    },
+                    "elements": {
+                      "title": "Three",
+                      "description": "The value \"three\"",
+                      "field": {
+                        "value": "three",
+                        "selectedItems": [
+                          2
+                        ],
+                        "id": "#/array/0/2"
+                      }
+                    }
+                  }
+                ],
+                "item": 0
+              },
+              "elements": {
+                "title": "String (One Of)",
+                "description": "A string schema",
+                "oneOf": {
+                  "selectedItems": [
+                    2
+                  ],
+                  "items": [
+                    {
+                      "meta": {
+                        "uri": "#/array/0/0",
+                        "type": "string",
+                        "parentUri": "#/array/0",
+                        "value": "one",
+                        "schema": {
+                          "const": "one",
+                          "title": "One",
+                          "description": "The value \"one\""
+                        },
+                        "rootSchema": {
+                          "$schema": "http://json-schema.org/draft-07/schema#",
+                          "type": "object",
+                          "title": "Object",
+                          "description": "An object schema",
+                          "properties": {
+                            "array": {
+                              "type": "array",
+                              "title": "Array (Items is an object)",
+                              "description": "An array schema",
+                              "items": {
+                                "type": "string",
+                                "title": "String (One Of)",
+                                "description": "A string schema",
+                                "oneOf": [
+                                  {
+                                    "const": "one",
+                                    "title": "One",
+                                    "description": "The value \"one\""
+                                  },
+                                  {
+                                    "const": "two",
+                                    "title": "Two",
+                                    "description": "The value \"two\""
+                                  },
+                                  {
+                                    "const": "three",
+                                    "title": "Three",
+                                    "description": "The value \"three\""
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "item": 0,
+                        "selectedItems": [
+                          2
+                        ]
+                      },
+                      "elements": {
+                        "title": "One",
+                        "description": "The value \"one\"",
+                        "field": {
+                          "value": "one",
+                          "selectedItems": [
+                            2
+                          ],
+                          "id": "#/array/0/0"
+                        }
+                      }
+                    },
+                    {
+                      "meta": {
+                        "uri": "#/array/0/1",
+                        "type": "string",
+                        "parentUri": "#/array/0",
+                        "value": "two",
+                        "schema": {
+                          "const": "two",
+                          "title": "Two",
+                          "description": "The value \"two\""
+                        },
+                        "rootSchema": {
+                          "$schema": "http://json-schema.org/draft-07/schema#",
+                          "type": "object",
+                          "title": "Object",
+                          "description": "An object schema",
+                          "properties": {
+                            "array": {
+                              "type": "array",
+                              "title": "Array (Items is an object)",
+                              "description": "An array schema",
+                              "items": {
+                                "type": "string",
+                                "title": "String (One Of)",
+                                "description": "A string schema",
+                                "oneOf": [
+                                  {
+                                    "const": "one",
+                                    "title": "One",
+                                    "description": "The value \"one\""
+                                  },
+                                  {
+                                    "const": "two",
+                                    "title": "Two",
+                                    "description": "The value \"two\""
+                                  },
+                                  {
+                                    "const": "three",
+                                    "title": "Three",
+                                    "description": "The value \"three\""
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "item": 1,
+                        "selectedItems": [
+                          2
+                        ]
+                      },
+                      "elements": {
+                        "title": "Two",
+                        "description": "The value \"two\"",
+                        "field": {
+                          "value": "two",
+                          "selectedItems": [
+                            2
+                          ],
+                          "id": "#/array/0/1"
+                        }
+                      }
+                    },
+                    {
+                      "meta": {
+                        "uri": "#/array/0/2",
+                        "type": "string",
+                        "parentUri": "#/array/0",
+                        "value": "three",
+                        "schema": {
+                          "const": "three",
+                          "title": "Three",
+                          "description": "The value \"three\""
+                        },
+                        "rootSchema": {
+                          "$schema": "http://json-schema.org/draft-07/schema#",
+                          "type": "object",
+                          "title": "Object",
+                          "description": "An object schema",
+                          "properties": {
+                            "array": {
+                              "type": "array",
+                              "title": "Array (Items is an object)",
+                              "description": "An array schema",
+                              "items": {
+                                "type": "string",
+                                "title": "String (One Of)",
+                                "description": "A string schema",
+                                "oneOf": [
+                                  {
+                                    "const": "one",
+                                    "title": "One",
+                                    "description": "The value \"one\""
+                                  },
+                                  {
+                                    "const": "two",
+                                    "title": "Two",
+                                    "description": "The value \"two\""
+                                  },
+                                  {
+                                    "const": "three",
+                                    "title": "Three",
+                                    "description": "The value \"three\""
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "item": 2,
+                        "selectedItems": [
+                          2
+                        ]
+                      },
+                      "elements": {
+                        "title": "Three",
+                        "description": "The value \"three\"",
+                        "field": {
+                          "value": "three",
+                          "selectedItems": [
+                            2
+                          ],
+                          "id": "#/array/0/2"
+                        }
+                      }
+                    }
+                  ],
+                  "id": "#/array/0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

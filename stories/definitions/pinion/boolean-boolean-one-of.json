@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "boolean",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "boolean",
+      "title": "Boolean (One Of)",
+      "description": "A boolean schema",
+      "oneOf": [
+        {
+          "const": true,
+          "title": "True",
+          "description": "The value \"true\""
+        },
+        {
+          "const": false,
+          "title": "False",
+          "description": "The value \"false\""
+        }
+      ]
+    },
+    "selectedItems": [
+      1
+    ],
+    "items": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "boolean",
+          "value": "true",
+          "schema": {
+            "const": true,
+            "title": "True",
+            "description": "The value \"true\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "boolean",
+            "title": "Boolean (One Of)",
+            "description": "A boolean schema",
+            "oneOf": [
+              {
+                "const": true,
+                "title": "True",
+                "description": "The value \"true\""
+              },
+              {
+                "const": false,
+                "title": "False",
+                "description": "The value \"false\""
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "True",
+          "description": "The value \"true\"",
+          "field": {
+            "value": "true",
+            "id": "#/0"
+          }
+        }
+      },
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/1",
+          "type": "boolean",
+          "value": "false",
+          "schema": {
+            "const": false,
+            "title": "False",
+            "description": "The value \"false\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "boolean",
+            "title": "Boolean (One Of)",
+            "description": "A boolean schema",
+            "oneOf": [
+              {
+                "const": true,
+                "title": "True",
+                "description": "The value \"true\""
+              },
+              {
+                "const": false,
+                "title": "False",
+                "description": "The value \"false\""
+              }
+            ]
+          },
+          "item": 1
+        },
+        "elements": {
+          "title": "False",
+          "description": "The value \"false\"",
+          "field": {
+            "value": "false",
+            "id": "#/1"
+          }
+        }
+      }
+    ]
+  },
+  "elements": {
+    "title": "Boolean (One Of)",
+    "description": "A boolean schema",
+    "oneOf": {
+      "selectedItems": [
+        1
+      ],
+      "items": [
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/0",
+            "type": "boolean",
+            "value": "true",
+            "schema": {
+              "const": true,
+              "title": "True",
+              "description": "The value \"true\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "boolean",
+              "title": "Boolean (One Of)",
+              "description": "A boolean schema",
+              "oneOf": [
+                {
+                  "const": true,
+                  "title": "True",
+                  "description": "The value \"true\""
+                },
+                {
+                  "const": false,
+                  "title": "False",
+                  "description": "The value \"false\""
+                }
+              ]
+            },
+            "item": 0
+          },
+          "elements": {
+            "title": "True",
+            "description": "The value \"true\"",
+            "field": {
+              "value": "true",
+              "id": "#/0"
+            }
+          }
+        },
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/1",
+            "type": "boolean",
+            "value": "false",
+            "schema": {
+              "const": false,
+              "title": "False",
+              "description": "The value \"false\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "boolean",
+              "title": "Boolean (One Of)",
+              "description": "A boolean schema",
+              "oneOf": [
+                {
+                  "const": true,
+                  "title": "True",
+                  "description": "The value \"true\""
+                },
+                {
+                  "const": false,
+                  "title": "False",
+                  "description": "The value \"false\""
+                }
+              ]
+            },
+            "item": 1
+          },
+          "elements": {
+            "title": "False",
+            "description": "The value \"false\"",
+            "field": {
+              "value": "false",
+              "id": "#/1"
+            }
+          }
+        }
+      ],
+      "id": "#/"
+    }
+  }
+}

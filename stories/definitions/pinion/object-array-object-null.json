@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "object",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "title": "Object",
+      "description": "An object schema",
+      "properties": {
+        "array": {
+          "type": "array",
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "items": {
+            "type": "null",
+            "title": "Null",
+            "description": "A null schema"
+          }
+        }
+      }
+    }
+  },
+  "elements": {
+    "title": "Object",
+    "description": "An object schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/array",
+          "type": "array",
+          "parentUri": "#/",
+          "schema": {
+            "type": "array",
+            "title": "Array (Items is an object)",
+            "description": "An array schema",
+            "items": {
+              "type": "null",
+              "title": "Null",
+              "description": "A null schema"
+            }
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": "Object",
+            "description": "An object schema",
+            "properties": {
+              "array": {
+                "type": "array",
+                "title": "Array (Items is an object)",
+                "description": "An array schema",
+                "items": {
+                  "type": "null",
+                  "title": "Null",
+                  "description": "A null schema"
+                }
+              }
+            }
+          },
+          "isRequired": false,
+          "name": "array"
+        },
+        "elements": {
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "fields": [
+            {
+              "meta": {
+                "uri": "#/array/0",
+                "type": "null",
+                "parentUri": "#/array",
+                "value": "null",
+                "schema": {
+                  "type": "null",
+                  "title": "Null",
+                  "description": "A null schema"
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "title": "Object",
+                  "description": "An object schema",
+                  "properties": {
+                    "array": {
+                      "type": "array",
+                      "title": "Array (Items is an object)",
+                      "description": "An array schema",
+                      "items": {
+                        "type": "null",
+                        "title": "Null",
+                        "description": "A null schema"
+                      }
+                    }
+                  }
+                },
+                "item": 0
+              },
+              "elements": {
+                "title": "Null",
+                "description": "A null schema",
+                "field": {
+                  "value": "null",
+                  "id": "#/array/0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

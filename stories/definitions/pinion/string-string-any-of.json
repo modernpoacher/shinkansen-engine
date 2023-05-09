@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "string",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "string",
+      "title": "String (Any Of)",
+      "description": "A string schema",
+      "anyOf": [
+        {
+          "const": "one",
+          "title": "One",
+          "description": "The value \"one\""
+        },
+        {
+          "const": "two",
+          "title": "Two",
+          "description": "The value \"two\""
+        },
+        {
+          "const": "three",
+          "title": "Three",
+          "description": "The value \"three\""
+        }
+      ]
+    },
+    "selectedItems": [
+      2
+    ],
+    "items": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "string",
+          "value": "one",
+          "schema": {
+            "const": "one",
+            "title": "One",
+            "description": "The value \"one\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "string",
+            "title": "String (Any Of)",
+            "description": "A string schema",
+            "anyOf": [
+              {
+                "const": "one",
+                "title": "One",
+                "description": "The value \"one\""
+              },
+              {
+                "const": "two",
+                "title": "Two",
+                "description": "The value \"two\""
+              },
+              {
+                "const": "three",
+                "title": "Three",
+                "description": "The value \"three\""
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "One",
+          "description": "The value \"one\"",
+          "field": {
+            "value": "one",
+            "id": "#/0"
+          }
+        }
+      },
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/1",
+          "type": "string",
+          "value": "two",
+          "schema": {
+            "const": "two",
+            "title": "Two",
+            "description": "The value \"two\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "string",
+            "title": "String (Any Of)",
+            "description": "A string schema",
+            "anyOf": [
+              {
+                "const": "one",
+                "title": "One",
+                "description": "The value \"one\""
+              },
+              {
+                "const": "two",
+                "title": "Two",
+                "description": "The value \"two\""
+              },
+              {
+                "const": "three",
+                "title": "Three",
+                "description": "The value \"three\""
+              }
+            ]
+          },
+          "item": 1
+        },
+        "elements": {
+          "title": "Two",
+          "description": "The value \"two\"",
+          "field": {
+            "value": "two",
+            "id": "#/1"
+          }
+        }
+      },
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/2",
+          "type": "string",
+          "value": "three",
+          "schema": {
+            "const": "three",
+            "title": "Three",
+            "description": "The value \"three\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "string",
+            "title": "String (Any Of)",
+            "description": "A string schema",
+            "anyOf": [
+              {
+                "const": "one",
+                "title": "One",
+                "description": "The value \"one\""
+              },
+              {
+                "const": "two",
+                "title": "Two",
+                "description": "The value \"two\""
+              },
+              {
+                "const": "three",
+                "title": "Three",
+                "description": "The value \"three\""
+              }
+            ]
+          },
+          "item": 2
+        },
+        "elements": {
+          "title": "Three",
+          "description": "The value \"three\"",
+          "field": {
+            "value": "three",
+            "id": "#/2"
+          }
+        }
+      }
+    ]
+  },
+  "elements": {
+    "title": "String (Any Of)",
+    "description": "A string schema",
+    "anyOf": {
+      "selectedItems": [
+        2
+      ],
+      "items": [
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/0",
+            "type": "string",
+            "value": "one",
+            "schema": {
+              "const": "one",
+              "title": "One",
+              "description": "The value \"one\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "string",
+              "title": "String (Any Of)",
+              "description": "A string schema",
+              "anyOf": [
+                {
+                  "const": "one",
+                  "title": "One",
+                  "description": "The value \"one\""
+                },
+                {
+                  "const": "two",
+                  "title": "Two",
+                  "description": "The value \"two\""
+                },
+                {
+                  "const": "three",
+                  "title": "Three",
+                  "description": "The value \"three\""
+                }
+              ]
+            },
+            "item": 0
+          },
+          "elements": {
+            "title": "One",
+            "description": "The value \"one\"",
+            "field": {
+              "value": "one",
+              "id": "#/0"
+            }
+          }
+        },
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/1",
+            "type": "string",
+            "value": "two",
+            "schema": {
+              "const": "two",
+              "title": "Two",
+              "description": "The value \"two\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "string",
+              "title": "String (Any Of)",
+              "description": "A string schema",
+              "anyOf": [
+                {
+                  "const": "one",
+                  "title": "One",
+                  "description": "The value \"one\""
+                },
+                {
+                  "const": "two",
+                  "title": "Two",
+                  "description": "The value \"two\""
+                },
+                {
+                  "const": "three",
+                  "title": "Three",
+                  "description": "The value \"three\""
+                }
+              ]
+            },
+            "item": 1
+          },
+          "elements": {
+            "title": "Two",
+            "description": "The value \"two\"",
+            "field": {
+              "value": "two",
+              "id": "#/1"
+            }
+          }
+        },
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/2",
+            "type": "string",
+            "value": "three",
+            "schema": {
+              "const": "three",
+              "title": "Three",
+              "description": "The value \"three\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "string",
+              "title": "String (Any Of)",
+              "description": "A string schema",
+              "anyOf": [
+                {
+                  "const": "one",
+                  "title": "One",
+                  "description": "The value \"one\""
+                },
+                {
+                  "const": "two",
+                  "title": "Two",
+                  "description": "The value \"two\""
+                },
+                {
+                  "const": "three",
+                  "title": "Three",
+                  "description": "The value \"three\""
+                }
+              ]
+            },
+            "item": 2
+          },
+          "elements": {
+            "title": "Three",
+            "description": "The value \"three\"",
+            "field": {
+              "value": "three",
+              "id": "#/2"
+            }
+          }
+        }
+      ],
+      "id": "#/"
+    }
+  }
+}

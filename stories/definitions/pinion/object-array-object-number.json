@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "object",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "title": "Object",
+      "description": "An object schema",
+      "properties": {
+        "array": {
+          "type": "array",
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "items": {
+            "type": "number",
+            "title": "Number",
+            "description": "A number schema"
+          }
+        }
+      }
+    }
+  },
+  "elements": {
+    "title": "Object",
+    "description": "An object schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/array",
+          "type": "array",
+          "parentUri": "#/",
+          "schema": {
+            "type": "array",
+            "title": "Array (Items is an object)",
+            "description": "An array schema",
+            "items": {
+              "type": "number",
+              "title": "Number",
+              "description": "A number schema"
+            }
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": "Object",
+            "description": "An object schema",
+            "properties": {
+              "array": {
+                "type": "array",
+                "title": "Array (Items is an object)",
+                "description": "An array schema",
+                "items": {
+                  "type": "number",
+                  "title": "Number",
+                  "description": "A number schema"
+                }
+              }
+            }
+          },
+          "isRequired": false,
+          "name": "array"
+        },
+        "elements": {
+          "title": "Array (Items is an object)",
+          "description": "An array schema",
+          "fields": [
+            {
+              "meta": {
+                "uri": "#/array/0",
+                "type": "number",
+                "parentUri": "#/array",
+                "value": "3",
+                "schema": {
+                  "type": "number",
+                  "title": "Number",
+                  "description": "A number schema"
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "title": "Object",
+                  "description": "An object schema",
+                  "properties": {
+                    "array": {
+                      "type": "array",
+                      "title": "Array (Items is an object)",
+                      "description": "An array schema",
+                      "items": {
+                        "type": "number",
+                        "title": "Number",
+                        "description": "A number schema"
+                      }
+                    }
+                  }
+                },
+                "item": 0
+              },
+              "elements": {
+                "title": "Number",
+                "description": "A number schema",
+                "field": {
+                  "value": "3",
+                  "id": "#/array/0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

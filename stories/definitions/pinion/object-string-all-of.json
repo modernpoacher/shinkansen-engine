@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "object",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "title": "Object",
+      "description": "An object schema",
+      "properties": {
+        "string": {
+          "type": "string",
+          "title": "String (All Of)",
+          "description": "A string schema",
+          "allOf": [
+            {
+              "minLength": 0,
+              "title": "String",
+              "description": "A \"string\" value"
+            },
+            {
+              "maxLength": 9
+            }
+          ]
+        }
+      }
+    }
+  },
+  "elements": {
+    "title": "Object",
+    "description": "An object schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/string",
+          "type": "string",
+          "parentUri": "#/",
+          "minLength": 0,
+          "maxLength": 9,
+          "value": "string",
+          "schema": {
+            "type": "string",
+            "title": "String (All Of)",
+            "description": "A string schema",
+            "allOf": [
+              {
+                "minLength": 0,
+                "title": "String",
+                "description": "A \"string\" value"
+              },
+              {
+                "maxLength": 9
+              }
+            ]
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": "Object",
+            "description": "An object schema",
+            "properties": {
+              "string": {
+                "type": "string",
+                "title": "String (All Of)",
+                "description": "A string schema",
+                "allOf": [
+                  {
+                    "minLength": 0,
+                    "title": "String",
+                    "description": "A \"string\" value"
+                  },
+                  {
+                    "maxLength": 9
+                  }
+                ]
+              }
+            }
+          },
+          "isRequired": false,
+          "name": "string"
+        },
+        "elements": {
+          "title": "String",
+          "description": "A \"string\" value",
+          "field": {
+            "minLength": 0,
+            "maxLength": 9,
+            "value": "string",
+            "isRequired": false,
+            "id": "#/string"
+          }
+        }
+      }
+    ]
+  }
+}

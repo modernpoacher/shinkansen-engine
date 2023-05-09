@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an object)",
+      "description": "An array schema",
+      "items": {
+        "type": "number",
+        "title": "Number (Any Of)",
+        "description": "A number schema",
+        "anyOf": [
+          {
+            "const": 1,
+            "title": "One",
+            "description": "The value \"1\""
+          },
+          {
+            "const": 2,
+            "title": "Two",
+            "description": "The value \"2\""
+          },
+          {
+            "const": 3,
+            "title": "Three",
+            "description": "The value \"3\""
+          }
+        ]
+      }
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an object)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "number",
+          "schema": {
+            "type": "number",
+            "title": "Number (Any Of)",
+            "description": "A number schema",
+            "anyOf": [
+              {
+                "const": 1,
+                "title": "One",
+                "description": "The value \"1\""
+              },
+              {
+                "const": 2,
+                "title": "Two",
+                "description": "The value \"2\""
+              },
+              {
+                "const": 3,
+                "title": "Three",
+                "description": "The value \"3\""
+              }
+            ]
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an object)",
+            "description": "An array schema",
+            "items": {
+              "type": "number",
+              "title": "Number (Any Of)",
+              "description": "A number schema",
+              "anyOf": [
+                {
+                  "const": 1,
+                  "title": "One",
+                  "description": "The value \"1\""
+                },
+                {
+                  "const": 2,
+                  "title": "Two",
+                  "description": "The value \"2\""
+                },
+                {
+                  "const": 3,
+                  "title": "Three",
+                  "description": "The value \"3\""
+                }
+              ]
+            }
+          },
+          "selectedItems": [
+            2
+          ],
+          "items": [
+            {
+              "meta": {
+                "parentUri": "#/0",
+                "uri": "#/0/0",
+                "type": "number",
+                "selectedItems": [
+                  2
+                ],
+                "value": "1",
+                "schema": {
+                  "const": 1,
+                  "title": "One",
+                  "description": "The value \"1\""
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "array",
+                  "title": "Array (Items is an object)",
+                  "description": "An array schema",
+                  "items": {
+                    "type": "number",
+                    "title": "Number (Any Of)",
+                    "description": "A number schema",
+                    "anyOf": [
+                      {
+                        "const": 1,
+                        "title": "One",
+                        "description": "The value \"1\""
+                      },
+                      {
+                        "const": 2,
+                        "title": "Two",
+                        "description": "The value \"2\""
+                      },
+                      {
+                        "const": 3,
+                        "title": "Three",
+                        "description": "The value \"3\""
+                      }
+                    ]
+                  }
+                },
+                "item": 0
+              },
+              "elements": {
+                "title": "One",
+                "description": "The value \"1\"",
+                "field": {
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "1",
+                  "id": "#/0/0"
+                }
+              }
+            },
+            {
+              "meta": {
+                "parentUri": "#/0",
+                "uri": "#/0/1",
+                "type": "number",
+                "selectedItems": [
+                  2
+                ],
+                "value": "2",
+                "schema": {
+                  "const": 2,
+                  "title": "Two",
+                  "description": "The value \"2\""
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "array",
+                  "title": "Array (Items is an object)",
+                  "description": "An array schema",
+                  "items": {
+                    "type": "number",
+                    "title": "Number (Any Of)",
+                    "description": "A number schema",
+                    "anyOf": [
+                      {
+                        "const": 1,
+                        "title": "One",
+                        "description": "The value \"1\""
+                      },
+                      {
+                        "const": 2,
+                        "title": "Two",
+                        "description": "The value \"2\""
+                      },
+                      {
+                        "const": 3,
+                        "title": "Three",
+                        "description": "The value \"3\""
+                      }
+                    ]
+                  }
+                },
+                "item": 1
+              },
+              "elements": {
+                "title": "Two",
+                "description": "The value \"2\"",
+                "field": {
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "2",
+                  "id": "#/0/1"
+                }
+              }
+            },
+            {
+              "meta": {
+                "parentUri": "#/0",
+                "uri": "#/0/2",
+                "type": "number",
+                "selectedItems": [
+                  2
+                ],
+                "value": "3",
+                "schema": {
+                  "const": 3,
+                  "title": "Three",
+                  "description": "The value \"3\""
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "array",
+                  "title": "Array (Items is an object)",
+                  "description": "An array schema",
+                  "items": {
+                    "type": "number",
+                    "title": "Number (Any Of)",
+                    "description": "A number schema",
+                    "anyOf": [
+                      {
+                        "const": 1,
+                        "title": "One",
+                        "description": "The value \"1\""
+                      },
+                      {
+                        "const": 2,
+                        "title": "Two",
+                        "description": "The value \"2\""
+                      },
+                      {
+                        "const": 3,
+                        "title": "Three",
+                        "description": "The value \"3\""
+                      }
+                    ]
+                  }
+                },
+                "item": 2
+              },
+              "elements": {
+                "title": "Three",
+                "description": "The value \"3\"",
+                "field": {
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "3",
+                  "id": "#/0/2"
+                }
+              }
+            }
+          ],
+          "item": 0
+        },
+        "elements": {
+          "title": "Number (Any Of)",
+          "description": "A number schema",
+          "anyOf": {
+            "selectedItems": [
+              2
+            ],
+            "items": [
+              {
+                "meta": {
+                  "parentUri": "#/0",
+                  "uri": "#/0/0",
+                  "type": "number",
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "1",
+                  "schema": {
+                    "const": 1,
+                    "title": "One",
+                    "description": "The value \"1\""
+                  },
+                  "rootSchema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "array",
+                    "title": "Array (Items is an object)",
+                    "description": "An array schema",
+                    "items": {
+                      "type": "number",
+                      "title": "Number (Any Of)",
+                      "description": "A number schema",
+                      "anyOf": [
+                        {
+                          "const": 1,
+                          "title": "One",
+                          "description": "The value \"1\""
+                        },
+                        {
+                          "const": 2,
+                          "title": "Two",
+                          "description": "The value \"2\""
+                        },
+                        {
+                          "const": 3,
+                          "title": "Three",
+                          "description": "The value \"3\""
+                        }
+                      ]
+                    }
+                  },
+                  "item": 0
+                },
+                "elements": {
+                  "title": "One",
+                  "description": "The value \"1\"",
+                  "field": {
+                    "selectedItems": [
+                      2
+                    ],
+                    "value": "1",
+                    "id": "#/0/0"
+                  }
+                }
+              },
+              {
+                "meta": {
+                  "parentUri": "#/0",
+                  "uri": "#/0/1",
+                  "type": "number",
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "2",
+                  "schema": {
+                    "const": 2,
+                    "title": "Two",
+                    "description": "The value \"2\""
+                  },
+                  "rootSchema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "array",
+                    "title": "Array (Items is an object)",
+                    "description": "An array schema",
+                    "items": {
+                      "type": "number",
+                      "title": "Number (Any Of)",
+                      "description": "A number schema",
+                      "anyOf": [
+                        {
+                          "const": 1,
+                          "title": "One",
+                          "description": "The value \"1\""
+                        },
+                        {
+                          "const": 2,
+                          "title": "Two",
+                          "description": "The value \"2\""
+                        },
+                        {
+                          "const": 3,
+                          "title": "Three",
+                          "description": "The value \"3\""
+                        }
+                      ]
+                    }
+                  },
+                  "item": 1
+                },
+                "elements": {
+                  "title": "Two",
+                  "description": "The value \"2\"",
+                  "field": {
+                    "selectedItems": [
+                      2
+                    ],
+                    "value": "2",
+                    "id": "#/0/1"
+                  }
+                }
+              },
+              {
+                "meta": {
+                  "parentUri": "#/0",
+                  "uri": "#/0/2",
+                  "type": "number",
+                  "selectedItems": [
+                    2
+                  ],
+                  "value": "3",
+                  "schema": {
+                    "const": 3,
+                    "title": "Three",
+                    "description": "The value \"3\""
+                  },
+                  "rootSchema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "array",
+                    "title": "Array (Items is an object)",
+                    "description": "An array schema",
+                    "items": {
+                      "type": "number",
+                      "title": "Number (Any Of)",
+                      "description": "A number schema",
+                      "anyOf": [
+                        {
+                          "const": 1,
+                          "title": "One",
+                          "description": "The value \"1\""
+                        },
+                        {
+                          "const": 2,
+                          "title": "Two",
+                          "description": "The value \"2\""
+                        },
+                        {
+                          "const": 3,
+                          "title": "Three",
+                          "description": "The value \"3\""
+                        }
+                      ]
+                    }
+                  },
+                  "item": 2
+                },
+                "elements": {
+                  "title": "Three",
+                  "description": "The value \"3\"",
+                  "field": {
+                    "selectedItems": [
+                      2
+                    ],
+                    "value": "3",
+                    "id": "#/0/2"
+                  }
+                }
+              }
+            ],
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

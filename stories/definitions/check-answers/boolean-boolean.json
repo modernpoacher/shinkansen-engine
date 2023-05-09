@@ -1,0 +1,14 @@
+{
+  "type": "BOOLEAN",
+  "params": {
+    "answer": {
+      "title": "Boolean",
+      "value": "false"
+    },
+    "changeAnswer": {
+      "href": "/alpha/omega",
+      "text": "Change",
+      "visuallyHiddenText": "boolean"
+    }
+  }
+}

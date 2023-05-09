@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "string",
+    "minLength": 0,
+    "maxLength": 9,
+    "value": "string",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "string",
+      "title": "String (All Of)",
+      "description": "A string schema",
+      "allOf": [
+        {
+          "minLength": 0,
+          "title": "String",
+          "description": "A \"string\" value"
+        },
+        {
+          "maxLength": 9
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "String",
+    "description": "A \"string\" value",
+    "field": {
+      "minLength": 0,
+      "maxLength": 9,
+      "value": "string",
+      "id": "#/"
+    }
+  }
+}

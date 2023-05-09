@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "null",
+          "title": "Null (Any Of)",
+          "description": "A null schema",
+          "anyOf": [
+            {
+              "const": null,
+              "title": "Null",
+              "description": "The value \"null\""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an array)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/0",
+          "type": "null",
+          "parentUri": "#/",
+          "schema": {
+            "type": "null",
+            "title": "Null (Any Of)",
+            "description": "A null schema",
+            "anyOf": [
+              {
+                "const": null,
+                "title": "Null",
+                "description": "The value \"null\""
+              }
+            ]
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an array)",
+            "description": "An array schema",
+            "items": [
+              {
+                "type": "null",
+                "title": "Null (Any Of)",
+                "description": "A null schema",
+                "anyOf": [
+                  {
+                    "const": null,
+                    "title": "Null",
+                    "description": "The value \"null\""
+                  }
+                ]
+              }
+            ]
+          },
+          "selectedItems": [
+            0
+          ],
+          "items": [
+            {
+              "meta": {
+                "uri": "#/0/0",
+                "type": "null",
+                "parentUri": "#/0",
+                "value": "null",
+                "schema": {
+                  "const": null,
+                  "title": "Null",
+                  "description": "The value \"null\""
+                },
+                "rootSchema": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "array",
+                  "title": "Array (Items is an array)",
+                  "description": "An array schema",
+                  "items": [
+                    {
+                      "type": "null",
+                      "title": "Null (Any Of)",
+                      "description": "A null schema",
+                      "anyOf": [
+                        {
+                          "const": null,
+                          "title": "Null",
+                          "description": "The value \"null\""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "item": 0,
+                "selectedItems": [
+                  0
+                ]
+              },
+              "elements": {
+                "title": "Null",
+                "description": "The value \"null\"",
+                "field": {
+                  "value": "null",
+                  "selectedItems": [
+                    0
+                  ],
+                  "id": "#/0/0"
+                }
+              }
+            }
+          ],
+          "item": 0
+        },
+        "elements": {
+          "title": "Null (Any Of)",
+          "description": "A null schema",
+          "anyOf": {
+            "selectedItems": [
+              0
+            ],
+            "items": [
+              {
+                "meta": {
+                  "uri": "#/0/0",
+                  "type": "null",
+                  "parentUri": "#/0",
+                  "value": "null",
+                  "schema": {
+                    "const": null,
+                    "title": "Null",
+                    "description": "The value \"null\""
+                  },
+                  "rootSchema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "array",
+                    "title": "Array (Items is an array)",
+                    "description": "An array schema",
+                    "items": [
+                      {
+                        "type": "null",
+                        "title": "Null (Any Of)",
+                        "description": "A null schema",
+                        "anyOf": [
+                          {
+                            "const": null,
+                            "title": "Null",
+                            "description": "The value \"null\""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "item": 0,
+                  "selectedItems": [
+                    0
+                  ]
+                },
+                "elements": {
+                  "title": "Null",
+                  "description": "The value \"null\"",
+                  "field": {
+                    "value": "null",
+                    "selectedItems": [
+                      0
+                    ],
+                    "id": "#/0/0"
+                  }
+                }
+              }
+            ],
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

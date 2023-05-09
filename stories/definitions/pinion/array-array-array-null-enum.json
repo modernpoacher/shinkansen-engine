@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "null",
+          "title": "Null (Enum)",
+          "description": "A null schema",
+          "enum": [
+            null
+          ]
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an array)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/0",
+          "type": "null",
+          "parentUri": "#/",
+          "schema": {
+            "type": "null",
+            "title": "Null (Enum)",
+            "description": "A null schema",
+            "enum": [
+              null
+            ]
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an array)",
+            "description": "An array schema",
+            "items": [
+              {
+                "type": "null",
+                "title": "Null (Enum)",
+                "description": "A null schema",
+                "enum": [
+                  null
+                ]
+              }
+            ]
+          },
+          "selectedItems": [
+            0
+          ],
+          "items": [
+            null
+          ],
+          "item": 0
+        },
+        "elements": {
+          "title": "Null (Enum)",
+          "description": "A null schema",
+          "enum": {
+            "selectedItems": [
+              0
+            ],
+            "items": [
+              null
+            ],
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

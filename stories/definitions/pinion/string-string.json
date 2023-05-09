@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "string",
+    "value": "string",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "string",
+      "title": "String",
+      "description": "A string schema"
+    }
+  },
+  "elements": {
+    "title": "String",
+    "description": "A string schema",
+    "field": {
+      "value": "string",
+      "id": "#/"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an object)",
+      "description": "An array schema",
+      "items": {
+        "type": "boolean",
+        "title": "Boolean (Enum)",
+        "description": "A boolean schema",
+        "enum": [
+          true,
+          false
+        ]
+      }
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an object)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/0",
+          "type": "boolean",
+          "parentUri": "#/",
+          "schema": {
+            "type": "boolean",
+            "title": "Boolean (Enum)",
+            "description": "A boolean schema",
+            "enum": [
+              true,
+              false
+            ]
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an object)",
+            "description": "An array schema",
+            "items": {
+              "type": "boolean",
+              "title": "Boolean (Enum)",
+              "description": "A boolean schema",
+              "enum": [
+                true,
+                false
+              ]
+            }
+          },
+          "selectedItems": [
+            1
+          ],
+          "items": [
+            true,
+            false
+          ],
+          "item": 0
+        },
+        "elements": {
+          "title": "Boolean (Enum)",
+          "description": "A boolean schema",
+          "enum": {
+            "selectedItems": [
+              1
+            ],
+            "items": [
+              true,
+              false
+            ],
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

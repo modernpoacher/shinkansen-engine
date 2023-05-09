@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "boolean",
+          "title": "Boolean",
+          "description": "A boolean schema"
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an array)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "uri": "#/0",
+          "type": "boolean",
+          "parentUri": "#/",
+          "value": "false",
+          "schema": {
+            "type": "boolean",
+            "title": "Boolean",
+            "description": "A boolean schema"
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an array)",
+            "description": "An array schema",
+            "items": [
+              {
+                "type": "boolean",
+                "title": "Boolean",
+                "description": "A boolean schema"
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "Boolean",
+          "description": "A boolean schema",
+          "field": {
+            "value": "false",
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}
