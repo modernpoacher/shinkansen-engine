@@ -104,3 +104,11 @@ Whether _items is an object_ or _items is an array_ depends on how Zashiki inter
 - [Null (_Enum_)](docs/null.md#6---1-null-enum)
 - [Null (_Any of_)](docs/null.md#6---2-null-any-of)
 - [Null (_One of_)](docs/null.md#6---3-null-one-of)
+
+## See also
+
+- [Cogs](https://github.com/modernpoacher/shinkansen-cogs)
+- [Sprockets](https://github.com/modernpoacher/shinkansen-sprockets)
+- [Gears](https://github.com/modernpoacher/shinkansen-gears)
+- [Pinion](https://github.com/modernpoacher/shinkansen-pinion)
+- [Transmission](https://github.com/modernpoacher/shinkansen-transmission)
