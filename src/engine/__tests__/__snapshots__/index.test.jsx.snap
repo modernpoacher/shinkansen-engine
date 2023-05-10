@@ -1,0 +1,4036 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_ARRAY\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Array (Items is an array)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An array schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/0"
+            >
+              <span
+                className="text-content"
+              >
+                String
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A string schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/0"
+              name="#/0/0"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="string"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/1"
+            >
+              <span
+                className="text-content"
+              >
+                Number
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A number schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/1"
+              name="#/0/1"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="1"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/2"
+            >
+              <span
+                className="text-content"
+              >
+                Boolean
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A boolean schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/2"
+              name="#/0/2"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="true"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/3"
+            >
+              <span
+                className="text-content"
+              >
+                Null
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A null schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/3"
+              name="#/0/3"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="null"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_BOOLEAN\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="cog text"
+      >
+        <label
+          className="title text"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            Boolean
+          </span>
+        </label>
+        <span
+          className="description text"
+        >
+          <span
+            className="text-content"
+          >
+            A boolean schema
+          </span>
+        </span>
+        <input
+          className="input text"
+          disabled={false}
+          id="#/0"
+          name="#/0"
+          onChange={[Function]}
+          readOnly={false}
+          required={false}
+          type="text"
+          value="true"
+        />
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_NULL\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="cog text"
+      >
+        <label
+          className="title text"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            Null
+          </span>
+        </label>
+        <span
+          className="description text"
+        >
+          <span
+            className="text-content"
+          >
+            A null schema
+          </span>
+        </span>
+        <input
+          className="input text"
+          disabled={false}
+          id="#/0"
+          name="#/0"
+          onChange={[Function]}
+          readOnly={false}
+          required={false}
+          type="text"
+          value="null"
+        />
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_NUMBER_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Number (Any Of)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A number schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/0"
+            >
+              <span
+                className="text-content"
+              >
+                One
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "1"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/1"
+            >
+              <span
+                className="text-content"
+              >
+                Two
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "2"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/2"
+            >
+              <span
+                className="text-content"
+              >
+                Three
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "3"
+              </span>
+            </span>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_NUMBER_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Number (Enum)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A number schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-0"
+            >
+              <span
+                className="text-content"
+              >
+                1
+              </span>
+            </label>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-1"
+            >
+              <span
+                className="text-content"
+              >
+                2
+              </span>
+            </label>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-2"
+            >
+              <span
+                className="text-content"
+              >
+                3
+              </span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_NUMBER_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Number (One Of)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A number schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/0"
+            >
+              <span
+                className="text-content"
+              >
+                One
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "1"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/1"
+            >
+              <span
+                className="text-content"
+              >
+                Two
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "2"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/2"
+            >
+              <span
+                className="text-content"
+              >
+                Three
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "3"
+              </span>
+            </span>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_NUMBER\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="cog text"
+      >
+        <label
+          className="title text"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            Number
+          </span>
+        </label>
+        <span
+          className="description text"
+        >
+          <span
+            className="text-content"
+          >
+            A number schema
+          </span>
+        </span>
+        <input
+          className="input text"
+          disabled={false}
+          id="#/0"
+          name="#/0"
+          onChange={[Function]}
+          readOnly={false}
+          required={false}
+          type="text"
+          value="1"
+        />
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_OBJECT\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Object
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An object schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/string"
+            >
+              <span
+                className="text-content"
+              >
+                String
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A string schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/string"
+              name="#/0/string"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="string"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/number"
+            >
+              <span
+                className="text-content"
+              >
+                Number
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A number schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/number"
+              name="#/0/number"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="1"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/boolean"
+            >
+              <span
+                className="text-content"
+              >
+                Boolean
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A boolean schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/boolean"
+              name="#/0/boolean"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="true"
+            />
+          </div>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/0/null"
+            >
+              <span
+                className="text-content"
+              >
+                Null
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A null schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/0/null"
+              name="#/0/null"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="null"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_STRING_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              String (Any Of)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A string schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/0"
+            >
+              <span
+                className="text-content"
+              >
+                One
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "one"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/1"
+            >
+              <span
+                className="text-content"
+              >
+                Two
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "two"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/2"
+            >
+              <span
+                className="text-content"
+              >
+                Three
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "three"
+              </span>
+            </span>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_STRING_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              String (Enum)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A string schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-0"
+            >
+              <span
+                className="text-content"
+              >
+                One
+              </span>
+            </label>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-1"
+            >
+              <span
+                className="text-content"
+              >
+                Two
+              </span>
+            </label>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0-2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0-2"
+            >
+              <span
+                className="text-content"
+              >
+                Three
+              </span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_STRING_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an object)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              String (One Of)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              A string schema
+            </span>
+          </span>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/0"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="0"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/0"
+            >
+              <span
+                className="text-content"
+              >
+                One
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "one"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/1"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="1"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/1"
+            >
+              <span
+                className="text-content"
+              >
+                Two
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "two"
+              </span>
+            </span>
+          </div>
+          <div
+            className="cog radio"
+          >
+            <input
+              checked={false}
+              className="input radio"
+              disabled={false}
+              id="#/0/2"
+              name="#/0"
+              onChange={[Function]}
+              onClick={[Function]}
+              readOnly={false}
+              required={false}
+              type="radio"
+              value="2"
+            />
+            <label
+              className="title radio"
+              htmlFor="#/0/2"
+            >
+              <span
+                className="text-content"
+              >
+                Three
+              </span>
+            </label>
+            <span
+              className="description radio"
+            >
+              <span
+                className="text-content"
+              >
+                The value "three"
+              </span>
+            </span>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`ARRAY_ARRAY_STRING\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Array (Items is an array)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An array schema
+        </span>
+      </span>
+      <div
+        className="cog text"
+      >
+        <label
+          className="title text"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            String
+          </span>
+        </label>
+        <span
+          className="description text"
+        >
+          <span
+            className="text-content"
+          >
+            A string schema
+          </span>
+        </span>
+        <input
+          className="input text"
+          disabled={false}
+          id="#/0"
+          name="#/0"
+          onChange={[Function]}
+          readOnly={false}
+          required={false}
+          type="text"
+          value="string"
+        />
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`BOOLEAN_BOOLEAN_ALL_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Boolean
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A "boolean" value
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="true"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`BOOLEAN_BOOLEAN_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Boolean (Any Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A boolean schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            True
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "true"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            False
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "false"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`BOOLEAN_BOOLEAN_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Boolean (Enum)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A boolean schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-0"
+        >
+          <span
+            className="text-content"
+          >
+            true
+          </span>
+        </label>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-1"
+        >
+          <span
+            className="text-content"
+          >
+            false
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`BOOLEAN_BOOLEAN_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Boolean (One Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A boolean schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            True
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "true"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            False
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "false"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`BOOLEAN_BOOLEAN\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Boolean
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A boolean schema
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="true"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NULL_NULL_ALL_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Null
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A "null" value
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="null"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NULL_NULL_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Null (Any Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A null schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            Null
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "null"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NULL_NULL_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Null (Enum)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A null schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-0"
+        >
+          <span
+            className="text-content"
+          >
+            null
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NULL_NULL_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Null (One Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A null schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            Null
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "null"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NULL_NULL\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Null
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A null schema
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="null"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NUMBER_NUMBER_ALL_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Number
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A "number" value
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="1"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NUMBER_NUMBER_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Number (Any Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A number schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            One
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "1"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            Two
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "2"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/2"
+        >
+          <span
+            className="text-content"
+          >
+            Three
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "3"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NUMBER_NUMBER_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Number (Enum)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A number schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-0"
+        >
+          <span
+            className="text-content"
+          >
+            1
+          </span>
+        </label>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-1"
+        >
+          <span
+            className="text-content"
+          >
+            2
+          </span>
+        </label>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-2"
+        >
+          <span
+            className="text-content"
+          >
+            3
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NUMBER_NUMBER_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Number (One Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A number schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            One
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "1"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            Two
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "2"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/2"
+        >
+          <span
+            className="text-content"
+          >
+            Three
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "3"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`NUMBER_NUMBER\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        Number
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A number schema
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="1"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`OBJECT_ARRAY_BOOLEAN\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Object
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An object schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Array (Items is an object)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An array schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/array/0"
+            >
+              <span
+                className="text-content"
+              >
+                Boolean
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A boolean schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/array/0"
+              name="#/array/0"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="true"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`OBJECT_ARRAY_NULL\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Object
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An object schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Array (Items is an array)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An array schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/array/0"
+            >
+              <span
+                className="text-content"
+              >
+                Null
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A null schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/array/0"
+              name="#/array/0"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="null"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`OBJECT_ARRAY_NUMBER\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Object
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An object schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Array (Items is an array)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An array schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/array/0"
+            >
+              <span
+                className="text-content"
+              >
+                Number
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A number schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/array/0"
+              name="#/array/0"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="1"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`OBJECT_ARRAY_STRING\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          Object
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          An object schema
+        </span>
+      </span>
+      <div
+        className="sprocket fieldset"
+      >
+        <fieldset
+          className="group fieldset"
+          onChange={[Function]}
+        >
+          <legend
+            className="title fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              Array (Items is an array)
+            </span>
+          </legend>
+          <span
+            className="description fieldset"
+          >
+            <span
+              className="text-content"
+            >
+              An array schema
+            </span>
+          </span>
+          <div
+            className="cog text"
+          >
+            <label
+              className="title text"
+              htmlFor="#/array/0"
+            >
+              <span
+                className="text-content"
+              >
+                String
+              </span>
+            </label>
+            <span
+              className="description text"
+            >
+              <span
+                className="text-content"
+              >
+                A string schema
+              </span>
+            </span>
+            <input
+              className="input text"
+              disabled={false}
+              id="#/array/0"
+              name="#/array/0"
+              onChange={[Function]}
+              readOnly={false}
+              required={false}
+              type="text"
+              value="string"
+            />
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`STRING_STRING_ALL_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        String
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A "string" value
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="string"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`STRING_STRING_ANY_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          String (Any Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A string schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            One
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "one"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            Two
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "two"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/2"
+        >
+          <span
+            className="text-content"
+          >
+            Three
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "three"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`STRING_STRING_ENUM\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          String (Enum)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A string schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-0"
+        >
+          <span
+            className="text-content"
+          >
+            One
+          </span>
+        </label>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-1"
+        >
+          <span
+            className="text-content"
+          >
+            Two
+          </span>
+        </label>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/-2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/-2"
+        >
+          <span
+            className="text-content"
+          >
+            Three
+          </span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`STRING_STRING_ONE_OF\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="sprocket fieldset"
+  >
+    <fieldset
+      className="group fieldset"
+      onChange={[Function]}
+    >
+      <legend
+        className="title fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          String (One Of)
+        </span>
+      </legend>
+      <span
+        className="description fieldset"
+      >
+        <span
+          className="text-content"
+        >
+          A string schema
+        </span>
+      </span>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/0"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="0"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/0"
+        >
+          <span
+            className="text-content"
+          >
+            One
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "one"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/1"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="1"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/1"
+        >
+          <span
+            className="text-content"
+          >
+            Two
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "two"
+          </span>
+        </span>
+      </div>
+      <div
+        className="cog radio"
+      >
+        <input
+          checked={false}
+          className="input radio"
+          disabled={false}
+          id="#/2"
+          name="#/"
+          onChange={[Function]}
+          onClick={[Function]}
+          readOnly={false}
+          required={false}
+          type="radio"
+          value="2"
+        />
+        <label
+          className="title radio"
+          htmlFor="#/2"
+        >
+          <span
+            className="text-content"
+          >
+            Three
+          </span>
+        </label>
+        <span
+          className="description radio"
+        >
+          <span
+            className="text-content"
+          >
+            The value "three"
+          </span>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With additional props renders \`STRING_STRING\` 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="#/"
+    >
+      <span
+        className="text-content"
+      >
+        String
+      </span>
+    </label>
+    <span
+      className="description text"
+    >
+      <span
+        className="text-content"
+      >
+        A string schema
+      </span>
+    </span>
+    <input
+      className="input text"
+      disabled={false}
+      id="#/"
+      name="#/"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value="string"
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;
+
+exports[`shinkansen-engine/engine <Component /> With required props renders 1`] = `
+<div
+  className="shinkansen-engine"
+>
+  <div
+    className="cog text"
+  >
+    <label
+      className="title text"
+      htmlFor="MOCK ID"
+    >
+      <span
+        className="text-content"
+      >
+        MOCK TITLE
+      </span>
+    </label>
+    <input
+      className="input text"
+      disabled={false}
+      id="MOCK ID"
+      name="MOCK ID"
+      onChange={[Function]}
+      readOnly={false}
+      required={false}
+      type="text"
+      value=""
+    />
+  </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    />
+    <li
+      className="shinkansen-gears-forward"
+    />
+  </ul>
+</div>
+`;

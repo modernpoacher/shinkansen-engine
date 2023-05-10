@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "null",
+          "title": "Null",
+          "description": "A null schema"
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an array)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "null",
+          "value": "null",
+          "schema": {
+            "type": "null",
+            "title": "Null",
+            "description": "A null schema"
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an array)",
+            "description": "An array schema",
+            "items": [
+              {
+                "type": "null",
+                "title": "Null",
+                "description": "A null schema"
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "Null",
+          "description": "A null schema",
+          "field": {
+            "value": "null",
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

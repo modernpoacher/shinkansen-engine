@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "string",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "string",
+      "title": "String (Enum)",
+      "description": "A string schema",
+      "enum": [
+        "One",
+        "Two",
+        "Three"
+      ]
+    },
+    "selectedItems": [
+      "Three"
+    ],
+    "items": [
+      "One",
+      "Two",
+      "Three"
+    ]
+  },
+  "elements": {
+    "title": "String (Enum)",
+    "description": "A string schema",
+    "enum": {
+      "selectedItems": [
+        "Three"
+      ],
+      "items": [
+        "One",
+        "Two",
+        "Three"
+      ],
+      "id": "#/"
+    }
+  }
+}

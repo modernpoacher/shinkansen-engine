@@ -2,6 +2,9 @@ module.exports = {
   bail: 1,
   verbose: true,
   rootDir: '.',
+  roots: [
+    './src'
+  ],
   collectCoverage: true,
   coverageDirectory: './coverage',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(mjs?|mts?|jsx?|js?|tsx?|ts?)$',

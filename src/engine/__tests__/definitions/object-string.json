@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "object",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "object",
+      "title": "Object",
+      "description": "An object schema",
+      "properties": {
+        "string": {
+          "type": "string",
+          "title": "String",
+          "description": "A string schema"
+        }
+      }
+    }
+  },
+  "elements": {
+    "title": "Object",
+    "description": "An object schema",
+    "fields": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/string",
+          "type": "string",
+          "value": "string",
+          "schema": {
+            "type": "string",
+            "title": "String",
+            "description": "A string schema"
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": "Object",
+            "description": "An object schema",
+            "properties": {
+              "string": {
+                "type": "string",
+                "title": "String",
+                "description": "A string schema"
+              }
+            }
+          },
+          "isRequired": false,
+          "name": "string"
+        },
+        "elements": {
+          "title": "String",
+          "description": "A string schema",
+          "field": {
+            "value": "string",
+            "isRequired": false,
+            "id": "#/string"
+          }
+        }
+      }
+    ]
+  }
+}

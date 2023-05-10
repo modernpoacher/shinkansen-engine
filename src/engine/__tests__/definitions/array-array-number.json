@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "array",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "array",
+      "title": "Array (Items is an array)",
+      "description": "An array schema",
+      "items": [
+        {
+          "type": "number",
+          "title": "Number",
+          "description": "A number schema"
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Array (Items is an array)",
+    "description": "An array schema",
+    "fields": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "number",
+          "value": "1",
+          "schema": {
+            "type": "number",
+            "title": "Number",
+            "description": "A number schema"
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "array",
+            "title": "Array (Items is an array)",
+            "description": "An array schema",
+            "items": [
+              {
+                "type": "number",
+                "title": "Number",
+                "description": "A number schema"
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "Number",
+          "description": "A number schema",
+          "field": {
+            "value": "1",
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  }
+}

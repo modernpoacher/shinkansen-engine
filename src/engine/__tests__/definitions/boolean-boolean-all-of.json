@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "boolean",
+    "value": "true",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "boolean",
+      "title": "Boolean (All Of)",
+      "description": "A boolean schema",
+      "allOf": [
+        {
+          "title": "Boolean",
+          "description": "A \"boolean\" value"
+        }
+      ]
+    }
+  },
+  "elements": {
+    "title": "Boolean",
+    "description": "A \"boolean\" value",
+    "field": {
+      "value": "true",
+      "id": "#/"
+    }
+  }
+}

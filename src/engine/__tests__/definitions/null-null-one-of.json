@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "uri": "#/",
+    "type": "null",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "type": "null",
+      "title": "Null (One Of)",
+      "description": "A null schema",
+      "oneOf": [
+        {
+          "const": null,
+          "title": "Null",
+          "description": "The value \"null\""
+        }
+      ]
+    },
+    "selectedItems": [
+      "null"
+    ],
+    "items": [
+      {
+        "meta": {
+          "parentUri": "#/",
+          "uri": "#/0",
+          "type": "null",
+          "value": "null",
+          "schema": {
+            "const": null,
+            "title": "Null",
+            "description": "The value \"null\""
+          },
+          "rootSchema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "null",
+            "title": "Null (One Of)",
+            "description": "A null schema",
+            "oneOf": [
+              {
+                "const": null,
+                "title": "Null",
+                "description": "The value \"null\""
+              }
+            ]
+          },
+          "item": 0
+        },
+        "elements": {
+          "title": "Null",
+          "description": "The value \"null\"",
+          "field": {
+            "value": "null",
+            "id": "#/0"
+          }
+        }
+      }
+    ]
+  },
+  "elements": {
+    "title": "Null (One Of)",
+    "description": "A null schema",
+    "oneOf": {
+      "selectedItems": [
+        "null"
+      ],
+      "items": [
+        {
+          "meta": {
+            "parentUri": "#/",
+            "uri": "#/0",
+            "type": "null",
+            "value": "null",
+            "schema": {
+              "const": null,
+              "title": "Null",
+              "description": "The value \"null\""
+            },
+            "rootSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "null",
+              "title": "Null (One Of)",
+              "description": "A null schema",
+              "oneOf": [
+                {
+                  "const": null,
+                  "title": "Null",
+                  "description": "The value \"null\""
+                }
+              ]
+            },
+            "item": 0
+          },
+          "elements": {
+            "title": "Null",
+            "description": "The value \"null\"",
+            "field": {
+              "value": "null",
+              "id": "#/0"
+            }
+          }
+        }
+      ],
+      "id": "#/"
+    }
+  }
+}
