@@ -4,6 +4,10 @@ import PropTypes from 'prop-types'
 import Pinion from 'shinkansen-engine/components/pinion'
 import Gears from 'shinkansen-engine/components/gears'
 
+function onChange () {
+  //
+}
+
 export default class Engine extends Component {
   render () {
     const {
@@ -47,5 +51,6 @@ Engine.propTypes = {
 
 Engine.defaultProps = {
   params: {},
-  gears: {}
+  gears: {},
+  onChange
 }

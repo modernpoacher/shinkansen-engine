@@ -20,8 +20,6 @@ const log = debug('shinksansen-engine')
 
 log('`shinkansen` is awake')
 
-module.exports.Engine = Engine
-
 module.exports.Cogs = Cogs
 module.exports.Sprockets = Sprockets
 module.exports.Gears = Gears
@@ -33,3 +31,5 @@ module.exports.Pantograph = Pantograph
 module.exports.fromDocumentToHash = fromDocumentToHash
 module.exports.fromHashToDocument = fromHashToDocument
 module.exports.toZashiki = toZashiki
+
+module.exports.Engine = Engine

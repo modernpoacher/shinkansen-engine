@@ -4022,15 +4022,5 @@ exports[`shinkansen-engine/engine <Component /> With required props renders 1`] 
       value=""
     />
   </div>
-  <ul
-    className="shinkansen-gears"
-  >
-    <li
-      className="shinkansen-gears-reverse"
-    />
-    <li
-      className="shinkansen-gears-forward"
-    />
-  </ul>
 </div>
 `;

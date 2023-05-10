@@ -12,14 +12,6 @@ const log = debug('shinksansen-engine')
 
 log('`shinkansen` is awake')
 
-export { default as Engine } from './engine/index.cjs'
-
-export {
-  fromDocumentToHash,
-  fromHashToDocument,
-  toZashiki
-} from './transformers/transmission/index.mjs'
-
 export {
   Cogs,
   Sprockets,
@@ -29,3 +21,13 @@ export {
   Signals,
   Pantograph
 }
+
+export {
+  fromDocumentToHash,
+  fromHashToDocument,
+  toZashiki
+} from './transformers/transmission/index.mjs'
+
+export {
+  default as Engine
+} from './engine/index.cjs'

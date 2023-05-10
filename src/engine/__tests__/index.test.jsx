@@ -68,8 +68,6 @@ describe('shinkansen-engine/engine', () => {
         const component = (
           <Component
             pinion={{ meta: {}, elements: { title: 'MOCK TITLE', field: { id: 'MOCK ID' } } }}
-            params={{}}
-            gears={GEARS}
             onChange={jest.fn()}
           />
         )
