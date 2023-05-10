@@ -12,6 +12,14 @@ export const parameters = {
         'Stories',
         [
           'Engine',
+          [
+            'String',
+            'Number',
+            'Array',
+            'Object',
+            'Boolean',
+            'Null'
+          ],
           'Components',
           [
             'Cogs',
