@@ -1,4 +1,6 @@
-module.exports = {
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
+
+export default {
   stories: [
     '../stories/**/*.stories.mdx',
     '../stories/**/*.stories.jsx'
@@ -7,6 +9,13 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials'
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
+  },
+  docs: {
+    autodocs: 'tag'
+  },
   webpackFinal (config) {
     const {
       module: {
