@@ -205,11 +205,14 @@ const plugins = [
          */
         'shinkansen-signals': './node_modules/shinkansen-signals/src/index.mjs',
         /**
-         *  Storybook - Engine
+         *  Storybook & Jest - Engine
          */
         'shinkansen-engine/components/cogs': './src/components/cogs/index.cjs',
         'shinkansen-engine/components/sprockets': './src/components/sprockets/index.cjs',
         'shinkansen-engine/components/gears': './src/components/gears/index.cjs',
+        'shinkansen-engine/components/pinion/check-answers': './src/components/pinion/check-answers/index.cjs',
+        'shinkansen-engine/components/pinion/error-summary': './src/components/pinion/error-summary/index.cjs',
+        'shinkansen-engine/components/pinion/fieldset': './src/components/pinion/fieldset/index.cjs',
         'shinkansen-engine/components/pinion': './src/components/pinion/index.cjs',
         'shinkansen-engine/engine': './src/engine/index.cjs',
         'shinkansen-engine': './src/index.cjs',

@@ -2,9 +2,7 @@ require('@babel/register')({ ignore: [] })
 
 const debug = require('debug')
 
-const {
-  default: CheckAnswers
-} = require('shinkansen-pinion/components/check-answers')
+const CheckAnswers = require('shinkansen-pinion/components/check-answers')
 
 const log = debug('shinksansen-engine/components/pinion/check-answers')
 
