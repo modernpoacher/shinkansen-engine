@@ -2,11 +2,13 @@
 
 .circleci
 .github
+.husky
 
-.storybook
 .editorconfig
 .eslintignore
 .eslintrc
+
+.gitattributes
 
 .depsrc
 
@@ -28,6 +30,7 @@ jest.config.cjs
 coverage
 
 # Storybook
+.storybook
 stories
 
 # Shell
