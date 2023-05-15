@@ -199,10 +199,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -277,10 +299,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -355,10 +399,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -534,10 +600,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -686,10 +774,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -865,10 +975,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -943,10 +1075,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1150,10 +1304,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1329,10 +1505,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1481,10 +1679,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1660,10 +1880,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1738,10 +1980,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1789,10 +2053,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -1905,10 +2191,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2003,10 +2311,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2119,10 +2449,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2170,10 +2522,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2221,10 +2595,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2301,10 +2697,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2372,10 +2790,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2452,10 +2892,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2503,10 +2965,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2554,10 +3038,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2706,10 +3212,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2831,10 +3359,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -2983,10 +3533,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3034,10 +3606,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3139,10 +3733,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3244,10 +3860,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3349,10 +3987,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3454,10 +4114,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3505,10 +4187,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3657,10 +4361,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3782,10 +4508,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3934,10 +4682,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
@@ -3985,10 +4755,32 @@ exports[`shinkansen-engine/engine <Component /> With additional props renders \`
   >
     <li
       className="shinkansen-gears-reverse"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
     <li
       className="shinkansen-gears-forward"
-    />
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
   </ul>
 </div>
 `;
