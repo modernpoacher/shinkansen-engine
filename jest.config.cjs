@@ -5,14 +5,16 @@ module.exports = {
   roots: [
     './src'
   ],
-  collectCoverage: true,
+  clearMocks: true,
+  collectCoverage: false,
   coverageDirectory: './coverage',
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(mjs?|mts?|jsx?|js?|tsx?|ts?)$',
+  coverageProvider: 'v8',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(mjs?|jsx?)$',
   transform: {
     '^.+\\.jsx$': 'babel-jest',
     '^.+\\.mjs$': 'babel-jest'
   },
-  moduleFileExtensions: ['js', 'jsx', 'mjs', 'cjs'],
+  moduleFileExtensions: ['js', 'jsx', 'mjs'],
   transformIgnorePatterns: [
     '/node_modules\\/(?!shinkansen-cogs)\\/',
     '/node_modules\\/(?!shinkansen-sprockets)\\/',
