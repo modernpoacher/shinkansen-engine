@@ -32,7 +32,7 @@ export default {
         /node_modules\/shinkansen/
       ],
       exclude: [
-        /node_modules\/(?!shinkansen|@modernpoacher)/
+        /node_modules\/(?!shinkansen)/
       ]
     })
 
