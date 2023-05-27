@@ -29,7 +29,7 @@ export default {
         loader: 'babel-loader'
       },
       include: [
-        /node_modules\/shinkansen-/
+        /node_modules\/shinkansen/
       ],
       exclude: [
         /node_modules\/(?!shinkansen|@modernpoacher)/
