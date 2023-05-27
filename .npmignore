@@ -18,6 +18,9 @@
 # User-defined NVM configuration
 .nvmrc
 
+# Docs
+docs
+
 # Build
 build
 gulpfile.mjs
@@ -25,6 +28,9 @@ gulpfile.mjs
 # Jest
 __tests__
 jest.config.cjs
+
+# Mocha
+test
 
 # Coverage
 coverage
