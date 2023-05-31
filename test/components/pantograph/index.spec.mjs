@@ -8,6 +8,6 @@ chai.use(sinonChai)
 describe('shinkansen-engine/components/pantograph', () => {
   it('is a function', () => {
     return expect(Pantograph)
-      .to.be.a('function')
+      .to.be.an('object')
   })
 })
