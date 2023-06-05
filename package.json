@@ -51,7 +51,7 @@
     "shinkansen-pinion": "1.1.28",
     "shinkansen-rails": "1.0.66",
     "shinkansen-signals": "1.1.51",
-    "shinkansen-sprockets": "1.1.21",
+    "shinkansen-sprockets": "1.1.22",
     "shinkansen-transmission": "2.2.62"
   },
   "devDependencies": {
