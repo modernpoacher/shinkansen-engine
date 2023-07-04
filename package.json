@@ -45,14 +45,14 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.6.49",
-    "shinkansen-gears": "1.1.54",
-    "shinkansen-pantograph": "1.3.24",
-    "shinkansen-pinion": "1.1.63",
-    "shinkansen-rails": "1.0.77",
-    "shinkansen-signals": "1.1.61",
-    "shinkansen-sprockets": "1.1.49",
-    "shinkansen-transmission": "2.2.73"
+    "shinkansen-cogs": "1.6.50",
+    "shinkansen-gears": "1.1.55",
+    "shinkansen-pantograph": "1.3.25",
+    "shinkansen-pinion": "1.1.64",
+    "shinkansen-rails": "1.0.78",
+    "shinkansen-signals": "1.1.62",
+    "shinkansen-sprockets": "1.1.50",
+    "shinkansen-transmission": "2.2.74"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
