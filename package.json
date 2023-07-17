@@ -45,13 +45,13 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.6.63",
-    "shinkansen-gears": "1.1.70",
-    "shinkansen-pantograph": "1.3.35",
-    "shinkansen-pinion": "1.1.81",
+    "shinkansen-cogs": "1.6.64",
+    "shinkansen-gears": "1.1.71",
+    "shinkansen-pantograph": "1.3.36",
+    "shinkansen-pinion": "1.1.82",
     "shinkansen-rails": "1.0.84",
     "shinkansen-signals": "1.1.68",
-    "shinkansen-sprockets": "1.1.63",
+    "shinkansen-sprockets": "1.1.64",
     "shinkansen-transmission": "2.2.81"
   },
   "devDependencies": {
