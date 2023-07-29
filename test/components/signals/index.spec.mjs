@@ -1,9 +1,9 @@
-import chai, { expect } from 'chai'
+import { use, expect } from 'chai'
 import sinonChai from 'sinon-chai'
 
 import Signals from 'shinkansen-engine/components/signals'
 
-chai.use(sinonChai)
+use(sinonChai)
 
 describe('shinkansen-engine/components/signals', () => {
   it('is an object', () => {

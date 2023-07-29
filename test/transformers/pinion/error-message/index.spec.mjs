@@ -1,9 +1,9 @@
-import chai, { expect } from 'chai'
+import { use, expect } from 'chai'
 import sinonChai from 'sinon-chai'
 
 import * as errorMessage from 'shinkansen-engine/transformers/pinion/error-message'
 
-chai.use(sinonChai)
+use(sinonChai)
 
 describe('shinkansen-engine/transformers/pinion/error-message', () => {
   /**

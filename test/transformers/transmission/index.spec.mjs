@@ -1,4 +1,4 @@
-import chai, { expect } from 'chai'
+import { use, expect } from 'chai'
 import sinonChai from 'sinon-chai'
 
 import {
@@ -7,7 +7,7 @@ import {
   toZashiki
 } from 'shinkansen-engine/transformers/transmission'
 
-chai.use(sinonChai)
+use(sinonChai)
 
 describe('shinkansen-engine/transformers/transmission', () => {
   it('is a function', () => {
