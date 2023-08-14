@@ -49,13 +49,13 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.6.80",
-    "shinkansen-gears": "1.1.87",
+    "shinkansen-cogs": "1.6.81",
+    "shinkansen-gears": "1.1.88",
     "shinkansen-pantograph": "1.3.44",
-    "shinkansen-pinion": "1.1.104",
+    "shinkansen-pinion": "1.1.105",
     "shinkansen-rails": "1.0.89",
     "shinkansen-signals": "1.1.73",
-    "shinkansen-sprockets": "1.1.78",
+    "shinkansen-sprockets": "1.1.79",
     "shinkansen-transmission": "2.2.87"
   },
   "devDependencies": {
@@ -85,7 +85,7 @@
     "@types/react": "^18.2.20",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "babel-plugin-module-resolver": "^5.0.0",
     "chai": "4.3.7",
     "core-js": "^3.32.0",
