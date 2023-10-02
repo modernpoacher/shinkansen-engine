@@ -57,7 +57,7 @@
     "shinkansen-rails": "1.0.102",
     "shinkansen-signals": "1.1.86",
     "shinkansen-sprockets": "1.1.116",
-    "shinkansen-transmission": "2.2.101"
+    "shinkansen-transmission": "2.2.102"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
