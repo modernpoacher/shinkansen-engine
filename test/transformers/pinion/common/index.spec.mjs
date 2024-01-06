@@ -1,5 +1,5 @@
 import { use, expect } from 'chai'
-import sinonChai from 'sinon-chai'
+import sinonChai from '@sequencemedia/sinon-chai'
 
 import * as common from 'shinkansen-engine/transformers/pinion/common'
 
