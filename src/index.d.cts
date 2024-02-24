@@ -86,7 +86,7 @@ declare module 'shinkansen-engine' {
     fromDocumentToHash,
     fromHashToDocument,
     toZashiki
-  } from 'shinkansen-engine/engine/transformers/transmission'
+  } from 'shinkansen-engine/transformers/transmission'
 
   export {
     default as Engine
