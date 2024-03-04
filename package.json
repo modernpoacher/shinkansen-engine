@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.7.88",
-    "shinkansen-gears": "1.1.258",
+    "shinkansen-cogs": "1.7.89",
+    "shinkansen-gears": "1.1.259",
     "shinkansen-pantograph": "1.3.142",
-    "shinkansen-pinion": "1.1.308",
+    "shinkansen-pinion": "1.1.309",
     "shinkansen-rails": "1.0.143",
     "shinkansen-signals": "1.1.122",
-    "shinkansen-sprockets": "1.1.250",
+    "shinkansen-sprockets": "1.1.251",
     "shinkansen-transmission": "2.2.139"
   },
   "devDependencies": {
@@ -66,7 +66,7 @@
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
     "@babel/register": "^7.23.7",
-    "@modernpoacher/design-system": "1.0.136",
+    "@modernpoacher/design-system": "1.0.137",
     "@modernpoacher/hooks": "^1.0.467",
     "@sequencemedia/gulp": "^1.1.168",
     "@sequencemedia/gulp-clean-css": "^1.0.87",
