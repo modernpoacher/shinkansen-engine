@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-cogs": "1.7.94",
-    "shinkansen-gears": "1.1.266",
+    "shinkansen-cogs": "1.7.95",
+    "shinkansen-gears": "1.1.267",
     "shinkansen-pantograph": "1.3.147",
-    "shinkansen-pinion": "1.1.317",
+    "shinkansen-pinion": "1.1.318",
     "shinkansen-rails": "1.0.145",
     "shinkansen-signals": "1.1.124",
-    "shinkansen-sprockets": "1.1.257",
+    "shinkansen-sprockets": "1.1.258",
     "shinkansen-transmission": "2.2.141"
   },
   "devDependencies": {
@@ -81,7 +81,7 @@
     "@storybook/addon-links": "^8.0.0",
     "@storybook/react": "^8.0.0",
     "@storybook/react-webpack5": "^8.0.0",
-    "@types/react": "^18.2.65",
+    "@types/react": "^18.2.66",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "autoprefixer": "^10.4.18",
