@@ -50,10 +50,10 @@
   },
   "dependencies": {
     "debug": "^4.3.5",
-    "shinkansen-cogs": "1.7.129",
+    "shinkansen-cogs": "1.7.130",
     "shinkansen-gears": "1.1.302",
     "shinkansen-pantograph": "1.3.190",
-    "shinkansen-pinion": "1.1.359",
+    "shinkansen-pinion": "1.1.360",
     "shinkansen-rails": "1.0.168",
     "shinkansen-signals": "1.1.146",
     "shinkansen-sprockets": "1.1.291",
