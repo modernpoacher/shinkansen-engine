@@ -204,6 +204,7 @@ const plugins = [
         /**
          *  Storybook & Jest - Engine
          */
+        'shinkansen-engine/common': './src/common/index.mjs',
         'shinkansen-engine/components/cogs': './src/components/cogs/index.cjs',
         'shinkansen-engine/components/sprockets': './src/components/sprockets/index.cjs',
         'shinkansen-engine/components/gears': './src/components/gears/index.cjs',
