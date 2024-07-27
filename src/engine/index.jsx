@@ -8,17 +8,21 @@ import {
   DEFAULT_HANDLE_CHANGE
 } from 'shinkansen-engine/common'
 
+const DEFAULT_PARAMS = {}
+
+const DEFAULT_GEARS = {}
+
 export default class Engine extends Component {
   render () {
     const {
       pinion,
-      params,
+      params = DEFAULT_PARAMS,
       onChange = DEFAULT_HANDLE_CHANGE,
       gears: {
         reverse,
         forward,
         pattern
-      }
+      } = DEFAULT_GEARS
     } = this.props
 
     return (
@@ -47,10 +51,4 @@ Engine.propTypes = {
     pattern: PropTypes.string
   }),
   onChange: PropTypes.func
-}
-
-Engine.defaultProps = {
-  params: {},
-  gears: {},
-  onChange: DEFAULT_HANDLE_CHANGE
 }
