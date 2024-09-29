@@ -3,7 +3,9 @@
 #storybook-root {
   @include design-system;
 
-  margin: 0 auto;
+  & { // stylelint-disable-line no-duplicate-selectors
+    margin: 0 auto;
+  }
 
   .shinkansen-gears { @include gears; }
 }
