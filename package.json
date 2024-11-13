@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "debug": "^4.3.7",
-    "shinkansen-cogs": "1.7.251",
-    "shinkansen-gears": "1.1.424",
+    "shinkansen-cogs": "1.7.252",
+    "shinkansen-gears": "1.1.425",
     "shinkansen-pantograph": "1.3.298",
-    "shinkansen-pinion": "1.1.484",
+    "shinkansen-pinion": "1.1.485",
     "shinkansen-rails": "1.0.248",
     "shinkansen-signals": "1.1.181",
-    "shinkansen-sprockets": "1.1.410",
+    "shinkansen-sprockets": "1.1.411",
     "shinkansen-transmission": "2.2.203"
   },
   "devDependencies": {
@@ -111,7 +111,7 @@
     "react-router-dom": "^6.28.0",
     "react-test-renderer": "^18.3.1",
     "regenerator-runtime": "^0.14.1",
-    "sass": "^1.80.6",
+    "sass": "^1.80.7",
     "sinon": "^19.0.2",
     "storybook": "7.6.20",
     "vinyl-paths": "^5.0.0"
