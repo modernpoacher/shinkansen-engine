@@ -192,16 +192,17 @@ const plugins = [
         'shinkansen-pinion/transformers/common': './node_modules/shinkansen-pinion/src/transformers/common/index.mjs',
         'shinkansen-pinion/transformers/error-message': './node_modules/shinkansen-pinion/src/transformers/error-message/index.mjs',
         'shinkansen-pinion/transformers': './node_modules/shinkansen-pinion/src/transformers/index.mjs',
+        /*
         'shinkansen-pinion/pinion': './node_modules/shinkansen-pinion/src/pinion/index.cjs',
-        /**
+        *//**
          *  Storybook - Rails
-         */
+         *//*
         'shinkansen-rails': './node_modules/shinkansen-rails/src/index.mjs',
-        /**
+        *//**
          *  Storybook - Signals
-         */
+         *//*
         'shinkansen-signals': './node_modules/shinkansen-signals/src/index.mjs',
-        /**
+        *//**
          *  Storybook & Jest - Engine
          */
         'shinkansen-engine/common': './src/common/index.mjs',

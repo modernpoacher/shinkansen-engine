@@ -134,7 +134,7 @@
     "./components/gears/forward": "./src/components/gears/forward/index.cjs",
     "./components/gears/reverse": "./src/components/gears/forward/index.cjs",
     "./components/pantograph": "./src/components/pantograph/index.cjs",
-    "./components/pinion": "./src/components/pinion/index.cjs",
+    "./components/pinion": "./src/components/pinion/index.mjs",
     "./components/pinion/check-answers": {
       "require": "./src/components/pinion/check-answers/index.cjs",
       "import": "./src/components/pinion/check-answers/index.mjs"
@@ -147,8 +147,8 @@
       "require": "./src/components/pinion/fieldset/index.cjs",
       "import": "./src/components/pinion/fieldset/index.mjs"
     },
-    "./components/rails": "./src/components/rails/index.cjs",
-    "./components/signals": "./src/components/signals/index.cjs",
+    "./components/rails": "./src/components/rails/index.mjs",
+    "./components/signals": "./src/components/signals/index.mjs",
     "./components/sprockets": "./src/components/sprockets/index.cjs",
     "./engine": "./src/engine/index.cjs",
     "./transformers/pinion": "./src/transformers/pinion/index.mjs",

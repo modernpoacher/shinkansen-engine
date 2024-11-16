@@ -4,8 +4,8 @@ import Cogs from './components/cogs/index.cjs'
 import Sprockets from './components/sprockets/index.cjs'
 import Gears from './components/gears/index.cjs'
 import Pinion from './components/pinion/index.mjs'
-import Rails from './components/rails/index.cjs'
-import Signals from './components/signals/index.cjs'
+import Rails from './components/rails/index.mjs'
+import Signals from './components/signals/index.mjs'
 import Pantograph from './components/pantograph/index.cjs'
 
 const log = debug('shinksansen-engine')
