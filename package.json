@@ -1,6 +1,6 @@
 {
   "name": "shinkansen-engine",
-  "version": "1.2.455",
+  "version": "1.2.456",
   "description": "Shinkansen Engine",
   "keywords": [
     "Shinkansen",
@@ -50,13 +50,13 @@
   },
   "dependencies": {
     "debug": "^4.3.7",
-    "shinkansen-cogs": "1.7.253",
-    "shinkansen-gears": "1.1.427",
+    "shinkansen-cogs": "1.7.254",
+    "shinkansen-gears": "1.1.428",
     "shinkansen-pantograph": "1.3.298",
-    "shinkansen-pinion": "1.1.487",
+    "shinkansen-pinion": "1.1.488",
     "shinkansen-rails": "1.0.248",
     "shinkansen-signals": "1.1.181",
-    "shinkansen-sprockets": "1.1.412",
+    "shinkansen-sprockets": "1.1.413",
     "shinkansen-transmission": "2.2.203"
   },
   "devDependencies": {
