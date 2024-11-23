@@ -28,9 +28,9 @@
     "url": "git@github.com/modernpoacher/shinkansen-engine.git"
   },
   "scripts": {
-    "build": "cross-env DEBUG=shinkansen-cogs webpack",
+    "build": "cross-env DEBUG=shinkansen-engine webpack",
     "build-storybook": "storybook build",
-    "build:watch": "cross-env DEBUG=shinkansen-cogs webpack --watch",
+    "build:watch": "cross-env DEBUG=shinkansen-engine webpack --watch",
     "gulp": "gulp --color",
     "lint": "eslint . .storybook --ext .mjs,.cjs,.jsx,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
