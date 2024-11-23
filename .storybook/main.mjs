@@ -23,7 +23,7 @@ export default {
     } = config
 
     rules.push({
-      test: /\.(mjs|jsx|cjs)$/,
+      test: /\.(cjs|jsx|mjs)$/,
       use: {
         loader: 'babel-loader'
       },
