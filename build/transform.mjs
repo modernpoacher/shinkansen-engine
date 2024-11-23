@@ -15,9 +15,9 @@ import {
   storybookPath
 } from '#build/paths'
 
-const log = debug('shinkansen-cogs/build/transform')
+const log = debug('shinkansen-engine/build/transform')
 
-log('`cogs` is awake')
+log('`engine` is awake')
 
 // eslint-disable-next-line no-irregular-whitespace
 // \u200b
