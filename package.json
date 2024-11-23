@@ -31,11 +31,9 @@
     "build": "cross-env DEBUG=shinkansen-engine webpack",
     "build-storybook": "storybook build",
     "build:watch": "cross-env DEBUG=shinkansen-engine webpack --watch",
-    "gulp": "gulp --color",
     "lint": "eslint . .storybook --ext .mjs,.cjs,.jsx,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
     "nvm": "bash nvm.sh",
-    "pregulp": "npm run nvm",
     "prelint": "npm run nvm",
     "prepare": "husky",
     "prepublishOnly": "cross-env NODE_ENV=production npm run build",
@@ -50,12 +48,12 @@
   "dependencies": {
     "debug": "^4.3.7",
     "shinkansen-cogs": "1.7.263",
-    "shinkansen-gears": "1.1.437",
+    "shinkansen-gears": "1.1.438",
     "shinkansen-pantograph": "1.3.303",
-    "shinkansen-pinion": "1.1.500",
+    "shinkansen-pinion": "1.1.501",
     "shinkansen-rails": "1.0.252",
     "shinkansen-signals": "1.1.182",
-    "shinkansen-sprockets": "1.1.422",
+    "shinkansen-sprockets": "1.1.423",
     "shinkansen-transmission": "2.2.204"
   },
   "devDependencies": {
