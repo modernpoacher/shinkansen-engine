@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/modernpoacher/shinkansen-engine.git"
+    "url": "git+ssh://git@github.com/modernpoacher/shinkansen-engine.git"
   },
   "scripts": {
     "build": "cross-env DEBUG=shinkansen-engine* webpack",
