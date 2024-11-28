@@ -27,6 +27,19 @@ export default {
             [
               'Cogs',
               'Sprockets',
+              [
+                'Check Answers',
+                [
+                  'String',
+                  'Number',
+                  'Array',
+                  'Object',
+                  'Boolean',
+                  'Null'
+                ],
+                'Error Summary',
+                'Fieldset'
+              ],
               'Gears',
               'Pinion'
             ]

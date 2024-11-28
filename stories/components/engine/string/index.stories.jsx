@@ -3,13 +3,13 @@ import {
   MemoryRouter
 } from 'react-router-dom'
 
-import Engine from 'shinkansen-engine/engine'
+import Engine from '#engine/engine'
 
-import STRING_STRING from '#stories/definitions/pinion/string-string.json'
-import STRING_STRING_ENUM from '#stories/definitions/pinion/string-string-enum.json'
-import STRING_STRING_ANY_OF from '#stories/definitions/pinion/string-string-any-of.json'
-import STRING_STRING_ONE_OF from '#stories/definitions/pinion/string-string-one-of.json'
-import STRING_STRING_ALL_OF from '#stories/definitions/pinion/string-string-all-of.json'
+import STRING_STRING from '#stories/definitions/pinion/string-string'
+import STRING_STRING_ENUM from '#stories/definitions/pinion/string-string-enum'
+import STRING_STRING_ANY_OF from '#stories/definitions/pinion/string-string-any-of'
+import STRING_STRING_ONE_OF from '#stories/definitions/pinion/string-string-one-of'
+import STRING_STRING_ALL_OF from '#stories/definitions/pinion/string-string-all-of'
 
 const REVERSE = {
   alpha: 'alpha',

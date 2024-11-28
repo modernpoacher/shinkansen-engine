@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import renderer from 'react-test-renderer'
 
-import Component from 'shinkansen-engine/engine'
+import Component from '#engine/engine'
 
 import STRING_STRING from './definitions/string-string.json'
 import STRING_STRING_ENUM from './definitions/string-string-enum.json'
@@ -88,7 +88,7 @@ jest.mock('react-router-dom', () => {
   }
 })
 
-describe('shinkansen-engine/engine', () => {
+describe('#engine/engine', () => {
   describe('<Component />', () => {
     describe('With required props', () => {
       it('renders', () => {

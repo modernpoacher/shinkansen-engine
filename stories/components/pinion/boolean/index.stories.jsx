@@ -3,13 +3,13 @@ import {
   MemoryRouter
 } from 'react-router-dom'
 
-import Pinion from 'shinkansen-engine/components/pinion'
+import Pinion from '#engine/components/pinion'
 
-import BOOLEAN_BOOLEAN from '#stories/definitions/pinion/boolean-boolean.json'
-import BOOLEAN_BOOLEAN_ENUM from '#stories/definitions/pinion/boolean-boolean-enum.json'
-import BOOLEAN_BOOLEAN_ANY_OF from '#stories/definitions/pinion/boolean-boolean-any-of.json'
-import BOOLEAN_BOOLEAN_ONE_OF from '#stories/definitions/pinion/boolean-boolean-one-of.json'
-import BOOLEAN_BOOLEAN_ALL_OF from '#stories/definitions/pinion/boolean-boolean-all-of.json'
+import BOOLEAN_BOOLEAN from '#stories/definitions/pinion/boolean-boolean'
+import BOOLEAN_BOOLEAN_ENUM from '#stories/definitions/pinion/boolean-boolean-enum'
+import BOOLEAN_BOOLEAN_ANY_OF from '#stories/definitions/pinion/boolean-boolean-any-of'
+import BOOLEAN_BOOLEAN_ONE_OF from '#stories/definitions/pinion/boolean-boolean-one-of'
+import BOOLEAN_BOOLEAN_ALL_OF from '#stories/definitions/pinion/boolean-boolean-all-of'
 
 const BOOLEAN = {
   BOOLEAN_BOOLEAN,

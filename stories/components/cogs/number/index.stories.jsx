@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   NumberCog
-} from 'shinkansen-engine/components/cogs'
+} from '#engine/components/cogs'
 import errors from '#stories/errors'
 import NumberState from '#stories/state/number'
 
@@ -23,19 +23,23 @@ export default {
           boolean: 'Boolean',
           null: 'Null'
         }
-      }
+      },
+      description: 'errorMessage'
     },
     placeholder: {
-      defaultValue: ''
+      control: 'text',
+      description: 'placeholder'
     }
   }
 }
 
-export const Value = (args) => (
-  <NumberState value={1}>
-    <NumberCog {...args} />
-  </NumberState>
-)
+export function Value (args) {
+  return (
+    <NumberState value={1}>
+      <NumberCog {...args} />
+    </NumberState>
+  )
+}
 
 Value.args = {
   title: 'Title',
@@ -49,11 +53,13 @@ Value.args = {
   name: 'number'
 }
 
-export const DefaultValue = (args) => (
-  <NumberState defaultValue={1}>
-    <NumberCog {...args} />
-  </NumberState>
-)
+export function DefaultValue (args) {
+  return (
+    <NumberState defaultValue={1}>
+      <NumberCog {...args} />
+    </NumberState>
+  )
+}
 
 DefaultValue.args = {
   title: 'Title',

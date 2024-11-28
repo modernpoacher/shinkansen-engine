@@ -96,13 +96,13 @@
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
-    "shinkansen-cogs": "1.7.263",
-    "shinkansen-gears": "1.1.438",
+    "shinkansen-cogs": "1.7.270",
+    "shinkansen-gears": "1.1.442",
     "shinkansen-pantograph": "1.3.303",
-    "shinkansen-pinion": "1.1.501",
+    "shinkansen-pinion": "1.1.508",
     "shinkansen-rails": "1.0.252",
     "shinkansen-signals": "1.1.182",
-    "shinkansen-sprockets": "1.1.423",
+    "shinkansen-sprockets": "1.1.429",
     "shinkansen-transmission": "2.2.204",
     "sinon": "^19.0.2",
     "storybook": "7.6.20",
@@ -120,7 +120,22 @@
     "shinkansen-transmission": "2.2.x"
   },
   "imports": {
-    "#build/paths": "./build/paths.mjs"
+    "#build/paths": "./build/paths.mjs",
+    "#engine/common": "./src/common/index.mjs",
+    "#engine/components": "./src/components/index.mjs",
+    "#engine/components/*": "./src/components/*/index.mjs",
+    "#engine/components/gears/forward": "./src/components/gears/forward/index.cjs",
+    "#engine/components/gears/reverse": "./src/components/gears/reverse/index.cjs",
+    "#engine/engine": "./src/engine/index.jsx",
+    "#engine/engine/*": "./src/engine/*/index.jsx",
+    "#engine/transformers": "./src/transformers/index.mjs",
+    "#engine/transformers/*": "./src/transformers/*/index.mjs",
+    "#stories/components/*": "./stories/components/*/index.stories.jsx",
+    "#stories/definitions/*": "./stories/definitions/*.json",
+    "#stories/engine/*": "./stories/engine/*/index.stories.jsx",
+    "#stories/errors": "./stories/errors.mjs",
+    "#stories/state": "./stories/state/index.jsx",
+    "#stories/state/*": "./stories/state/*/index.jsx"
   },
   "exports": {
     ".": {
@@ -128,35 +143,14 @@
       "import": "./src/index.mjs"
     },
     "./common": "./src/common/index.mjs",
-    "./components/cogs": "./src/components/cogs/index.cjs",
-    "./components/gears": "./src/components/gears/index.cjs",
+    "./components/cogs": "./src/components/cogs/index.mjs",
+    "./components/*": {
+      "require": "./src/components/*/index.cjs",
+      "import": "./src/components/*/index.mjs"
+    },
     "./components/gears/forward": "./src/components/gears/forward/index.cjs",
-    "./components/gears/reverse": "./src/components/gears/forward/index.cjs",
-    "./components/pantograph": "./src/components/pantograph/index.cjs",
-    "./components/pinion": "./src/components/pinion/index.mjs",
-    "./components/pinion/check-answers": {
-      "require": "./src/components/pinion/check-answers/index.cjs",
-      "import": "./src/components/pinion/check-answers/index.mjs"
-    },
-    "./components/pinion/error-summary": {
-      "require": "./src/components/pinion/error-summary/index.cjs",
-      "import": "./src/components/pinion/error-summary/index.mjs"
-    },
-    "./components/pinion/fieldset": {
-      "require": "./src/components/pinion/fieldset/index.cjs",
-      "import": "./src/components/pinion/fieldset/index.mjs"
-    },
-    "./components/rails": "./src/components/rails/index.mjs",
-    "./components/signals": "./src/components/signals/index.mjs",
-    "./components/sprockets": "./src/components/sprockets/index.cjs",
+    "./components/gears/reverse": "./src/components/gears/reverse/index.cjs",
     "./engine": "./src/engine/index.cjs",
-    "./transformers/pinion": "./src/transformers/pinion/index.mjs",
-    "./transformers/pinion/check-answers": "./src/transformers/pinion/check-answers/index.mjs",
-    "./transformers/pinion/common": "./src/transformers/pinion/common/index.mjs",
-    "./transformers/pinion/error-message": "./src/transformers/pinion/error-message/index.mjs",
-    "./transformers/transmission": "./src/transformers/transmission/index.mjs",
-    "./transformers/transmission/from-document-to-hash": "./src/transformers/transmission/from-document-to-hash/index.mjs",
-    "./transformers/transmission/from-hash-to-document": "./src/transformers/transmission/from-hash-to-document/index.mjs",
-    "./transformers/transmission/to-zashiki": "./src/transformers/transmission/to-zashiki/index.mjs"
+    "./transformers/*": "./src/transformers/*/index.mjs"
   }
 }

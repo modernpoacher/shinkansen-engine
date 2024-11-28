@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   EmailCog
-} from 'shinkansen-engine/components/cogs'
+} from '#engine/components/cogs'
 import errors from '#stories/errors'
 import EmailState from '#stories/state/email'
 
@@ -23,19 +23,23 @@ export default {
           boolean: 'Boolean',
           null: 'Null'
         }
-      }
+      },
+      description: 'errorMessage'
     },
     placeholder: {
-      defaultValue: ''
+      control: 'text',
+      description: 'placeholder'
     }
   }
 }
 
-export const Value = (args) => (
-  <EmailState value='email@email.com'>
-    <EmailCog {...args} />
-  </EmailState>
-)
+export function Value (args) {
+  return (
+    <EmailState value='email@email.com'>
+      <EmailCog {...args} />
+    </EmailState>
+  )
+}
 
 Value.args = {
   title: 'Title',
@@ -49,11 +53,13 @@ Value.args = {
   name: 'email'
 }
 
-export const DefaultValue = (args) => (
-  <EmailState defaultValue='email@email.com'>
-    <EmailCog {...args} />
-  </EmailState>
-)
+export function DefaultValue (args) {
+  return (
+    <EmailState defaultValue='email@email.com'>
+      <EmailCog {...args} />
+    </EmailState>
+  )
+}
 
 DefaultValue.args = {
   title: 'Title',

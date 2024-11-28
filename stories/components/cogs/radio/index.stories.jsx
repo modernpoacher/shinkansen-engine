@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   RadioCog
-} from 'shinkansen-engine/components/cogs'
+} from '#engine/components/cogs'
 import errors from '#stories/errors'
 import RadioState from '#stories/state/radio'
 
@@ -23,19 +23,25 @@ export default {
           boolean: 'Boolean',
           null: 'Null'
         }
-      }
+      },
+      description: 'errorMessage'
     },
     placeholder: {
-      defaultValue: ''
+      control: 'text',
+      description: 'placeholder'
     }
   }
 }
 
-export const Value = (args) => (
-  <RadioState value='value'>
-    <RadioCog {...args} id='radio' value='value' />
-  </RadioState>
-)
+export function Value (args) {
+  const VALUE = 'value'
+
+  return (
+    <RadioState value={VALUE}>
+      <RadioCog {...args} value={VALUE} id='radio' />
+    </RadioState>
+  )
+}
 
 Value.args = {
   title: 'Title',
@@ -48,11 +54,15 @@ Value.args = {
   name: 'radio'
 }
 
-export const DefaultValue = (args) => (
-  <RadioState defaultValue='value'>
-    <RadioCog {...args} id='radio' value='value' />
-  </RadioState>
-)
+export function DefaultValue (args) {
+  const DEFAULT_VALUE = 'value'
+
+  return (
+    <RadioState defaultValue={DEFAULT_VALUE}>
+      <RadioCog {...args} defaultValue={DEFAULT_VALUE} id='radio' />
+    </RadioState>
+  )
+}
 
 DefaultValue.args = {
   title: 'Title',

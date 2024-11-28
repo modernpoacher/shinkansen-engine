@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   MemoryRouter
 } from 'react-router-dom'
 
 import {
   ErrorSummarySprocket
-} from 'shinkansen-engine/components/sprockets'
+} from '#engine/components/sprockets'
 
 import ERROR_MAX_ITEMS from '#stories/definitions/error-summary/error-max-items'
 import ERROR_MIN_ITEMS from '#stories/definitions/error-summary/error-min-items'
@@ -81,14 +82,14 @@ export default {
   ],
   args: {
     title: 'Error Summary',
-    errorSummary: 'ERROR_UNKNOWN'
+    errorSummary: 'ERROR_MAX_ITEMS'
   },
   argTypes: {
     errorSummary: {
       options: Object.keys(ERROR),
       mapping: ERROR,
       control: {
-        type: 'radio',
+        type: 'check',
         labels: {
           ERROR_MAX_ITEMS: 'Error - Max Items',
           ERROR_MIN_ITEMS: 'Error - Min Items',
@@ -125,30 +126,15 @@ export default {
   }
 }
 
-export const Default = (args) => (
-  <ErrorSummarySprocket
-    {...args}
-  />
-)
-
-export const AllErrors = () => (
-  <ErrorSummarySprocket
-    title='All Errors'
-    errorSummary={Object.values(ERROR).map(([e]) => e)}
-  />
-)
-
-AllErrors.parameters = {
-  controls: { disabled: true, hideNoControlsWarning: true }
+export function Default ({ errorSummary = [], ...args }) {
+  return (
+    <ErrorSummarySprocket
+      {...args}
+      errorSummary={errorSummary.flat()}
+    />
+  )
 }
 
-export const NoErrors = () => (
-  <ErrorSummarySprocket
-    title='No Errors'
-    errorSummary={[]}
-  />
-)
-
-NoErrors.parameters = {
-  controls: { disabled: true, hideNoControlsWarning: true }
+Default.propTypes = {
+  errorSummary: PropTypes.array
 }

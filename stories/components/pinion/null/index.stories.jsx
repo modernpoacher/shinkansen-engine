@@ -3,13 +3,13 @@ import {
   MemoryRouter
 } from 'react-router-dom'
 
-import Pinion from 'shinkansen-engine/components/pinion'
+import Pinion from '#engine/components/pinion'
 
-import NULL_NULL from '#stories/definitions/pinion/null-null.json'
-import NULL_NULL_ENUM from '#stories/definitions/pinion/null-null-enum.json'
-import NULL_NULL_ANY_OF from '#stories/definitions/pinion/null-null-any-of.json'
-import NULL_NULL_ONE_OF from '#stories/definitions/pinion/null-null-one-of.json'
-import NULL_NULL_ALL_OF from '#stories/definitions/pinion/null-null-all-of.json'
+import NULL_NULL from '#stories/definitions/pinion/null-null'
+import NULL_NULL_ENUM from '#stories/definitions/pinion/null-null-enum'
+import NULL_NULL_ANY_OF from '#stories/definitions/pinion/null-null-any-of'
+import NULL_NULL_ONE_OF from '#stories/definitions/pinion/null-null-one-of'
+import NULL_NULL_ALL_OF from '#stories/definitions/pinion/null-null-all-of'
 
 const NULL = {
   NULL_NULL,

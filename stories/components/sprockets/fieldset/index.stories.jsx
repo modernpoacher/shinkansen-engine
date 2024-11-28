@@ -1,13 +1,19 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import {
   FieldsetSprocket
-} from 'shinkansen-engine/components/sprockets'
+} from '#engine/components/sprockets'
 import errors from '#stories/errors'
 
 export default {
   title: 'Stories/Components/Sprockets/Fieldset',
   component: FieldsetSprocket,
+  args: {
+    title: 'Fieldset',
+    description: 'Description',
+    errorMessage: 'string'
+  },
   argTypes: {
     errorMessage: {
       options: Object.keys(errors),
@@ -23,22 +29,28 @@ export default {
           null: 'Null'
         }
       }
-    },
-    children: {
-      control: {
-        type: null
-      }
     }
   }
 }
 
-export const Fieldset = (args) => (
-  <FieldsetSprocket
-    {...args}
+export function Default (args) {
+  return (
+    <FieldsetSprocket
+      {...args}
+      errorMessage={undefined}
   />
-)
+  )
+}
 
-Fieldset.args = {
-  title: 'Title',
-  description: 'Description'
+export function WithError ({ errorMessage = {}, ...args }) {
+  return (
+    <FieldsetSprocket
+      {...args}
+      errorMessage={errorMessage}
+    />
+  )
+}
+
+WithError.propTypes = {
+  errorMessage: PropTypes.shape()
 }

@@ -3,6 +3,9 @@
     "standard",
     "plugin:react/recommended"
   ],
+  "env": {
+    "browser": true
+  },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {

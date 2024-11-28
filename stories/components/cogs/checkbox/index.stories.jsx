@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   CheckboxCog
-} from 'shinkansen-engine/components/cogs'
+} from '#engine/components/cogs'
 import errors from '#stories/errors'
 import CheckboxState from '#stories/state/checkbox'
 
@@ -23,19 +23,25 @@ export default {
           boolean: 'Boolean',
           null: 'Null'
         }
-      }
+      },
+      description: 'errorMessage'
     },
     placeholder: {
-      defaultValue: ''
+      control: 'text',
+      description: 'placeholder'
     }
   }
 }
 
-export const Checked = (args) => (
-  <CheckboxState checked>
-    <CheckboxCog {...args} />
-  </CheckboxState>
-)
+export function Checked (args) {
+  const VALUE = 'value'
+
+  return (
+    <CheckboxState value={VALUE} checked>
+      <CheckboxCog {...args} value={VALUE} />
+    </CheckboxState>
+  )
+}
 
 Checked.args = {
   title: 'Title',
@@ -49,11 +55,15 @@ Checked.args = {
   name: 'checkbox'
 }
 
-export const DefaultChecked = (args) => (
-  <CheckboxState defaultChecked>
-    <CheckboxCog {...args} />
-  </CheckboxState>
-)
+export function DefaultChecked (args) {
+  const VALUE = 'value'
+
+  return (
+    <CheckboxState value={VALUE} defaultChecked>
+      <CheckboxCog {...args} value={VALUE} />
+    </CheckboxState>
+  )
+}
 
 DefaultChecked.args = {
   title: 'Title',

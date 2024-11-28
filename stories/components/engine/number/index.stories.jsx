@@ -3,13 +3,13 @@ import {
   MemoryRouter
 } from 'react-router-dom'
 
-import Engine from 'shinkansen-engine/engine'
+import Engine from '#engine/engine'
 
-import NUMBER_NUMBER from '#stories/definitions/pinion/number-number.json'
-import NUMBER_NUMBER_ENUM from '#stories/definitions/pinion/number-number-enum.json'
-import NUMBER_NUMBER_ANY_OF from '#stories/definitions/pinion/number-number-any-of.json'
-import NUMBER_NUMBER_ONE_OF from '#stories/definitions/pinion/number-number-one-of.json'
-import NUMBER_NUMBER_ALL_OF from '#stories/definitions/pinion/number-number-all-of.json'
+import NUMBER_NUMBER from '#stories/definitions/pinion/number-number'
+import NUMBER_NUMBER_ENUM from '#stories/definitions/pinion/number-number-enum'
+import NUMBER_NUMBER_ANY_OF from '#stories/definitions/pinion/number-number-any-of'
+import NUMBER_NUMBER_ONE_OF from '#stories/definitions/pinion/number-number-one-of'
+import NUMBER_NUMBER_ALL_OF from '#stories/definitions/pinion/number-number-all-of'
 
 const REVERSE = {
   alpha: 'alpha',

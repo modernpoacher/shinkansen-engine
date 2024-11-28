@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import Pinion from 'shinkansen-engine/components/pinion'
-import Gears from 'shinkansen-engine/components/gears'
+import Pinion from '#engine/components/pinion'
+import Gears from '#engine/components/gears'
 
 import {
   DEFAULT_HANDLE_CHANGE
-} from 'shinkansen-engine/common'
+} from '#engine/common'
 
 const DEFAULT_PARAMS = {}
 
