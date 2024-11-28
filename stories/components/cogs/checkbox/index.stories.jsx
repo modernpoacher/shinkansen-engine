@@ -34,11 +34,9 @@ export default {
 }
 
 export function Checked (args) {
-  const VALUE = 'value'
-
   return (
-    <CheckboxState value={VALUE} checked>
-      <CheckboxCog {...args} value={VALUE} />
+    <CheckboxState checked>
+      <CheckboxCog {...args} value='Value' />
     </CheckboxState>
   )
 }
@@ -56,11 +54,9 @@ Checked.args = {
 }
 
 export function DefaultChecked (args) {
-  const VALUE = 'value'
-
   return (
-    <CheckboxState value={VALUE} defaultChecked>
-      <CheckboxCog {...args} value={VALUE} />
+    <CheckboxState defaultChecked>
+      <CheckboxCog {...args} value='Value' />
     </CheckboxState>
   )
 }

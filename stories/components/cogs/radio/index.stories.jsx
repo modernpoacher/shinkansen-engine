@@ -33,17 +33,15 @@ export default {
   }
 }
 
-export function Value (args) {
-  const VALUE = 'value'
-
+export function Checked (args) {
   return (
-    <RadioState value={VALUE}>
-      <RadioCog {...args} value={VALUE} id='radio' />
+    <RadioState checked>
+      <RadioCog {...args} value='Value' />
     </RadioState>
   )
 }
 
-Value.args = {
+Checked.args = {
   title: 'Title',
   description: 'Description',
   required: false,
@@ -51,20 +49,19 @@ Value.args = {
   readOnly: false,
   tabIndex: 0,
   accessKey: 'A',
+  id: 'radio',
   name: 'radio'
 }
 
-export function DefaultValue (args) {
-  const DEFAULT_VALUE = 'value'
-
+export function DefaultChecked (args) {
   return (
-    <RadioState defaultValue={DEFAULT_VALUE}>
-      <RadioCog {...args} defaultValue={DEFAULT_VALUE} id='radio' />
+    <RadioState defaultChecked>
+      <RadioCog {...args} value='Value' />
     </RadioState>
   )
 }
 
-DefaultValue.args = {
+DefaultChecked.args = {
   title: 'Title',
   description: 'Description',
   required: false,
@@ -72,5 +69,6 @@ DefaultValue.args = {
   readOnly: false,
   tabIndex: 0,
   accessKey: 'A',
+  id: 'radio',
   name: 'radio'
 }
