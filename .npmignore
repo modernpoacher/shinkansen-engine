@@ -8,6 +8,7 @@
 .eslintignore
 .eslintrc
 
+.gitignore
 .gitattributes
 
 .depsrc
@@ -18,19 +19,16 @@
 # User-defined NVM configuration
 .nvmrc
 
-# Docs
-docs
-
 # Build
 build
-gulpfile.mjs
+transform.sh
+
+# Mocha
+test
 
 # Jest
 __tests__
 jest.config.cjs
-
-# Mocha
-test
 
 # Coverage
 coverage
@@ -41,3 +39,10 @@ stories
 
 # Shell
 nvm.sh
+
+# Webpack
+webpack.config.mjs
+
+# TypeScript
+tsconfig.json
+jsconfig.json
