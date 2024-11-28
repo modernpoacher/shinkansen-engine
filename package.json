@@ -143,7 +143,10 @@
       "import": "./src/index.mjs"
     },
     "./common": "./src/common/index.mjs",
-    "./components/cogs": "./src/components/cogs/index.mjs",
+    "./components": {
+      "require": "./src/components/index.cjs",
+      "import": "./src/components/index.mjs"
+    },
     "./components/*": {
       "require": "./src/components/*/index.cjs",
       "import": "./src/components/*/index.mjs"
@@ -151,6 +154,7 @@
     "./components/gears/forward": "./src/components/gears/forward/index.cjs",
     "./components/gears/reverse": "./src/components/gears/reverse/index.cjs",
     "./engine": "./src/engine/index.cjs",
+    "./engine/*": "./src/engine/*/index.cjs",
     "./transformers/*": "./src/transformers/*/index.mjs"
   }
 }
