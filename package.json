@@ -121,6 +121,7 @@
   },
   "imports": {
     "#build/paths": "./build/paths.mjs",
+    "#engine": "./src/index.mjs",
     "#engine/common": "./src/common/index.mjs",
     "#engine/components": "./src/components/index.mjs",
     "#engine/components/*": "./src/components/*/index.mjs",

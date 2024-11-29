@@ -10,6 +10,9 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
+      "#engine": [
+        "src/index.mjs"
+      ],
       "#engine/common": [
         "src/common/index.mjs"
       ],
@@ -58,7 +61,6 @@
     }
   },
   "include": [
-    "src/**/*",
     "node_modules/shinkansen-cogs/src/**/*",
     "node_modules/shinkansen-gears/src/**/*",
     "node_modules/shinkansen-pantograph/src/**/*",
@@ -66,6 +68,7 @@
     "node_modules/shinkansen-rails/src/**/*",
     "node_modules/shinkansen-signals/src/**/*",
     "node_modules/shinkansen-sprockets/src/**/*",
-    "node_modules/shinkansen-transmission/src/**/*"
+    "node_modules/shinkansen-transmission/src/**/*",
+    "src/**/*"
   ]
 }
