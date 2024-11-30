@@ -1,9 +1,6 @@
-import { use, expect } from 'chai'
-import sinonChai from '@sequencemedia/sinon-chai'
+import { expect } from 'chai'
 
 import Signals from 'shinkansen-engine/components/signals'
-
-use(sinonChai)
 
 describe('shinkansen-engine/components/signals', () => {
   it('is an object', () => {

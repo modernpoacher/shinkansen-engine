@@ -1,9 +1,6 @@
-import { use, expect } from 'chai'
-import sinonChai from '@sequencemedia/sinon-chai'
+import { expect } from 'chai'
 
 import Pinion from 'shinkansen-engine/components/pinion'
-
-use(sinonChai)
 
 describe('shinkansen-engine/components/pinion', () => {
   it('is a function', () => {

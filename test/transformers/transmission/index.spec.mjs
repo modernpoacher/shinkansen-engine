@@ -1,13 +1,10 @@
-import { use, expect } from 'chai'
-import sinonChai from '@sequencemedia/sinon-chai'
+import { expect } from 'chai'
 
 import {
   fromDocumentToHash,
   fromHashToDocument,
   toZashiki
 } from 'shinkansen-engine/transformers/transmission'
-
-use(sinonChai)
 
 describe('shinkansen-engine/transformers/transmission', () => {
   it('is a function', () => {
