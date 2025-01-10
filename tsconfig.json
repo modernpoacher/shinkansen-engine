@@ -61,6 +61,7 @@
     }
   },
   "include": [
+    ".",
     "node_modules/shinkansen-cogs/src/**/*",
     "node_modules/shinkansen-gears/src/**/*",
     "node_modules/shinkansen-pantograph/src/**/*",
@@ -69,6 +70,7 @@
     "node_modules/shinkansen-signals/src/**/*",
     "node_modules/shinkansen-sprockets/src/**/*",
     "node_modules/shinkansen-transmission/src/**/*",
-    "src/**/*"
+    "src/**/*",
+    "stories/**/*"
   ]
 }

@@ -1,9 +1,0 @@
-.circleci
-.github
-node_modules
-
-lib
-
-**/*.snap
-
-**/__snapshots__/**/*
