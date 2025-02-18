@@ -6,53 +6,48 @@ import {
 
 import Engine from '#engine/engine'
 
-import ARRAY_ARRAY_OBJECT_STRING from '#stories/definitions/pinion/array-array-object-string'
-import ARRAY_ARRAY_OBJECT_STRING_ENUM from '#stories/definitions/pinion/array-array-object-string-enum'
-import ARRAY_ARRAY_OBJECT_STRING_ANY_OF from '#stories/definitions/pinion/array-array-object-string-any-of'
-import ARRAY_ARRAY_OBJECT_STRING_ONE_OF from '#stories/definitions/pinion/array-array-object-string-one-of'
-import ARRAY_ARRAY_OBJECT_STRING_ALL_OF from '#stories/definitions/pinion/array-array-object-string-all-of'
-
-import ARRAY_ARRAY_OBJECT_NUMBER from '#stories/definitions/pinion/array-array-object-number'
-import ARRAY_ARRAY_OBJECT_NUMBER_ENUM from '#stories/definitions/pinion/array-array-object-number-enum'
-import ARRAY_ARRAY_OBJECT_NUMBER_ANY_OF from '#stories/definitions/pinion/array-array-object-number-any-of'
-import ARRAY_ARRAY_OBJECT_NUMBER_ONE_OF from '#stories/definitions/pinion/array-array-object-number-one-of'
-import ARRAY_ARRAY_OBJECT_NUMBER_ALL_OF from '#stories/definitions/pinion/array-array-object-number-all-of'
-
-import ARRAY_ARRAY_OBJECT_BOOLEAN from '#stories/definitions/pinion/array-array-object-boolean'
-import ARRAY_ARRAY_OBJECT_BOOLEAN_ENUM from '#stories/definitions/pinion/array-array-object-boolean-enum'
-import ARRAY_ARRAY_OBJECT_BOOLEAN_ANY_OF from '#stories/definitions/pinion/array-array-object-boolean-any-of'
-import ARRAY_ARRAY_OBJECT_BOOLEAN_ONE_OF from '#stories/definitions/pinion/array-array-object-boolean-one-of'
-import ARRAY_ARRAY_OBJECT_BOOLEAN_ALL_OF from '#stories/definitions/pinion/array-array-object-boolean-all-of'
-
-import ARRAY_ARRAY_OBJECT_NULL from '#stories/definitions/pinion/array-array-object-null'
-import ARRAY_ARRAY_OBJECT_NULL_ENUM from '#stories/definitions/pinion/array-array-object-null-enum'
-import ARRAY_ARRAY_OBJECT_NULL_ANY_OF from '#stories/definitions/pinion/array-array-object-null-any-of'
-import ARRAY_ARRAY_OBJECT_NULL_ONE_OF from '#stories/definitions/pinion/array-array-object-null-one-of'
-import ARRAY_ARRAY_OBJECT_NULL_ALL_OF from '#stories/definitions/pinion/array-array-object-null-all-of'
-
-import ARRAY_ARRAY_ARRAY_STRING from '#stories/definitions/pinion/array-array-array-string'
-import ARRAY_ARRAY_ARRAY_STRING_ENUM from '#stories/definitions/pinion/array-array-array-string-enum'
-import ARRAY_ARRAY_ARRAY_STRING_ANY_OF from '#stories/definitions/pinion/array-array-array-string-any-of'
-import ARRAY_ARRAY_ARRAY_STRING_ONE_OF from '#stories/definitions/pinion/array-array-array-string-one-of'
-import ARRAY_ARRAY_ARRAY_STRING_ALL_OF from '#stories/definitions/pinion/array-array-array-string-all-of'
-
-import ARRAY_ARRAY_ARRAY_NUMBER from '#stories/definitions/pinion/array-array-array-number'
-import ARRAY_ARRAY_ARRAY_NUMBER_ENUM from '#stories/definitions/pinion/array-array-array-number-enum'
-import ARRAY_ARRAY_ARRAY_NUMBER_ANY_OF from '#stories/definitions/pinion/array-array-array-number-any-of'
-import ARRAY_ARRAY_ARRAY_NUMBER_ONE_OF from '#stories/definitions/pinion/array-array-array-number-one-of'
-import ARRAY_ARRAY_ARRAY_NUMBER_ALL_OF from '#stories/definitions/pinion/array-array-array-number-all-of'
-
-import ARRAY_ARRAY_ARRAY_BOOLEAN from '#stories/definitions/pinion/array-array-array-boolean'
-import ARRAY_ARRAY_ARRAY_BOOLEAN_ENUM from '#stories/definitions/pinion/array-array-array-boolean-enum'
-import ARRAY_ARRAY_ARRAY_BOOLEAN_ANY_OF from '#stories/definitions/pinion/array-array-array-boolean-any-of'
-import ARRAY_ARRAY_ARRAY_BOOLEAN_ONE_OF from '#stories/definitions/pinion/array-array-array-boolean-one-of'
-import ARRAY_ARRAY_ARRAY_BOOLEAN_ALL_OF from '#stories/definitions/pinion/array-array-array-boolean-all-of'
-
-import ARRAY_ARRAY_ARRAY_NULL from '#stories/definitions/pinion/array-array-array-null'
-import ARRAY_ARRAY_ARRAY_NULL_ENUM from '#stories/definitions/pinion/array-array-array-null-enum'
-import ARRAY_ARRAY_ARRAY_NULL_ANY_OF from '#stories/definitions/pinion/array-array-array-null-any-of'
-import ARRAY_ARRAY_ARRAY_NULL_ONE_OF from '#stories/definitions/pinion/array-array-array-null-one-of'
-import ARRAY_ARRAY_ARRAY_NULL_ALL_OF from '#stories/definitions/pinion/array-array-array-null-all-of'
+import {
+  ARRAY_ARRAY_OBJECT_STRING,
+  ARRAY_ARRAY_OBJECT_STRING_ENUM,
+  ARRAY_ARRAY_OBJECT_STRING_ANY_OF,
+  ARRAY_ARRAY_OBJECT_STRING_ONE_OF,
+  ARRAY_ARRAY_OBJECT_STRING_ALL_OF,
+  ARRAY_ARRAY_OBJECT_NUMBER,
+  ARRAY_ARRAY_OBJECT_NUMBER_ENUM,
+  ARRAY_ARRAY_OBJECT_NUMBER_ANY_OF,
+  ARRAY_ARRAY_OBJECT_NUMBER_ONE_OF,
+  ARRAY_ARRAY_OBJECT_NUMBER_ALL_OF,
+  ARRAY_ARRAY_OBJECT_BOOLEAN,
+  ARRAY_ARRAY_OBJECT_BOOLEAN_ENUM,
+  ARRAY_ARRAY_OBJECT_BOOLEAN_ANY_OF,
+  ARRAY_ARRAY_OBJECT_BOOLEAN_ONE_OF,
+  ARRAY_ARRAY_OBJECT_BOOLEAN_ALL_OF,
+  ARRAY_ARRAY_OBJECT_NULL,
+  ARRAY_ARRAY_OBJECT_NULL_ENUM,
+  ARRAY_ARRAY_OBJECT_NULL_ANY_OF,
+  ARRAY_ARRAY_OBJECT_NULL_ONE_OF,
+  ARRAY_ARRAY_OBJECT_NULL_ALL_OF,
+  ARRAY_ARRAY_ARRAY_STRING,
+  ARRAY_ARRAY_ARRAY_STRING_ENUM,
+  ARRAY_ARRAY_ARRAY_STRING_ANY_OF,
+  ARRAY_ARRAY_ARRAY_STRING_ONE_OF,
+  ARRAY_ARRAY_ARRAY_STRING_ALL_OF,
+  ARRAY_ARRAY_ARRAY_NUMBER,
+  ARRAY_ARRAY_ARRAY_NUMBER_ENUM,
+  ARRAY_ARRAY_ARRAY_NUMBER_ANY_OF,
+  ARRAY_ARRAY_ARRAY_NUMBER_ONE_OF,
+  ARRAY_ARRAY_ARRAY_NUMBER_ALL_OF,
+  ARRAY_ARRAY_ARRAY_BOOLEAN,
+  ARRAY_ARRAY_ARRAY_BOOLEAN_ENUM,
+  ARRAY_ARRAY_ARRAY_BOOLEAN_ANY_OF,
+  ARRAY_ARRAY_ARRAY_BOOLEAN_ONE_OF,
+  ARRAY_ARRAY_ARRAY_BOOLEAN_ALL_OF,
+  ARRAY_ARRAY_ARRAY_NULL,
+  ARRAY_ARRAY_ARRAY_NULL_ENUM,
+  ARRAY_ARRAY_ARRAY_NULL_ANY_OF,
+  ARRAY_ARRAY_ARRAY_NULL_ONE_OF,
+  ARRAY_ARRAY_ARRAY_NULL_ALL_OF
+} from './definitions.mjs'
 
 const REVERSE = {
   alpha: 'alpha',
@@ -65,6 +60,17 @@ const FORWARD = {
 }
 
 const EXCLUDE = {}
+
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
 
 const ARRAY = {
   ARRAY_ARRAY_OBJECT_STRING,
@@ -112,13 +118,7 @@ const ARRAY = {
 export default {
   title: 'Stories/Engine/Array',
   component: Engine,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     pinion: 'ARRAY_ARRAY_OBJECT_STRING',
     params: 'DEFAULT',

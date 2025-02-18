@@ -18,16 +18,21 @@ const FORWARD = {
 
 const EXCLUDE = {}
 
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
+
 export default {
   title: 'Stories/Components/Gears',
   component: Gears,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     reverse: 'REVERSE',
     forward: 'FORWARD',

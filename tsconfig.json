@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
     "target": "ESNext",
     "allowJs": true,
-    "checkJs": false,
+    "checkJs": true,
     "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
     "baseUrl": ".",
+    "jsx": "react",
+    "resolveJsonModule": true,
     "paths": {
       "#engine": [
         "src/index.mjs"
@@ -72,5 +74,8 @@
     "node_modules/shinkansen-transmission/src/**/*",
     "src/**/*",
     "stories/**/*"
+  ],
+  "exclude": [
+    "**/__tests___/**/*"
   ]
 }

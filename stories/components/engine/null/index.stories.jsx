@@ -5,11 +5,13 @@ import {
 
 import Engine from '#engine/engine'
 
-import NULL_NULL from '#stories/definitions/pinion/null-null'
-import NULL_NULL_ENUM from '#stories/definitions/pinion/null-null-enum'
-import NULL_NULL_ANY_OF from '#stories/definitions/pinion/null-null-any-of'
-import NULL_NULL_ONE_OF from '#stories/definitions/pinion/null-null-one-of'
-import NULL_NULL_ALL_OF from '#stories/definitions/pinion/null-null-all-of'
+import {
+  NULL_NULL,
+  NULL_NULL_ENUM,
+  NULL_NULL_ANY_OF,
+  NULL_NULL_ONE_OF,
+  NULL_NULL_ALL_OF
+} from './definitions.mjs'
 
 const REVERSE = {
   alpha: 'alpha',
@@ -23,6 +25,17 @@ const FORWARD = {
 
 const EXCLUDE = {}
 
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
+
 const NULL = {
   NULL_NULL,
   NULL_NULL_ENUM,
@@ -34,13 +47,7 @@ const NULL = {
 export default {
   title: 'Stories/Engine/Null',
   component: Engine,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     pinion: 'NULL_NULL',
     params: 'DEFAULT',

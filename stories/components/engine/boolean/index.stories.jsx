@@ -5,11 +5,13 @@ import {
 
 import Engine from '#engine/engine'
 
-import BOOLEAN_BOOLEAN from '#stories/definitions/pinion/boolean-boolean'
-import BOOLEAN_BOOLEAN_ENUM from '#stories/definitions/pinion/boolean-boolean-enum'
-import BOOLEAN_BOOLEAN_ANY_OF from '#stories/definitions/pinion/boolean-boolean-any-of'
-import BOOLEAN_BOOLEAN_ONE_OF from '#stories/definitions/pinion/boolean-boolean-one-of'
-import BOOLEAN_BOOLEAN_ALL_OF from '#stories/definitions/pinion/boolean-boolean-all-of'
+import {
+  BOOLEAN_BOOLEAN,
+  BOOLEAN_BOOLEAN_ENUM,
+  BOOLEAN_BOOLEAN_ANY_OF,
+  BOOLEAN_BOOLEAN_ONE_OF,
+  BOOLEAN_BOOLEAN_ALL_OF
+} from './definitions.mjs'
 
 const REVERSE = {
   alpha: 'alpha',
@@ -23,6 +25,17 @@ const FORWARD = {
 
 const EXCLUDE = {}
 
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
+
 const BOOLEAN = {
   BOOLEAN_BOOLEAN,
   BOOLEAN_BOOLEAN_ENUM,
@@ -34,13 +47,7 @@ const BOOLEAN = {
 export default {
   title: 'Stories/Engine/Boolean',
   component: Engine,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     pinion: 'BOOLEAN_BOOLEAN',
     params: 'DEFAULT',

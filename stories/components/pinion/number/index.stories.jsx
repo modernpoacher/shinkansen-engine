@@ -5,11 +5,24 @@ import {
 
 import Pinion from '#engine/components/pinion'
 
-import NUMBER_NUMBER from '#stories/definitions/pinion/number-number'
-import NUMBER_NUMBER_ENUM from '#stories/definitions/pinion/number-number-enum'
-import NUMBER_NUMBER_ANY_OF from '#stories/definitions/pinion/number-number-any-of'
-import NUMBER_NUMBER_ONE_OF from '#stories/definitions/pinion/number-number-one-of'
-import NUMBER_NUMBER_ALL_OF from '#stories/definitions/pinion/number-number-all-of'
+import {
+  NUMBER_NUMBER,
+  NUMBER_NUMBER_ENUM,
+  NUMBER_NUMBER_ANY_OF,
+  NUMBER_NUMBER_ONE_OF,
+  NUMBER_NUMBER_ALL_OF
+} from './definitions.mjs'
+
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
 
 const NUMBER = {
   NUMBER_NUMBER,
@@ -22,13 +35,7 @@ const NUMBER = {
 export default {
   title: 'Stories/Components/Pinion/Number',
   component: Pinion,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     pinion: 'NUMBER_NUMBER',
     params: 'DEFAULT'

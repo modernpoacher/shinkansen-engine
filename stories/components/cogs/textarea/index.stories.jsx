@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Cogs.Cog.Textarea.TextareaProps} TextareaProps
+ */
+
 import React from 'react'
 
 import {
@@ -33,6 +37,10 @@ export default {
   }
 }
 
+/**
+ * @param {TextareaProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Value (args) {
   return (
     <TextareaState value='Value'>
@@ -53,6 +61,10 @@ Value.args = {
   name: 'textarea'
 }
 
+/**
+ * @param {TextareaProps} args
+ * @returns {React.JSX.Element}
+ */
 export function DefaultValue (args) {
   return (
     <TextareaState defaultValue='Default value'>

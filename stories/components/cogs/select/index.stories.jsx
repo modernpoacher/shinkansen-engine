@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Cogs.Cog.Select.SelectProps} SelectProps
+ */
+
 import React from 'react'
 
 import {
@@ -33,6 +37,10 @@ export default {
   }
 }
 
+/**
+ * @param {SelectProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Value (args) {
   return (
     <SelectState value='one'>
@@ -45,6 +53,10 @@ export function Value (args) {
   )
 }
 
+/**
+ * @param {SelectProps} args
+ * @returns {React.JSX.Element}
+ */
 Value.args = {
   title: 'Title',
   description: 'Description',
@@ -57,6 +69,10 @@ Value.args = {
   name: 'select'
 }
 
+/**
+ * @param {SelectProps} args
+ * @returns {React.JSX.Element}
+ */
 export function DefaultValue (args) {
   return (
     <SelectState defaultValue='one'>
@@ -81,6 +97,10 @@ DefaultValue.args = {
   name: 'select'
 }
 
+/**
+ * @param {SelectProps} args
+ * @returns {React.JSX.Element}
+ */
 export function MultipleValue (args) {
   return (
     <SelectState value={['one', 'three']}>
@@ -108,6 +128,10 @@ MultipleValue.args = {
   name: 'select'
 }
 
+/**
+ * @param {SelectProps} args
+ * @returns {React.JSX.Element}
+ */
 export function MultipleDefaultValue (args) {
   return (
     <SelectState defaultValue={['one', 'three']}>

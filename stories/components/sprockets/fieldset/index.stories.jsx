@@ -1,3 +1,7 @@
+/**
+ *  @typedef {import('shinkansen-sprockets/sprockets/fieldset').FieldsetProps} FieldsetProps
+ */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -33,24 +37,30 @@ export default {
   }
 }
 
+/**
+ * @param {FieldsetProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Default (args) {
   return (
     <FieldsetSprocket
       {...args}
-      errorMessage={undefined}
-  />
+    />
   )
 }
 
-export function WithError ({ errorMessage = {}, ...args }) {
+/**
+ * @param {FieldsetProps} args
+ * @returns {React.JSX.Element}
+ */
+export function WithError (args) {
   return (
     <FieldsetSprocket
       {...args}
-      errorMessage={errorMessage}
     />
   )
 }
 
 WithError.propTypes = {
-  errorMessage: PropTypes.shape()
+  errorMessage: PropTypes.shape({})
 }

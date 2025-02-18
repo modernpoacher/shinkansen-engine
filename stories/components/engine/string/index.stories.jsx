@@ -5,11 +5,13 @@ import {
 
 import Engine from '#engine/engine'
 
-import STRING_STRING from '#stories/definitions/pinion/string-string'
-import STRING_STRING_ENUM from '#stories/definitions/pinion/string-string-enum'
-import STRING_STRING_ANY_OF from '#stories/definitions/pinion/string-string-any-of'
-import STRING_STRING_ONE_OF from '#stories/definitions/pinion/string-string-one-of'
-import STRING_STRING_ALL_OF from '#stories/definitions/pinion/string-string-all-of'
+import {
+  STRING_STRING,
+  STRING_STRING_ENUM,
+  STRING_STRING_ANY_OF,
+  STRING_STRING_ONE_OF,
+  STRING_STRING_ALL_OF
+} from './definitions.mjs'
 
 const REVERSE = {
   alpha: 'alpha',
@@ -23,6 +25,17 @@ const FORWARD = {
 
 const EXCLUDE = {}
 
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
+
 const STRING = {
   STRING_STRING,
   STRING_STRING_ENUM,
@@ -34,13 +47,7 @@ const STRING = {
 export default {
   title: 'Stories/Engine/String',
   component: Engine,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     pinion: 'STRING_STRING',
     params: 'DEFAULT',

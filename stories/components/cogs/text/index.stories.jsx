@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Cogs.Cog.Text.TextProps} TextProps
+ */
+
 import React from 'react'
 
 import {
@@ -33,6 +37,10 @@ export default {
   }
 }
 
+/**
+ * @param {TextProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Value (args) {
   return (
     <TextState value='Value'>
@@ -53,6 +61,10 @@ Value.args = {
   name: 'text'
 }
 
+/**
+ * @param {TextProps} args
+ * @returns {React.JSX.Element}
+ */
 export function DefaultValue (args) {
   return (
     <TextState defaultValue='Default value'>

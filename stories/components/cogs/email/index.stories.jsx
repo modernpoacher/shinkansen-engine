@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Cogs.Cog.Email.EmailProps} EmailProps
+ */
+
 import React from 'react'
 
 import {
@@ -33,6 +37,10 @@ export default {
   }
 }
 
+/**
+ * @param {EmailProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Value (args) {
   return (
     <EmailState value='email@email.com'>
@@ -41,6 +49,10 @@ export function Value (args) {
   )
 }
 
+/**
+ * @param {EmailProps} args
+ * @returns {React.JSX.Element}
+ */
 Value.args = {
   title: 'Title',
   description: 'Description',
@@ -53,6 +65,10 @@ Value.args = {
   name: 'email'
 }
 
+/**
+ * @param {EmailProps} args
+ * @returns {React.JSX.Element}
+ */
 export function DefaultValue (args) {
   return (
     <EmailState defaultValue='email@email.com'>

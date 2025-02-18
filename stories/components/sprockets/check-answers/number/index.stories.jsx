@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Sprockets.Sprocket.CheckAnswers.CheckAnswersProps} CheckAnswersProps
+ */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
@@ -8,11 +12,24 @@ import {
   CheckAnswersSprocket
 } from '#engine/components/sprockets'
 
-import NUMBER_NUMBER from '#stories/definitions/check-answers/number-number'
-import NUMBER_NUMBER_ENUM from '#stories/definitions/check-answers/number-number-enum'
-import NUMBER_NUMBER_ANY_OF from '#stories/definitions/check-answers/number-number-any-of'
-import NUMBER_NUMBER_ONE_OF from '#stories/definitions/check-answers/number-number-one-of'
-import NUMBER_NUMBER_ALL_OF from '#stories/definitions/check-answers/number-number-all-of'
+import {
+  NUMBER_NUMBER,
+  NUMBER_NUMBER_ENUM,
+  NUMBER_NUMBER_ANY_OF,
+  NUMBER_NUMBER_ONE_OF,
+  NUMBER_NUMBER_ALL_OF
+} from './definitions.mjs'
+
+/**
+ *  @type {Array<(Story: () => React.JSX.Element) => React.JSX.Element>}
+ */
+const decorators = [
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  )
+]
 
 const NUMBER = {
   NUMBER_NUMBER: [NUMBER_NUMBER],
@@ -25,13 +42,7 @@ const NUMBER = {
 export default {
   title: 'Stories/Components/Sprockets/Check Answers/Number',
   component: CheckAnswersSprocket,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    )
-  ],
+  decorators,
   args: {
     title: 'Check Answers',
     checkAnswers: 'NUMBER_NUMBER'
@@ -54,11 +65,22 @@ export default {
   }
 }
 
+/**
+ * @param {CheckAnswersProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Default ({ checkAnswers = [], ...args }) {
+  /**
+   *  @type {CheckAnswersProps}
+   */
+  const props = {
+    ...args,
+    checkAnswers: checkAnswers.flat()
+  }
+
   return (
     <CheckAnswersSprocket
-      {...args}
-      checkAnswers={checkAnswers.flat()}
+      {...props}
     />
   )
 }

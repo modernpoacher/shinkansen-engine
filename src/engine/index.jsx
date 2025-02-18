@@ -43,11 +43,11 @@ export default class Engine extends Component {
 }
 
 Engine.propTypes = {
-  pinion: PropTypes.shape().isRequired,
-  params: PropTypes.shape(),
+  pinion: PropTypes.shape({}).isRequired,
+  params: PropTypes.shape({}),
   gears: PropTypes.shape({
-    forward: PropTypes.shape(),
-    reverse: PropTypes.shape(),
+    forward: PropTypes.shape({}),
+    reverse: PropTypes.shape({}),
     pattern: PropTypes.string
   }),
   onChange: PropTypes.func

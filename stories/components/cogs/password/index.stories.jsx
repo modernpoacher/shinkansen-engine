@@ -1,3 +1,7 @@
+/**
+ *  @typedef {EngineTypes.Components.Cogs.Cog.Password.PasswordProps} PasswordProps
+ */
+
 import React from 'react'
 
 import {
@@ -33,6 +37,10 @@ export default {
   }
 }
 
+/**
+ * @param {PasswordProps} args
+ * @returns {React.JSX.Element}
+ */
 export function Value (args) {
   return (
     <PasswordState value='password'>
@@ -53,6 +61,10 @@ Value.args = {
   name: 'password'
 }
 
+/**
+ * @param {PasswordProps} args
+ * @returns {React.JSX.Element}
+ */
 export function DefaultValue (args) {
   return (
     <PasswordState defaultValue='password'>
