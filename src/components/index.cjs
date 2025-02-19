@@ -4,8 +4,6 @@ const log = debug('shinksansen-engine')
 
 log('`shinkansen` is awake')
 
-console.log(require('./cogs/index.cjs'))
-
 module.exports.Cogs = require('./cogs/index.cjs')
 module.exports.Gears = require('./gears/index.cjs')
 module.exports.Pantograph = require('./pantograph/index.cjs')

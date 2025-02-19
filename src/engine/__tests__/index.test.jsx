@@ -4,62 +4,50 @@ import renderer from 'react-test-renderer'
 
 import Component from '#engine/engine'
 
-import STRING_STRING from './definitions/string-string.json'
-import STRING_STRING_ENUM from './definitions/string-string-enum.json'
-import STRING_STRING_ANY_OF from './definitions/string-string-any-of.json'
-import STRING_STRING_ONE_OF from './definitions/string-string-one-of.json'
-import STRING_STRING_ALL_OF from './definitions/string-string-all-of.json'
+import {
+  STRING_STRING,
+  STRING_STRING_ENUM,
+  STRING_STRING_ANY_OF,
+  STRING_STRING_ONE_OF,
+  STRING_STRING_ALL_OF,
+  NUMBER_NUMBER,
+  NUMBER_NUMBER_ENUM,
+  NUMBER_NUMBER_ANY_OF,
+  NUMBER_NUMBER_ONE_OF,
+  NUMBER_NUMBER_ALL_OF,
+  OBJECT_ARRAY_STRING,
+  OBJECT_ARRAY_NUMBER,
+  OBJECT_ARRAY_BOOLEAN,
+  OBJECT_ARRAY_NULL,
+  ARRAY_ARRAY_STRING,
+  ARRAY_ARRAY_STRING_ENUM,
+  ARRAY_ARRAY_STRING_ANY_OF,
+  ARRAY_ARRAY_STRING_ONE_OF,
+  ARRAY_ARRAY_NUMBER,
+  ARRAY_ARRAY_NUMBER_ENUM,
+  ARRAY_ARRAY_NUMBER_ANY_OF,
+  ARRAY_ARRAY_NUMBER_ONE_OF,
+  ARRAY_ARRAY_OBJECT,
+  ARRAY_ARRAY_ARRAY,
+  ARRAY_ARRAY_BOOLEAN,
+  ARRAY_ARRAY_NULL,
+  BOOLEAN_BOOLEAN,
+  BOOLEAN_BOOLEAN_ENUM,
+  BOOLEAN_BOOLEAN_ANY_OF,
+  BOOLEAN_BOOLEAN_ONE_OF,
+  BOOLEAN_BOOLEAN_ALL_OF,
+  NULL_NULL,
+  NULL_NULL_ENUM,
+  NULL_NULL_ANY_OF,
+  NULL_NULL_ONE_OF,
+  NULL_NULL_ALL_OF
+} from './definitions.mjs'
 
-import NUMBER_NUMBER from './definitions/number-number.json'
-import NUMBER_NUMBER_ENUM from './definitions/number-number-enum.json'
-import NUMBER_NUMBER_ANY_OF from './definitions/number-number-any-of.json'
-import NUMBER_NUMBER_ONE_OF from './definitions/number-number-one-of.json'
-import NUMBER_NUMBER_ALL_OF from './definitions/number-number-all-of.json'
-
-import OBJECT_ARRAY_STRING from './definitions/object-array-string.json'
-import OBJECT_ARRAY_NUMBER from './definitions/object-array-number.json'
-import OBJECT_ARRAY_BOOLEAN from './definitions/object-array-boolean.json'
-import OBJECT_ARRAY_NULL from './definitions/object-array-null.json'
-
-import ARRAY_ARRAY_STRING from './definitions/array-array-string.json'
-import ARRAY_ARRAY_STRING_ENUM from './definitions/array-array-string-enum.json'
-import ARRAY_ARRAY_STRING_ANY_OF from './definitions/array-array-string-any-of.json'
-import ARRAY_ARRAY_STRING_ONE_OF from './definitions/array-array-string-one-of.json'
-
-import ARRAY_ARRAY_NUMBER from './definitions/array-array-number.json'
-import ARRAY_ARRAY_NUMBER_ENUM from './definitions/array-array-number-enum.json'
-import ARRAY_ARRAY_NUMBER_ANY_OF from './definitions/array-array-number-any-of.json'
-import ARRAY_ARRAY_NUMBER_ONE_OF from './definitions/array-array-number-one-of.json'
-
-import ARRAY_ARRAY_OBJECT from './definitions/array-array-object.json'
-import ARRAY_ARRAY_ARRAY from './definitions/array-array-array.json'
-import ARRAY_ARRAY_BOOLEAN from './definitions/array-array-boolean.json'
-import ARRAY_ARRAY_NULL from './definitions/array-array-null.json'
-
-import BOOLEAN_BOOLEAN from './definitions/boolean-boolean.json'
-import BOOLEAN_BOOLEAN_ENUM from './definitions/boolean-boolean-enum.json'
-import BOOLEAN_BOOLEAN_ANY_OF from './definitions/boolean-boolean-any-of.json'
-import BOOLEAN_BOOLEAN_ONE_OF from './definitions/boolean-boolean-one-of.json'
-import BOOLEAN_BOOLEAN_ALL_OF from './definitions/boolean-boolean-all-of.json'
-
-import NULL_NULL from './definitions/null-null.json'
-import NULL_NULL_ENUM from './definitions/null-null-enum.json'
-import NULL_NULL_ANY_OF from './definitions/null-null-any-of.json'
-import NULL_NULL_ONE_OF from './definitions/null-null-one-of.json'
-import NULL_NULL_ALL_OF from './definitions/null-null-all-of.json'
-
-const GEARS = {
-  reverse: {
-    alpha: 'alpha',
-    omega: 'omega'
-  },
-  forward: {
-    alpha: 'alpha',
-    omega: 'omega'
-  },
-  pattern: '/:alpha/:omega'
-}
-
+/**
+ *
+ * @param {{ to: string, children: React.ReactNode | React.ReactNode[] }} param0
+ * @returns
+ */
 function MockLink ({ to, children }) {
   return (
     <a href={to} className='mock-link'>
@@ -69,10 +57,7 @@ function MockLink ({ to, children }) {
 }
 
 MockLink.propTypes = {
-  to: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.shape({})
-  ]),
+  to: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(
@@ -89,13 +74,39 @@ jest.mock('react-router', () => {
 })
 
 describe('#engine/engine', () => {
+  const MOCK_PINION = {
+    meta: { type: 'MOCK', uri: '#/' },
+    elements: { title: 'MOCK TITLE', field: { id: 'MOCK ID' } }
+  }
+
+  const MOCK_PARAMS = {
+    components: {},
+    errors: []
+  }
+
+  const MOCK_GEARS = {
+    reverse: {
+      alpha: 'alpha',
+      omega: 'omega'
+    },
+    forward: {
+      alpha: 'alpha',
+      omega: 'omega'
+    },
+    pattern: '/:alpha/:omega'
+  }
+
+  const MOCK_ON_CHANGE = jest.fn()
+
   describe('<Component />', () => {
     describe('With required props', () => {
       it('renders', () => {
         const component = (
           <Component
-            pinion={{ meta: {}, elements: { title: 'MOCK TITLE', field: { id: 'MOCK ID' } } }}
-            onChange={jest.fn()}
+            pinion={MOCK_PINION}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -109,9 +120,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={STRING_STRING}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -123,9 +134,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={STRING_STRING_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -137,9 +148,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={STRING_STRING_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -151,9 +162,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={STRING_STRING_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -165,9 +176,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={STRING_STRING_ALL_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -179,9 +190,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NUMBER_NUMBER}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -193,9 +204,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NUMBER_NUMBER_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -207,9 +218,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NUMBER_NUMBER_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -221,9 +232,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NUMBER_NUMBER_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -235,9 +246,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NUMBER_NUMBER_ALL_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -249,9 +260,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={OBJECT_ARRAY_STRING}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -263,9 +274,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={OBJECT_ARRAY_NUMBER}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -277,9 +288,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={OBJECT_ARRAY_BOOLEAN}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -291,9 +302,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={OBJECT_ARRAY_NULL}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -305,9 +316,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_STRING}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -319,9 +330,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_STRING_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -333,9 +344,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_STRING_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -347,9 +358,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_STRING_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -361,9 +372,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_NUMBER}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -375,9 +386,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_NUMBER_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -389,9 +400,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_NUMBER_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -403,9 +414,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_NUMBER_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -417,9 +428,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_OBJECT}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -431,9 +442,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_ARRAY}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -445,9 +456,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_BOOLEAN}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -459,9 +470,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={ARRAY_ARRAY_NULL}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -473,9 +484,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={BOOLEAN_BOOLEAN}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -487,9 +498,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={BOOLEAN_BOOLEAN_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -501,9 +512,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={BOOLEAN_BOOLEAN_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -515,9 +526,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={BOOLEAN_BOOLEAN_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -529,9 +540,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={BOOLEAN_BOOLEAN_ALL_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -543,9 +554,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NULL_NULL}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -557,9 +568,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NULL_NULL_ENUM}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -571,9 +582,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NULL_NULL_ANY_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -585,9 +596,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NULL_NULL_ONE_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 
@@ -599,9 +610,9 @@ describe('#engine/engine', () => {
         const component = (
           <Component
             pinion={NULL_NULL_ALL_OF}
-            params={{}}
-            gears={GEARS}
-            onChange={jest.fn()}
+            params={MOCK_PARAMS}
+            gears={MOCK_GEARS}
+            onChange={MOCK_ON_CHANGE}
           />
         )
 

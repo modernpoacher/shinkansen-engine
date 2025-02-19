@@ -4774,5 +4774,37 @@ exports[`#engine/engine <Component /> With required props renders 1`] = `
       value=""
     />
   </div>
+  <ul
+    className="shinkansen-gears"
+  >
+    <li
+      className="shinkansen-gears-reverse"
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Reverse
+      </a>
+    </li>
+    <li
+      className="shinkansen-gears-forward"
+    >
+      <a
+        className="mock-link"
+        href={
+          {
+            "pathname": "/alpha/omega",
+          }
+        }
+      >
+        Forward
+      </a>
+    </li>
+  </ul>
 </div>
 `;

@@ -1,4 +1,6 @@
-import { expect } from 'chai'
+import {
+  expect
+} from 'chai'
 
 import * as common from 'shinkansen-engine/transformers/pinion/common'
 
@@ -9,7 +11,7 @@ describe('shinkansen-engine/transformers/pinion/common', () => {
    *  (This project exports exactly what `shinkansen-pinion` exports)
    */
   it('is a module', () => {
-    return expect(common)
+    expect(common)
       .to.be.a('module')
   })
 })
