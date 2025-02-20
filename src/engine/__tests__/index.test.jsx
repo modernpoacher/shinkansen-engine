@@ -44,7 +44,6 @@ import {
 } from './definitions.mjs'
 
 /**
- *
  * @param {{ to: string | { pathname: string }, children: React.ReactNode | React.ReactNode[] }} param0
  * @returns {React.JSX.Element}
  */
