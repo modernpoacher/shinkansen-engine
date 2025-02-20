@@ -1,4 +1,6 @@
-import { expect } from 'chai'
+import {
+  expect
+} from 'chai'
 
 import {
   fromDocumentToHash,
@@ -8,17 +10,17 @@ import {
 
 describe('shinkansen-engine/transformers/transmission', () => {
   it('is a function', () => {
-    return expect(fromDocumentToHash)
+    expect(fromDocumentToHash)
       .to.be.a('function')
   })
 
   it('is a function', () => {
-    return expect(fromHashToDocument)
+    expect(fromHashToDocument)
       .to.be.a('function')
   })
 
   it('is a function', () => {
-    return expect(toZashiki)
+    expect(toZashiki)
       .to.be.a('function')
   })
 })

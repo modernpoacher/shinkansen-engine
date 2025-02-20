@@ -1,10 +1,12 @@
-import { expect } from 'chai'
+import {
+  expect
+} from 'chai'
 
 import Gears from 'shinkansen-engine/components/gears'
 
 describe('shinkansen-engine/components/gears', () => {
   it('is a function', () => {
-    return expect(Gears)
+    expect(Gears)
       .to.be.a('function')
   })
 })

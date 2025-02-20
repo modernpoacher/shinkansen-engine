@@ -1,4 +1,6 @@
-import { expect } from 'chai'
+import {
+  expect
+} from 'chai'
 
 import * as errorMessage from 'shinkansen-engine/transformers/pinion/error-message'
 
@@ -9,7 +11,7 @@ describe('shinkansen-engine/transformers/pinion/error-message', () => {
    *  (This project exports exactly what `shinkansen-pinion` exports)
    */
   it('is a module', () => {
-    return expect(errorMessage)
+    expect(errorMessage)
       .to.be.a('module')
   })
 })
