@@ -44,20 +44,39 @@ import {
 } from './definitions.mjs'
 
 /**
- *
- * @param {{ to: string, children: React.ReactNode | React.ReactNode[] }} param0
- * @returns
+ * @param {{
+ *  to: string | { pathname: string },
+ *  children: React.ReactNode | React.ReactNode[]
+ * }} prop
+ * @returns {React.JSX.Element}
  */
 function MockLink ({ to, children }) {
+  if (typeof to === 'string') {
+    return (
+      <a href={to} className='mock-link'>
+        {children}
+      </a>
+    )
+  }
+
+  const {
+    pathname
+  } = to
+
   return (
-    <a href={to} className='mock-link'>
+    <a href={pathname} className='mock-link'>
       {children}
     </a>
   )
 }
 
 MockLink.propTypes = {
-  to: PropTypes.string,
+  to: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      pathname: PropTypes.string
+    })
+  ]),
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(

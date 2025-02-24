@@ -200,11 +200,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -214,11 +210,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -299,11 +291,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -313,11 +301,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -398,11 +382,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -412,11 +392,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -597,11 +573,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -611,11 +583,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -769,11 +737,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -783,11 +747,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -968,11 +928,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -982,11 +938,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1067,11 +1019,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1081,11 +1029,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1294,11 +1238,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1308,11 +1248,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1493,11 +1429,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1507,11 +1439,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1665,11 +1593,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1679,11 +1603,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1864,11 +1784,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1878,11 +1794,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -1963,11 +1875,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -1977,11 +1885,7 @@ exports[`#engine/engine <Component /> With additional props renders \`ARRAY_ARRA
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2036,11 +1940,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2050,11 +1950,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2173,11 +2069,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2187,11 +2079,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2292,11 +2180,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2306,11 +2190,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2429,11 +2309,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2443,11 +2319,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2502,11 +2374,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2516,11 +2384,7 @@ exports[`#engine/engine <Component /> With additional props renders \`BOOLEAN_BO
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2575,11 +2439,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2589,11 +2449,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2676,11 +2532,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2690,11 +2542,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2768,11 +2616,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2782,11 +2626,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2869,11 +2709,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2883,11 +2719,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL_
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -2942,11 +2774,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL\
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -2956,11 +2784,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NULL_NULL\
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3015,11 +2839,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3029,11 +2849,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3188,11 +3004,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3202,11 +3014,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3334,11 +3142,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3348,11 +3152,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3507,11 +3307,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3521,11 +3317,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3580,11 +3372,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3594,11 +3382,7 @@ exports[`#engine/engine <Component /> With additional props renders \`NUMBER_NUM
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3705,11 +3489,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3719,11 +3499,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3830,11 +3606,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3844,11 +3616,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -3955,11 +3723,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -3969,11 +3733,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4080,11 +3840,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4094,11 +3850,7 @@ exports[`#engine/engine <Component /> With additional props renders \`OBJECT_ARR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4153,11 +3905,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4167,11 +3915,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4326,11 +4070,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4340,11 +4080,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4472,11 +4208,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4486,11 +4218,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4645,11 +4373,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4659,11 +4383,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4718,11 +4438,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4732,11 +4448,7 @@ exports[`#engine/engine <Component /> With additional props renders \`STRING_STR
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
@@ -4782,11 +4494,7 @@ exports[`#engine/engine <Component /> With required props renders 1`] = `
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Reverse
       </a>
@@ -4796,11 +4504,7 @@ exports[`#engine/engine <Component /> With required props renders 1`] = `
     >
       <a
         className="mock-link"
-        href={
-          {
-            "pathname": "/alpha/omega",
-          }
-        }
+        href="/alpha/omega"
       >
         Forward
       </a>
