@@ -44,11 +44,11 @@ import {
 } from './definitions.mjs'
 
 /**
- * @param {{
- *  to: string | { pathname: string },
- *  children: React.ReactNode | React.ReactNode[]
- * }} prop
- * @returns {React.JSX.Element}
+ *  @param {{
+ *    to: string | { pathname: string },
+ *    children: React.ReactNode | React.ReactNode[]
+ *  }} prop
+ *  @returns {React.JSX.Element}
  */
 function MockLink ({ to, children }) {
   if (typeof to === 'string') {
