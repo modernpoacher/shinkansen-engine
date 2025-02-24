@@ -3,5 +3,6 @@ declare module '#engine/components/pinion' {
 }
 
 declare module 'shinkansen-engine/components/pinion' {
+  export { default } from '#engine/components/pinion'
   export * from '#engine/components/pinion'
 }

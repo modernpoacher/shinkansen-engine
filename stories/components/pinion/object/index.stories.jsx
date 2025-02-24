@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   MemoryRouter
-} from 'react-router-dom'
+} from 'react-router'
 
 import Pinion from '#engine/components/pinion'
 

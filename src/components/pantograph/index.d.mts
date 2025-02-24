@@ -3,5 +3,6 @@ declare module '#engine/components/pantograph' {
 }
 
 declare module 'shinkansen-engine/components/pantograph' {
+  export { default } from '#engine/components/pantograph'
   export * from '#engine/components/pantograph'
 }

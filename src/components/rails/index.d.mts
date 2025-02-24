@@ -3,5 +3,6 @@ declare module '#engine/components/rails' {
 }
 
 declare module 'shinkansen-engine/components/rails' {
+  export { default } from '#engine/components/rails'
   export * from '#engine/components/rails'
 }
