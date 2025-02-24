@@ -1,26 +1,16 @@
 import debug from 'debug'
 
-import Cogs from './components/cogs/index.mjs'
-import Sprockets from './components/sprockets/index.mjs'
-import Gears from './components/gears/index.mjs'
-import Pinion from './components/pinion/index.mjs'
-import Rails from './components/rails/index.mjs'
-import Signals from './components/signals/index.mjs'
-import Pantograph from './components/pantograph/index.mjs'
+export { default as Cogs } from './components/cogs/index.mjs'
+export { default as Sprockets } from './components/sprockets/index.mjs'
+export { default as Gears } from './components/gears/index.mjs'
+export { default as Pinion } from './components/pinion/index.mjs'
+export { default as Rails } from './components/rails/index.mjs'
+export { default as Signals } from './components/signals/index.mjs'
+export { default as Pantograph } from './components/pantograph/index.mjs'
 
 const log = debug('shinksansen-engine')
 
 log('`shinkansen` is awake')
-
-export {
-  Cogs,
-  Sprockets,
-  Gears,
-  Pinion,
-  Rails,
-  Signals,
-  Pantograph
-}
 
 export {
   fromDocumentToHash,

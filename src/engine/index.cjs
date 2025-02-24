@@ -7,7 +7,7 @@ require('@babel/register')({
 const debug = require('debug')
 
 const {
-  default: component
+  default: component // @ts-ignore
 } = require('./index.jsx')
 
 const log = debug('shinksansen-engine')
