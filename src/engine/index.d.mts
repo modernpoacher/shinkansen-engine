@@ -9,5 +9,6 @@ declare module '#engine/engine' {
 }
 
 declare module 'shinkansen-engine/engine' {
+  export { default } from '#engine/engine'
   export * from '#engine/engine'
 }

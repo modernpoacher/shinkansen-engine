@@ -3,5 +3,6 @@ declare module '#engine/components/signals' {
 }
 
 declare module 'shinkansen-engine/components/signals' {
+  export { default } from '#engine/components/signals'
   export * from '#engine/components/signals'
 }
