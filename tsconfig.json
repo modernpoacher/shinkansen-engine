@@ -10,57 +10,7 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "jsx": "react",
-    "resolveJsonModule": true,
-    "paths": {
-      "#engine": [
-        "src/index.mjs"
-      ],
-      "#engine/common": [
-        "src/common/index.mjs"
-      ],
-      "#engine/components": [
-        "src/components/index.mjs"
-      ],
-      "#engine/components/*": [
-        "src/components/*/index.mjs"
-      ],
-      "#engine/components/gears/forward": [
-        "src/components/gears/forward/index.cjs"
-      ],
-      "#engine/components/gears/reverse": [
-        "src/components/gears/reverse/index.cjs"
-      ],
-      "#engine/engine": [
-        "src/engine/index.jsx"
-      ],
-      "#engine/engine/*": [
-        "src/engine/*/index.jsx"
-      ],
-      "#engine/transformers": [
-        "src/transformers/index.mjs"
-      ],
-      "#engine/transformers/*": [
-        "src/transformers/*/index.mjs"
-      ],
-      "#stories/components/*": [
-        "stories/components/*/index.stories.jsx"
-      ],
-      "#stories/definitions/*": [
-        "stories/definitions/*.json"
-      ],
-      "#stories/engine/*": [
-        "stories/engine/*/index.stories.jsx"
-      ],
-      "#stories/errors": [
-        "stories/errors.mjs"
-      ],
-      "#stories/state": [
-        "stories/state/index.jsx"
-      ],
-      "#stories/state/*": [
-        "stories/state/*/index.jsx"
-      ]
-    }
+    "resolveJsonModule": true
   },
   "include": [
     ".",
