@@ -107,7 +107,7 @@
     "shinkansen-rails": "1.0.289",
     "shinkansen-signals": "1.1.219",
     "shinkansen-sprockets": "1.2.8",
-    "shinkansen-transmission": "2.3.5",
+    "shinkansen-transmission": "2.4.0",
     "sinon": "^19.0.2",
     "storybook": "7.6.20",
     "webpack": "^5.98.0",
@@ -121,7 +121,7 @@
     "shinkansen-rails": "1.0.x",
     "shinkansen-signals": "1.1.x",
     "shinkansen-sprockets": "1.2.x",
-    "shinkansen-transmission": "2.3.x"
+    "shinkansen-transmission": "2.4.x"
   },
   "imports": {
     "#build/paths": "./build/paths.mjs",
