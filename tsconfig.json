@@ -4,7 +4,6 @@
     "target": "ESNext",
     "allowJs": true,
     "checkJs": true,
-    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
@@ -21,9 +20,7 @@
     "node_modules/shinkansen-rails/**/*",
     "node_modules/shinkansen-signals/**/*",
     "node_modules/shinkansen-sprockets/**/*",
-    "node_modules/shinkansen-transmission/**/*",
-    "src/**/*",
-    "stories/**/*"
+    "node_modules/shinkansen-transmission/**/*"
   ],
   "exclude": [
     "**/__tests__/**/*"
