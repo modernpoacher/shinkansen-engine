@@ -1,4 +1,8 @@
-import type { PinionProps } from 'shinkansen-pinion/pinion'
+import type {
+  PinionType,
+  ParamsType,
+  PinionProps
+} from 'shinkansen-pinion/pinion'
 import type { GearsProps } from 'shinkansen-gears/gears'
 import type { CheckboxProps } from 'shinkansen-cogs/cogs/checkbox'
 import type { EmailProps } from 'shinkansen-cogs/cogs/email'
@@ -19,6 +23,8 @@ declare global {
     export namespace Components {
       export namespace Pinion {
         export type {
+          PinionType,
+          ParamsType,
           PinionProps
         }
       }

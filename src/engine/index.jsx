@@ -1,3 +1,9 @@
+/**
+ *  @typedef {EngineTypes.Components.Pinion.PinionType} PinionType
+ *  @typedef {EngineTypes.Components.Pinion.ParamsType} ParamsType
+ *  @typedef {EngineTypes.Components.Gears.GearsProps} GearsProps
+ */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -8,16 +14,37 @@ import {
   DEFAULT_HANDLE_CHANGE
 } from '#engine/common'
 
-const DEFAULT_PARAMS = {}
+/**
+ *  @type {ParamsType}
+ */
+const DEFAULT_PARAMS = {
+  components: {},
+  errors: []
+}
 
+/**
+ *  @type {GearsProps}
+ */
 const DEFAULT_GEARS = {}
 
 export default class Engine extends Component {
   render () {
     const {
+      /**
+       *  @type {PinionType}
+       */
       pinion,
+      /**
+       *  @type {ParamsType}
+       */
       params = DEFAULT_PARAMS,
+      /**
+       *  @type {() => void}
+       */
       onChange = DEFAULT_HANDLE_CHANGE,
+      /**
+       *  @type {GearsType}
+       */
       gears: {
         reverse,
         forward,
