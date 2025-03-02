@@ -1,5 +1,5 @@
 /**
- *  @typedef {import('shinkansen-sprockets/sprockets/fieldset').FieldsetProps} FieldsetProps
+ *  @typedef {EngineTypes.Components.Sprockets.Sprocket.Fieldset.FieldsetProps} FieldsetProps
  */
 
 import React from 'react'
@@ -38,29 +38,39 @@ export default {
 }
 
 /**
- * @param {FieldsetProps} args
+ * @param {FieldsetProps} props
  * @returns {React.JSX.Element}
  */
-export function Default (args) {
+export function Default (props) {
   return (
-    <FieldsetSprocket
-      {...args}
-    />
+    <form>
+      <FieldsetSprocket
+        {...props}
+        errorMessage={undefined}
+      />
+    </form>
   )
 }
 
 /**
- * @param {FieldsetProps} args
+ * @param {FieldsetProps} props
  * @returns {React.JSX.Element}
  */
-export function WithError (args) {
+export function WithError ({ errorMessage, ...props }) {
   return (
-    <FieldsetSprocket
-      {...args}
-    />
+    <form>
+      <FieldsetSprocket
+        {...props}
+        errorMessage={errorMessage}
+      />
+    </form>
   )
 }
 
 WithError.propTypes = {
-  errorMessage: PropTypes.shape({})
+  errorMessage: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    params: PropTypes.shape({}).isRequired,
+    uri: PropTypes.string.isRequired
+  })
 }

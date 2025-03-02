@@ -234,34 +234,47 @@ export default {
   }
 }
 
-const hasError = (params) => Reflect.has(params, 'errors')
+/**
+ *  @param {EngineTypes.Components.Pinion.ParamsType} params
+ *  @returns {boolean}
+ */
+const hasError = (params) => 'errors' in params // Reflect.has(params, 'errors')
 const getError = ({ meta: { schema: { properties = {} } = {} } = {} }) => {
-  let error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] }
+  if ('string' in properties /* Reflect.has(properties, 'string') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/string' }]
 
-  if (Reflect.has(properties, 'string')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/string' }] }
+  if ('number' in properties /* Reflect.has(properties, 'number') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/number' }]
 
-  if (Reflect.has(properties, 'number')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/number' }] }
+  if ('array' in properties /* Reflect.has(properties, 'array') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/array/0' }]
 
-  if (Reflect.has(properties, 'array')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/array/0' }] }
+  if ('boolean' in properties /* Reflect.has(properties, 'boolean') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/boolean' }]
 
-  if (Reflect.has(properties, 'boolean')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/boolean' }] }
+  if ('null' in properties /* Reflect.has(properties, 'null') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/null' }]
 
-  if (Reflect.has(properties, 'null')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/null' }] }
-
-  return error
+  return []
 }
 
-export const Default = ({ pinion, params }) => {
-  const PARAMS = hasError(params) ? getError(pinion) : params
+const onChange = () => {}
+
+/**
+ *  @param {{
+ *    pinion: EngineTypes.Components.Pinion.PinionType,
+ *    params: EngineTypes.Components.Pinion.ParamsType
+ *  }} args
+ *  @returns {React.JSX.Element}
+ */
+export function Default ({ pinion, params }) {
+  const errors = hasError(params) ? getError(pinion) : []
+  const PARAMS = { ...params, errors }
 
   return (
     <Pinion
       pinion={pinion}
       params={PARAMS}
+      onChange={onChange}
     />
   )
 }
 
-Default.propTypes = {
+Default.propTypes = { // @ts-ignore
   ...Pinion.propTypes
 }

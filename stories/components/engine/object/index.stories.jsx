@@ -1,3 +1,11 @@
+/**
+ *  @typedef {PinionTypes.ObjectType} ObjectType
+ *
+ *  @typedef {PinionTypes.PinionProps} PinionProps
+ *
+ *  @typedef {PinionTypes.ParamsType} ParamsType
+ */
+
 import React from 'react'
 import {
   MemoryRouter
@@ -271,35 +279,42 @@ export default {
   }
 }
 
-const hasError = (params) => Reflect.has(params, 'errors')
+/**
+ *  @param {ParamsType} params
+ *  @returns {boolean}
+ */
+const hasError = (params) => 'errors' in params // Reflect.has(params, 'errors')
 const getError = ({ meta: { schema: { properties = {} } = {} } = {} }) => {
-  let error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/' }] }
+  if ('string' in properties /* Reflect.has(properties, 'string') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/string' }]
 
-  if (Reflect.has(properties, 'string')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/string' }] }
+  if ('number' in properties /* Reflect.has(properties, 'number') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/number' }]
 
-  if (Reflect.has(properties, 'number')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/number' }] }
+  if ('array' in properties /* Reflect.has(properties, 'array') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/array/0' }]
 
-  if (Reflect.has(properties, 'array')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/array/0' }] }
+  if ('boolean' in properties /* Reflect.has(properties, 'boolean') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/boolean' }]
 
-  if (Reflect.has(properties, 'boolean')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/boolean' }] }
+  if ('null' in properties /* Reflect.has(properties, 'null') */) return [{ type: 'UNKNOWN', params: {}, uri: '#/null' }]
 
-  if (Reflect.has(properties, 'null')) error = { errors: [{ type: 'UNKNOWN', params: {}, uri: '#/null' }] }
-
-  return error
+  return []
 }
 
-export const Default = ({ pinion, params, reverse, forward, pattern }) => {
-  const PARAMS = hasError(params) ? getError(pinion) : params
+const onChange = () => {}
+
+// @ts-ignore
+export function Default ({ pinion, params, reverse, forward, pattern }) {
+  const errors = hasError(params) ? getError(pinion) : []
+  const PARAMS = { ...params, errors }
 
   return (
     <Engine
       pinion={pinion}
       params={PARAMS}
       gears={{ reverse, forward, pattern }}
+      onChange={onChange}
     />
   )
 }
 
-Default.propTypes = {
+Default.propTypes = { // @ts-ignore
   ...Engine.propTypes
 }

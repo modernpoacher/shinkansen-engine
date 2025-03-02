@@ -7,9 +7,41 @@
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "baseUrl": ".",
     "jsx": "react",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "#engine": [
+        "./src/index.cjs",
+        "./src/index.mjs"
+      ],
+      "#engine/common": [
+        "./src/common/index.mjs"
+      ],
+      "#engine/components": [
+        "./src/components/index.cjs",
+        "./src/components/index.mjs"
+      ],
+      "#engine/components/*": [
+        "./src/components/*/index.cjs",
+        "./src/components/*/index.mjs"
+      ],
+      "#engine/components/gears/forward": [
+        "./src/components/gears/forward/index.cjs"
+      ],
+      "#engine/components/gears/reverse": [
+        "./src/components/gears/reverse/index.cjs"
+      ],
+      "#engine/engine": [
+        "./src/engine/index.cjs"
+      ],
+      "#engine/transformers": [
+        "./src/transformers/index.mjs"
+      ],
+      "#engine/transformers/*": [
+        "./src/transformers/*/index.mjs"
+      ]
+    }
   },
   "include": [
     ".",

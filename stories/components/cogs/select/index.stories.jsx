@@ -43,13 +43,15 @@ export default {
  */
 export function Value (args) {
   return (
-    <SelectState value='one'>
-      <SelectCog {...args}>
-        <option value='one'>One</option>
-        <option value='two'>Two</option>
-        <option value='three'>Three</option>
-      </SelectCog>
-    </SelectState>
+    <form>
+      <SelectState value='one'>
+        <SelectCog {...args}>
+          <option value='one'>One</option>
+          <option value='two'>Two</option>
+          <option value='three'>Three</option>
+        </SelectCog>
+      </SelectState>
+    </form>
   )
 }
 
@@ -75,13 +77,15 @@ Value.args = {
  */
 export function DefaultValue (args) {
   return (
-    <SelectState defaultValue='one'>
-      <SelectCog {...args}>
-        <option value='one'>One</option>
-        <option value='two'>Two</option>
-        <option value='three'>Three</option>
-      </SelectCog>
-    </SelectState>
+    <form>
+      <SelectState defaultValue='one'>
+        <SelectCog {...args}>
+          <option value='one'>One</option>
+          <option value='two'>Two</option>
+          <option value='three'>Three</option>
+        </SelectCog>
+      </SelectState>
+    </form>
   )
 }
 
@@ -103,16 +107,18 @@ DefaultValue.args = {
  */
 export function MultipleValue (args) {
   return (
-    <SelectState value={['one', 'three']}>
-      <SelectCog multiple {...args}>
-        <option value='one'>One</option>
-        <option value='two'>Two</option>
-        <option value='three'>Three</option>
-        <option value='four'>Four</option>
-        <option value='five'>Five</option>
-        <option value='six'>Six</option>
-      </SelectCog>
-    </SelectState>
+    <form>
+      <SelectState value={['one', 'three']}>
+        <SelectCog multiple {...args}>
+          <option value='one'>One</option>
+          <option value='two'>Two</option>
+          <option value='three'>Three</option>
+          <option value='four'>Four</option>
+          <option value='five'>Five</option>
+          <option value='six'>Six</option>
+        </SelectCog>
+      </SelectState>
+    </form>
   )
 }
 
@@ -134,16 +140,18 @@ MultipleValue.args = {
  */
 export function MultipleDefaultValue (args) {
   return (
-    <SelectState defaultValue={['one', 'three']}>
-      <SelectCog multiple {...args}>
-        <option value='one'>One</option>
-        <option value='two'>Two</option>
-        <option value='three'>Three</option>
-        <option value='four'>Four</option>
-        <option value='five'>Five</option>
-        <option value='six'>Six</option>
-      </SelectCog>
-    </SelectState>
+    <form>
+      <SelectState defaultValue={['one', 'three']}>
+        <SelectCog multiple {...args}>
+          <option value='one'>One</option>
+          <option value='two'>Two</option>
+          <option value='three'>Three</option>
+          <option value='four'>Four</option>
+          <option value='five'>Five</option>
+          <option value='six'>Six</option>
+        </SelectCog>
+      </SelectState>
+    </form>
   )
 }
 

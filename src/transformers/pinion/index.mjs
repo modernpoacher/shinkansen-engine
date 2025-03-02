@@ -1,6 +1,6 @@
 import debug from 'debug'
 
-const log = debug('shinksansen-engine')
+const log = debug('shinksansen-engine/transformers/pinion')
 
 log('`shinkansen` is awake')
 

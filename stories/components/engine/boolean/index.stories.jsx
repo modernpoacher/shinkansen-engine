@@ -106,14 +106,20 @@ export default {
   }
 }
 
-export const Default = ({ pinion, params, reverse, forward, pattern }) => (
-  <Engine
-    pinion={pinion}
-    params={params}
-    gears={{ reverse, forward, pattern }}
-  />
-)
+const onChange = () => {}
 
-Default.propTypes = {
+// @ts-ignore
+export function Default ({ pinion, params, reverse, forward, pattern }) {
+  return (
+    <Engine
+      pinion={pinion}
+      params={params}
+      gears={{ reverse, forward, pattern }}
+      onChange={onChange}
+    />
+  )
+}
+
+Default.propTypes = { // @ts-ignore
   ...Engine.propTypes
 }

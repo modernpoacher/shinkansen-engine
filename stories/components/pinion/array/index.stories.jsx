@@ -174,8 +174,14 @@ export default {
   }
 }
 
-export const Default = (args) => (
-  <Pinion
-    {...args}
-  />
-)
+/**
+ *  @param {EngineTypes.Components.Pinion.PinionProps} props
+ *  @returns {React.JSX.Element}
+ */
+export function Default (props) {
+  return (
+    <Pinion
+      {...props}
+    />
+  )
+}

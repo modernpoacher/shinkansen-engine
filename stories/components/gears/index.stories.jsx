@@ -64,8 +64,18 @@ export default {
   }
 }
 
-export const Default = (args) => (
-  <Gears
-    {...args}
-  />
-)
+/**
+ * @param {EngineTypes.Components.Gears.GearsProps} props
+ * @returns {React.JSX.Element}
+ */
+export function Default (props) {
+  return (
+    <Gears
+      {...props}
+    />
+  )
+}
+
+Default.propTypes = {
+  ...Gears.propTypes
+}

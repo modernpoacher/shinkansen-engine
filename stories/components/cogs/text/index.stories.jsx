@@ -43,9 +43,11 @@ export default {
  */
 export function Value (args) {
   return (
-    <TextState value='Value'>
-      <TextCog {...args} />
-    </TextState>
+    <form>
+      <TextState value='Value'>
+        <TextCog {...args} />
+      </TextState>
+    </form>
   )
 }
 
@@ -67,9 +69,11 @@ Value.args = {
  */
 export function DefaultValue (args) {
   return (
-    <TextState defaultValue='Default value'>
-      <TextCog {...args} />
-    </TextState>
+    <form>
+      <TextState defaultValue='Default value'>
+        <TextCog {...args} />
+      </TextState>
+    </form>
   )
 }
 

@@ -43,9 +43,11 @@ export default {
  */
 export function Value (args) {
   return (
-    <NumberState value={1}>
-      <NumberCog {...args} />
-    </NumberState>
+    <form>
+      <NumberState value={1}>
+        <NumberCog {...args} />
+      </NumberState>
+    </form>
   )
 }
 
@@ -67,9 +69,11 @@ Value.args = {
  */
 export function DefaultValue (args) {
   return (
-    <NumberState defaultValue={1}>
-      <NumberCog {...args} />
-    </NumberState>
+    <form>
+      <NumberState defaultValue={1}>
+        <NumberCog {...args} />
+      </NumberState>
+    </form>
   )
 }
 
