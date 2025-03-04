@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Rails from '#engine/components/rails'
+const Rails = require('#engine/components/rails')
 
 describe('#engine/components/rails', () => {
   it('is a function', () => {

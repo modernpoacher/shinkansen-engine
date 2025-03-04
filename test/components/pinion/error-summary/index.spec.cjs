@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import ErrorSummary from '#engine/components/pinion/error-summary'
+const ErrorSummary = require('#engine/components/pinion/error-summary')
 
 describe('#engine/components/pinion/error-summary', () => {
   it('is a function', () => {

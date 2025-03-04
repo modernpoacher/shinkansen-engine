@@ -6,9 +6,9 @@ import {
   fromDocumentToHash,
   fromHashToDocument,
   toZashiki
-} from 'shinkansen-engine/transformers/transmission'
+} from '#engine/transformers/transmission'
 
-describe('shinkansen-engine/transformers/transmission', () => {
+describe('#engine/transformers/transmission', () => {
   it('is a function', () => {
     expect(fromDocumentToHash)
       .to.be.a('function')

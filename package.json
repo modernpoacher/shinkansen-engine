@@ -77,7 +77,6 @@
     "core-js": "^3.41.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
-    "eslint-import-resolver-babel-module": "^5.3.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-storybook": "^0.11.4",
     "globals": "^16.0.0",
@@ -100,14 +99,14 @@
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
-    "shinkansen-cogs": "1.8.19",
-    "shinkansen-gears": "1.2.14",
-    "shinkansen-pantograph": "1.4.6",
-    "shinkansen-pinion": "1.3.10",
-    "shinkansen-rails": "1.0.298",
-    "shinkansen-signals": "1.1.227",
-    "shinkansen-sprockets": "1.2.19",
-    "shinkansen-transmission": "2.4.7",
+    "shinkansen-cogs": "github:modernpoacher/shinkansen-cogs#v1.9.0",
+    "shinkansen-gears": "github:modernpoacher/shinkansen-gears#v1.3.0",
+    "shinkansen-pantograph": "github:modernpoacher/shinkansen-pantograph#v1.5.0",
+    "shinkansen-pinion": "github:modernpoacher/shinkansen-pinion#v1.4.0",
+    "shinkansen-rails": "github:modernpoacher/shinkansen-rails#v1.1.0",
+    "shinkansen-signals": "github:modernpoacher/shinkansen-signals#v1.2.0",
+    "shinkansen-sprockets": "github:modernpoacher/shinkansen-sprockets#v1.3.0",
+    "shinkansen-transmission": "github:modernpoacher/shinkansen-transmission#v2.5.0",
     "sinon": "^19.0.2",
     "storybook": "7.6.20",
     "webpack": "^5.98.0",
@@ -129,7 +128,6 @@
       "require": "./src/index.cjs",
       "import": "./src/index.mjs"
     },
-    "#engine/common": "./src/common/index.mjs",
     "#engine/components": {
       "require": "./src/components/index.cjs",
       "import": "./src/components/index.mjs"
@@ -155,7 +153,6 @@
       "require": "./src/index.cjs",
       "import": "./src/index.mjs"
     },
-    "./common": "./src/common/index.mjs",
     "./components": {
       "require": "./src/components/index.cjs",
       "import": "./src/components/index.mjs"
@@ -167,7 +164,7 @@
     "./components/gears/forward": "./src/components/gears/forward/index.cjs",
     "./components/gears/reverse": "./src/components/gears/reverse/index.cjs",
     "./engine": "./src/engine/index.cjs",
-    "./engine/*": "./src/engine/*/index.cjs",
+    "./transformers": "./src/transformers/index.mjs",
     "./transformers/*": "./src/transformers/*/index.mjs"
   }
 }

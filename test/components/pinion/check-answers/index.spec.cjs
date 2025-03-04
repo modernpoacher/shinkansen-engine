@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import CheckAnswers from '#engine/components/pinion/check-answers'
+const CheckAnswers = require('#engine/components/pinion/check-answers')
 
 describe('#engine/components/pinion/check-answers', () => {
   it('is a function', () => {

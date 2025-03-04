@@ -130,19 +130,16 @@ export default [
       globals: {
         ...globals.browser
       }
-    },
+    }, // @ts-expect-error Storybook
     plugins: {
       ...reactPlugins,
       ...storybookPlugins
-    },
+    }, // @ts-expect-error Storybook
     rules: {
       ...reactRules
     },
     settings: {
-      ...reactSettings,
-      'import/resolver': {
-        'babel-module': {}
-      }
+      ...reactSettings
     }
   }),
   standard({
@@ -160,19 +157,16 @@ export default [
         ...globals.browser,
         ...globals.jest
       }
-    },
+    }, // @ts-expect-error Storybook
     plugins: {
       ...reactPlugins,
       ...storybookPlugins
-    },
+    }, // @ts-expect-error Storybook
     rules: {
       ...reactRules
     },
     settings: {
-      ...reactSettings,
-      'import/resolver': {
-        'babel-module': {}
-      }
+      ...reactSettings
     }
   }),
   /**
@@ -183,7 +177,8 @@ export default [
       '**/*.{mts,cts}'
     ],
     ignores: [
-      'src'
+      'src',
+      'test'
     ],
     languageOptions: {
       parser: typescriptParser,
@@ -199,7 +194,8 @@ export default [
   }),
   typescript({
     files: [
-      'src/**/*.{mts,cts}'
+      'src/**/*.{mts,cts}',
+      'test/**/*.{mts,cts}'
     ],
     languageOptions: {
       parser: typescriptParser,
