@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Cogs from '#engine/components/cogs'
+const Cogs = require('#engine/components/cogs')
 
 describe('#engine/components/cogs', () => {
   it('is an object', () => {

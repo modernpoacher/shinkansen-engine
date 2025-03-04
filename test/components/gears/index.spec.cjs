@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Gears from '#engine/components/gears'
+const Gears = require('#engine/components/gears')
 
 describe('#engine/components/gears', () => {
   it('is a function', () => {

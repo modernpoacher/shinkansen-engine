@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Forward from '#engine/components/gears/forward'
+const Forward = require('#engine/components/gears/forward')
 
 describe('#engine/components/gears/forward', () => {
   it('is a function', () => {
