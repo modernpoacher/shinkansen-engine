@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Pantograph from '#engine/components/pantograph'
+const Pantograph = require('#engine/components/pantograph')
 
 describe('#engine/components/pantograph', () => {
   it('is a function', () => {

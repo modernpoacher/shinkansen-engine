@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Reverse from '#engine/components/gears/reverse'
+const Reverse = require('#engine/components/gears/reverse')
 
 describe('#engine/components/gears/reverse', () => {
   it('is a function', () => {

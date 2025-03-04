@@ -18,6 +18,8 @@ import type { FieldsetProps } from 'shinkansen-sprockets/sprockets/fieldset'
 
 declare global {
   namespace EngineTypes {
+    export type OnEventType = () => void
+
     export type EngineProps = PinionProps & { gears: GearsProps }
 
     export namespace Components {
@@ -111,3 +113,5 @@ declare global {
     }
   }
 }
+
+export {}

@@ -16,9 +16,11 @@ const Rails = require('./components/rails/index.cjs')
 const Signals = require('./components/signals/index.cjs')
 const Pantograph = require('./components/pantograph/index.cjs')
 
-const { default: fromDocumentToHash } = require('./transformers/transmission/from-document-to-hash/index.mjs')
-const { default: fromHashToDocument } = require('./transformers/transmission/from-hash-to-document/index.mjs')
-const { default: toZashiki } = require('./transformers/transmission/to-zashiki/index.mjs')
+const {
+  fromDocumentToHash,
+  fromHashToDocument,
+  toZashiki // @ts-expect-error MJS
+} = require('./transformers/transmission/index.mjs')
 
 const log = debug('shinksansen-engine')
 

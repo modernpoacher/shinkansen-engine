@@ -6,12 +6,15 @@ require('@babel/register')({
 
 const debug = require('debug')
 
-const {
-  default: component // @ts-ignore
-} = require('./index.jsx')
-
-const log = debug('shinksansen-engine')
+const log = debug('shinksansen-engine/engine')
 
 log('`shinkansen` is awake')
 
-module.exports = component
+const {
+  default: Engine // @ts-expect-error
+} = require('./index.jsx')
+
+/**
+ *  Exports only default
+ */
+module.exports = Engine

@@ -4483,7 +4483,6 @@ exports[`#engine/engine <Component /> With required props renders 1`] = `
       readOnly={false}
       required={false}
       type="text"
-      value=""
     />
   </div>
   <ul
