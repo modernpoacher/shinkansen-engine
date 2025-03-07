@@ -1,8 +1,8 @@
-import {
-  expect
-} from 'chai'
+const {
+  expect // @ts-ignore
+} = require('chai')
 
-import Sprockets from '#engine/components/sprockets'
+const Sprockets = require('#engine/components/sprockets')
 
 describe('#engine/components/sprockets', () => {
   it('is an object', () => {

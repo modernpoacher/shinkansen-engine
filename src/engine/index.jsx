@@ -1,4 +1,5 @@
 /**
+ *  @typedef {EngineTypes.OnEventType} OnEventType
  *  @typedef {EngineTypes.Components.Pinion.PinionType} PinionType
  *  @typedef {EngineTypes.Components.Pinion.ParamsType} ParamsType
  *  @typedef {EngineTypes.Components.Gears.GearsProps} GearsProps
@@ -10,9 +11,12 @@ import PropTypes from 'prop-types'
 import Pinion from '#engine/components/pinion'
 import Gears from '#engine/components/gears'
 
-import {
-  DEFAULT_HANDLE_CHANGE
-} from '#engine/common'
+/**
+ *  @type {OnEventType}
+ */
+function DEFAULT_HANDLE_EVENT () {
+  /* */
+}
 
 /**
  *  @type {ParamsType}
@@ -39,9 +43,9 @@ export default class Engine extends Component {
        */
       params = DEFAULT_PARAMS,
       /**
-       *  @type {() => void}
+       *  @type {OnEventType}
        */
-      onChange = DEFAULT_HANDLE_CHANGE,
+      onChange = DEFAULT_HANDLE_EVENT,
       /**
        *  @type {GearsType}
        */
