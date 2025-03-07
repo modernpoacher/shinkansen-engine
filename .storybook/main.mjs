@@ -4,17 +4,20 @@ export default {
   stories: [
     '../stories/**/*.stories.jsx'
   ],
+
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials'
+    '@storybook/addon-essentials',
+    '@storybook/addon-webpack5-compiler-babel'
   ],
+
   framework: {
     name: '@storybook/react-webpack5',
     options: {}
   },
-  docs: {
-    autodocs: 'tag'
-  },
+
+  docs: {},
+
   webpackFinal (config) {
     const {
       module: {
@@ -36,5 +39,9 @@ export default {
     })
 
     return config
+  },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript'
   }
 }
