@@ -11,31 +11,31 @@
     "baseUrl": ".",
     "paths": {
       "#engine": [
-        "src/index.cjs",
-        "src/index.mjs"
+        "src/js/index.cjs",
+        "src/js/index.mjs"
       ],
       "#engine/components": [
-        "src/components/index.cjs",
-        "src/components/index.mjs"
+        "src/js/components/index.cjs",
+        "src/js/components/index.mjs"
       ],
       "#engine/components/*": [
-        "src/components/*/index.cjs",
-        "src/components/*/index.mjs"
+        "src/js/components/*/index.cjs",
+        "src/js/components/*/index.mjs"
       ],
       "#engine/components/gears/forward": [
-        "src/components/gears/forward/index.cjs"
+        "src/js/components/gears/forward/index.cjs"
       ],
       "#engine/components/gears/reverse": [
-        "src/components/gears/reverse/index.cjs"
+        "src/js/components/gears/reverse/index.cjs"
       ],
       "#engine/engine": [
-        "src/engine/index.cjs"
+        "src/js/engine/index.cjs"
       ],
       "#engine/transformers": [
-        "src/transformers/index.mjs"
+        "src/js/transformers/index.mjs"
       ],
       "#engine/transformers/*": [
-        "src/transformers/*/index.mjs"
+        "src/js/transformers/*/index.mjs"
       ]
     }
   },
@@ -51,6 +51,7 @@
     "node_modules/shinkansen-transmission/**/*"
   ],
   "exclude": [
-    "**/__tests__/**/*"
+    "**/__tests__/**/*",
+    ".storybook/**/*"
   ]
 }

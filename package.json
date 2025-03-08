@@ -11,7 +11,7 @@
     "React",
     "React Router"
   ],
-  "main": "./src/index.mjs",
+  "main": "./src/js/index.mjs",
   "type": "module",
   "types": "./index.d.mts",
   "author": {
@@ -28,22 +28,28 @@
     "url": "git+ssh://git@github.com/modernpoacher/shinkansen-engine.git"
   },
   "scripts": {
-    "build": "cross-env DEBUG=shinkansen-engine* webpack",
+    "build": "cross-env DEBUG=shinkansen-engine* webpack -c .storybook/webpack.config.mjs",
     "build-storybook": "storybook build",
-    "build:watch": "cross-env DEBUG=shinkansen-engine* webpack --watch",
-    "lint": "eslint",
-    "lint:fix": "npm run lint -- --fix",
+    "build:watch": "npm run build -- -w",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "lint:fix": "npm run lint:js:fix && npm run lint:sass:fix",
+    "lint:js": "eslint",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:sass": "stylelint src/sass .storybook/*.scss",
+    "lint:sass:fix": "npm run lint:sass -- --fix",
     "nvm": "bash nvm.sh",
+    "prebuild": "npm run nvm",
     "prelint": "npm run nvm",
     "prepare": "husky",
     "prepublishOnly": "cross-env NODE_ENV=production npm run build",
-    "prestorybook": "npm run build && npm run transform",
+    "prestorybook": "npm run build && npm run prettier && npm run transform",
     "pretest": "npm run nvm",
+    "prettier": "prettier src/sass .storybook --write",
     "storybook": "storybook dev -p 6010",
     "test": "npm run test:mocha && npm run test:jest",
     "test:jest": "cross-env NODE_ENV=test jest",
     "test:mocha": "cross-env NODE_ENV=test mocha test --recursive",
-    "transform": "cross-env DEBUG=shinkansen-engine* ./transform.sh"
+    "transform": "cross-env DEBUG=shinkansen-engine* .storybook/transform.sh"
   },
   "dependencies": {
     "debug": "^4.4.0"
@@ -55,7 +61,7 @@
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "@babel/register": "^7.25.9",
-    "@modernpoacher/design-system": "1.2.0",
+    "@modernpoacher/design-system": "2.0.0",
     "@sequencemedia/eslint-config-standard": "^0.2.42",
     "@sequencemedia/eslint-config-typescript": "^0.1.58",
     "@storybook/addon-actions": "^8.6.4",
@@ -94,6 +100,7 @@
     "postcss-import": "^16.1.0",
     "postcss-loader": "^8.1.1",
     "postcss-map": "^0.11.0",
+    "prettier": "^3.5.3",
     "prop-types": "^15.8.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -102,48 +109,50 @@
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
-    "shinkansen-cogs": "1.9.1",
-    "shinkansen-gears": "1.3.1",
+    "shinkansen-cogs": "2.0.0",
+    "shinkansen-gears": "2.0.0",
     "shinkansen-pantograph": "1.5.0",
-    "shinkansen-pinion": "1.4.1",
+    "shinkansen-pinion": "2.0.0",
     "shinkansen-rails": "1.1.0",
     "shinkansen-signals": "1.2.0",
-    "shinkansen-sprockets": "1.3.1",
+    "shinkansen-sprockets": "2.0.0",
     "shinkansen-transmission": "2.5.0",
     "sinon": "^19.0.2",
     "storybook": "^8.6.4",
+    "stylelint": "^16.15.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-scss": "^6.11.1",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1"
   },
   "peerDependencies": {
-    "shinkansen-cogs": "1.9.x",
-    "shinkansen-gears": "1.3.x",
+    "shinkansen-cogs": "2.0.x",
+    "shinkansen-gears": "2.0.x",
     "shinkansen-pantograph": "1.5.x",
-    "shinkansen-pinion": "1.4.x",
+    "shinkansen-pinion": "2.0.x",
     "shinkansen-rails": "1.1.x",
     "shinkansen-signals": "1.2.x",
-    "shinkansen-sprockets": "1.3.x",
+    "shinkansen-sprockets": "2.0.x",
     "shinkansen-transmission": "2.5.x"
   },
   "imports": {
-    "#build/paths": "./build/paths.mjs",
     "#engine": {
-      "require": "./src/index.cjs",
-      "import": "./src/index.mjs"
+      "require": "./src/js/index.cjs",
+      "import": "./src/js/index.mjs"
     },
     "#engine/components": {
-      "require": "./src/components/index.cjs",
-      "import": "./src/components/index.mjs"
+      "require": "./src/js/components/index.cjs",
+      "import": "./src/js/components/index.mjs"
     },
     "#engine/components/*": {
-      "require": "./src/components/*/index.cjs",
-      "import": "./src/components/*/index.mjs"
+      "require": "./src/js/components/*/index.cjs",
+      "import": "./src/js/components/*/index.mjs"
     },
-    "#engine/components/gears/forward": "./src/components/gears/forward/index.cjs",
-    "#engine/components/gears/reverse": "./src/components/gears/reverse/index.cjs",
-    "#engine/engine": "./src/engine/index.cjs",
-    "#engine/transformers": "./src/transformers/index.mjs",
-    "#engine/transformers/*": "./src/transformers/*/index.mjs",
+    "#engine/components/gears/forward": "./src/js/components/gears/forward/index.cjs",
+    "#engine/components/gears/reverse": "./src/js/components/gears/reverse/index.cjs",
+    "#engine/engine": "./src/js/engine/index.cjs",
+    "#engine/transformers": "./src/js/transformers/index.mjs",
+    "#engine/transformers/*": "./src/js/transformers/*/index.mjs",
     "#stories/components/*": "./stories/components/*/index.stories.jsx",
     "#stories/definitions/*": "./stories/definitions/*.json",
     "#stories/engine/*": "./stories/engine/*/index.stories.jsx",
@@ -153,21 +162,21 @@
   },
   "exports": {
     ".": {
-      "require": "./src/index.cjs",
-      "import": "./src/index.mjs"
+      "require": "./src/js/index.cjs",
+      "import": "./src/js/index.mjs"
     },
     "./components": {
-      "require": "./src/components/index.cjs",
-      "import": "./src/components/index.mjs"
+      "require": "./src/js/components/index.cjs",
+      "import": "./src/js/components/index.mjs"
     },
     "./components/*": {
-      "require": "./src/components/*/index.cjs",
-      "import": "./src/components/*/index.mjs"
+      "require": "./src/js/components/*/index.cjs",
+      "import": "./src/js/components/*/index.mjs"
     },
-    "./components/gears/forward": "./src/components/gears/forward/index.cjs",
-    "./components/gears/reverse": "./src/components/gears/reverse/index.cjs",
-    "./engine": "./src/engine/index.cjs",
-    "./transformers": "./src/transformers/index.mjs",
-    "./transformers/*": "./src/transformers/*/index.mjs"
+    "./components/gears/forward": "./src/js/components/gears/forward/index.cjs",
+    "./components/gears/reverse": "./src/js/components/gears/reverse/index.cjs",
+    "./engine": "./src/js/engine/index.cjs",
+    "./transformers": "./src/js/transformers/index.mjs",
+    "./transformers/*": "./src/js/transformers/*/index.mjs"
   }
 }

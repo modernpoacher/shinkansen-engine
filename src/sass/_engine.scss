@@ -1,0 +1,10 @@
+@use "pinion";
+@use "gears";
+
+@mixin engine {
+  @include pinion.pinion;
+
+  .shinkansen-gears {
+    @include gears.gears;
+  }
+}
