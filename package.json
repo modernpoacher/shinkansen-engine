@@ -41,7 +41,6 @@
     "prebuild": "npm run nvm",
     "prelint": "npm run nvm",
     "prepare": "husky",
-    "prepublishOnly": "cross-env NODE_ENV=production npm run build",
     "prestorybook": "npm run build && npm run prettier && npm run transform",
     "pretest": "npm run nvm",
     "prettier": "prettier src/sass .storybook --write",
