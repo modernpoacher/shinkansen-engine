@@ -14,7 +14,6 @@ module.exports = {
     '^.+\\.jsx$': 'babel-jest',
     '^.+\\.mjs$': 'babel-jest'
   },
-  moduleFileExtensions: ['js', 'jsx', 'mjs'],
   transformIgnorePatterns: [
     '/node_modules\\/(?!shinkansen-cogs)\\/',
     '/node_modules\\/(?!shinkansen-sprockets)\\/',
@@ -23,6 +22,13 @@ module.exports = {
     '/node_modules\\/(?!shinkansen-rails)\\/',
     '/node_modules\\/(?!shinkansen-signals)\\/',
     '/node_modules\\/(?!shinkansen-pantograph)\\/',
-    '/node_modules\\/(?!shinkansen-transmission)\\/'
+    '/node_modules\\/(?!shinkansen-transmission)\\/',
+    '/node_modules\\/(?!react-component-snapshot)\\/'
+  ],
+  moduleFileExtensions: ['js', 'jsx', 'mjs'],
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: [
+    '<rootDir>/jest.before-each.mjs',
+    '<rootDir>/jest.after-each.mjs'
   ]
 }
