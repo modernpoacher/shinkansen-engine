@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import snapshotOf from 'react-component-snapshot'
-import renderer from 'react-test-renderer'
 
 import '@testing-library/jest-dom'
 
@@ -161,18 +160,6 @@ describe('#engine/engine', () => {
         expect(snapshotOf(engine))
           .toMatchSnapshot()
       })
-
-      xit('matches the snapshot', () => {
-        expect(renderer.create(
-          <Engine
-            pinion={MOCK_PINION}
-            params={MOCK_PARAMS}
-            gears={MOCK_GEARS}
-            onChange={MOCK_ON_CHANGE}
-          />
-        ).toJSON())
-          .toMatchSnapshot()
-      })
     })
 
     describe('With additional props', () => {
@@ -210,18 +197,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={STRING_STRING}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -262,18 +237,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={STRING_STRING_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `STRING_STRING_ANY_OF`', () => {
@@ -310,18 +273,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={STRING_STRING_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -362,18 +313,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={STRING_STRING_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `STRING_STRING_ALL_OF`', () => {
@@ -410,18 +349,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={STRING_STRING_ALL_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -462,18 +389,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NUMBER_NUMBER}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `NUMBER_NUMBER_ENUM`', () => {
@@ -510,18 +425,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NUMBER_NUMBER_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -562,18 +465,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NUMBER_NUMBER_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `NUMBER_NUMBER_ONE_OF`', () => {
@@ -610,18 +501,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NUMBER_NUMBER_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -662,18 +541,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NUMBER_NUMBER_ALL_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `OBJECT_ARRAY_STRING`', () => {
@@ -710,18 +577,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={OBJECT_ARRAY_STRING}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -762,18 +617,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={OBJECT_ARRAY_NUMBER}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `OBJECT_ARRAY_BOOLEAN`', () => {
@@ -810,18 +653,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={OBJECT_ARRAY_BOOLEAN}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -862,18 +693,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={OBJECT_ARRAY_NULL}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_STRING`', () => {
@@ -910,18 +729,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_STRING}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -962,18 +769,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_STRING_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_STRING_ANY_OF`', () => {
@@ -1010,18 +805,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_STRING_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1062,18 +845,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_STRING_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_NUMBER`', () => {
@@ -1110,18 +881,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_NUMBER}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1162,18 +921,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_NUMBER_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_NUMBER_ANY_OF`', () => {
@@ -1210,18 +957,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_NUMBER_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1262,18 +997,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_NUMBER_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_OBJECT`', () => {
@@ -1310,18 +1033,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_OBJECT}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1362,18 +1073,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_ARRAY}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `ARRAY_ARRAY_BOOLEAN`', () => {
@@ -1410,18 +1109,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_BOOLEAN}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1462,18 +1149,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={ARRAY_ARRAY_NULL}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `BOOLEAN_BOOLEAN`', () => {
@@ -1510,18 +1185,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={BOOLEAN_BOOLEAN}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1562,18 +1225,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={BOOLEAN_BOOLEAN_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `BOOLEAN_BOOLEAN_ANY_OF`', () => {
@@ -1610,18 +1261,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={BOOLEAN_BOOLEAN_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1662,18 +1301,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={BOOLEAN_BOOLEAN_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `BOOLEAN_BOOLEAN_ALL_OF`', () => {
@@ -1710,18 +1337,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={BOOLEAN_BOOLEAN_ALL_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1762,18 +1377,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NULL_NULL}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `NULL_NULL_ENUM`', () => {
@@ -1810,18 +1413,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NULL_NULL_ENUM}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
@@ -1862,18 +1453,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NULL_NULL_ANY_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `NULL_NULL_ONE_OF`', () => {
@@ -1912,18 +1491,6 @@ describe('#engine/engine', () => {
           expect(snapshotOf(engine))
             .toMatchSnapshot()
         })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NULL_NULL_ONE_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
-            .toMatchSnapshot()
-        })
       })
 
       describe('Prop `pinion` is `NULL_NULL_ALL_OF`', () => {
@@ -1960,18 +1527,6 @@ describe('#engine/engine', () => {
           )
 
           expect(snapshotOf(engine))
-            .toMatchSnapshot()
-        })
-
-        xit('matches the snapshot', () => {
-          expect(renderer.create(
-            <Engine
-              pinion={NULL_NULL_ALL_OF}
-              params={MOCK_PARAMS}
-              gears={MOCK_GEARS}
-              onChange={MOCK_ON_CHANGE}
-            />
-          ).toJSON())
             .toMatchSnapshot()
         })
       })
