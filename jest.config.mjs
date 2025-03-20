@@ -23,7 +23,9 @@ export default {
     '/node_modules\\/(?!shinkansen-signals)\\/',
     '/node_modules\\/(?!shinkansen-pantograph)\\/',
     '/node_modules\\/(?!shinkansen-transmission)\\/',
-    '/node_modules\\/(?!react-component-snapshot)\\/'
+    '/node_modules\\/(?!react-component-instance)\\/',
+    '/node_modules\\/(?!react-component-snapshot)\\/',
+    '/node_modules\\/(?!react-component-name)\\/'
   ],
   moduleFileExtensions: ['js', 'jsx', 'mjs'],
   testEnvironment: 'jsdom',
