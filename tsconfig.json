@@ -51,7 +51,7 @@
     "node_modules/shinkansen-transmission/**/*"
   ],
   "exclude": [
-    "**/__tests__/**/*",
-    ".storybook/**/*"
+    ".storybook/**/*",
+    "**/__tests__/**/*"
   ]
 }
