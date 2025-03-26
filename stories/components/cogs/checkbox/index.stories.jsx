@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {CheckboxProps} args
- * @returns {React.JSX.Element}
+ *  @param {CheckboxProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Checked (args) {
   return (
@@ -64,8 +64,8 @@ Checked.args = {
 }
 
 /**
- * @param {CheckboxProps} args
- * @returns {React.JSX.Element}
+ *  @param {CheckboxProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultChecked (args) {
   return (

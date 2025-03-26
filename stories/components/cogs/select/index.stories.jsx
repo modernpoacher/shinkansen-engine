@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {SelectProps} args
- * @returns {React.JSX.Element}
+ *  @param {SelectProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Value (args) {
   return (
@@ -56,8 +56,8 @@ export function Value (args) {
 }
 
 /**
- * @param {SelectProps} args
- * @returns {React.JSX.Element}
+ *  @param {SelectProps} args
+ *  @returns {React.JSX.Element}
  */
 Value.args = {
   title: 'Title',
@@ -72,8 +72,8 @@ Value.args = {
 }
 
 /**
- * @param {SelectProps} args
- * @returns {React.JSX.Element}
+ *  @param {SelectProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultValue (args) {
   return (
@@ -102,8 +102,8 @@ DefaultValue.args = {
 }
 
 /**
- * @param {SelectProps} args
- * @returns {React.JSX.Element}
+ *  @param {SelectProps} args
+ *  @returns {React.JSX.Element}
  */
 export function MultipleValue (args) {
   return (
@@ -135,8 +135,8 @@ MultipleValue.args = {
 }
 
 /**
- * @param {SelectProps} args
- * @returns {React.JSX.Element}
+ *  @param {SelectProps} args
+ *  @returns {React.JSX.Element}
  */
 export function MultipleDefaultValue (args) {
   return (

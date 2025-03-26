@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {TextareaProps} args
- * @returns {React.JSX.Element}
+ *  @param {TextareaProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Value (args) {
   return (
@@ -64,8 +64,8 @@ Value.args = {
 }
 
 /**
- * @param {TextareaProps} args
- * @returns {React.JSX.Element}
+ *  @param {TextareaProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultValue (args) {
   return (

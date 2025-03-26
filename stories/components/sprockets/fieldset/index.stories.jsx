@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {FieldsetProps} props
- * @returns {React.JSX.Element}
+ *  @param {FieldsetProps} props
+ *  @returns {React.JSX.Element}
  */
 export function Default (props) {
   return (
@@ -53,8 +53,8 @@ export function Default (props) {
 }
 
 /**
- * @param {FieldsetProps} props
- * @returns {React.JSX.Element}
+ *  @param {FieldsetProps} props
+ *  @returns {React.JSX.Element}
  */
 export function WithError ({ errorMessage, ...props }) {
   return (

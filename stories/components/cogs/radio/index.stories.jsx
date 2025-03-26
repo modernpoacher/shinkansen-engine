@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {RadioProps} args
- * @returns {React.JSX.Element}
+ *  @param {RadioProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Checked (args) {
   return (
@@ -78,8 +78,8 @@ Checked.args = {
 }
 
 /**
- * @param {RadioProps} args
- * @returns {React.JSX.Element}
+ *  @param {RadioProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultChecked (args) {
   return (

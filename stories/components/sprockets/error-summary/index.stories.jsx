@@ -138,8 +138,8 @@ export default {
 }
 
 /**
- * @param {ErrorSummaryProps} args
- * @returns {React.JSX.Element}
+ *  @param {ErrorSummaryProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Default ({ errorSummary = [], ...args }) {
   /**

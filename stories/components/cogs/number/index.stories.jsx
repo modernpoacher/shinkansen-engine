@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {NumberProps} args
- * @returns {React.JSX.Element}
+ *  @param {NumberProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Value (args) {
   return (
@@ -64,8 +64,8 @@ Value.args = {
 }
 
 /**
- * @param {NumberProps} args
- * @returns {React.JSX.Element}
+ *  @param {NumberProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultValue (args) {
   return (

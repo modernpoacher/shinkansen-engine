@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {PasswordProps} args
- * @returns {React.JSX.Element}
+ *  @param {PasswordProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Value (args) {
   return (
@@ -64,8 +64,8 @@ Value.args = {
 }
 
 /**
- * @param {PasswordProps} args
- * @returns {React.JSX.Element}
+ *  @param {PasswordProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultValue (args) {
   return (

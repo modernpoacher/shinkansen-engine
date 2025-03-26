@@ -38,8 +38,8 @@ export default {
 }
 
 /**
- * @param {EmailProps} args
- * @returns {React.JSX.Element}
+ *  @param {EmailProps} args
+ *  @returns {React.JSX.Element}
  */
 export function Value (args) {
   return (
@@ -52,8 +52,8 @@ export function Value (args) {
 }
 
 /**
- * @param {EmailProps} args
- * @returns {React.JSX.Element}
+ *  @param {EmailProps} args
+ *  @returns {React.JSX.Element}
  */
 Value.args = {
   title: 'Title',
@@ -68,8 +68,8 @@ Value.args = {
 }
 
 /**
- * @param {EmailProps} args
- * @returns {React.JSX.Element}
+ *  @param {EmailProps} args
+ *  @returns {React.JSX.Element}
  */
 export function DefaultValue (args) {
   return (
