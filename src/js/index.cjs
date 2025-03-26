@@ -19,7 +19,7 @@ const Pantograph = require('./components/pantograph/index.cjs')
 const {
   fromDocumentToHash,
   fromHashToDocument,
-  toZashiki // @ts-expect-error MJS
+  toZashiki
 } = require('./transformers/transmission/index.mjs')
 
 const log = debug('shinksansen-engine')
