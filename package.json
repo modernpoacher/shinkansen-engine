@@ -51,7 +51,7 @@
     "transform": "cross-env DEBUG=shinkansen-engine* .storybook/transform.sh"
   },
   "dependencies": {
-    "debug": "^4.4.0"
+    "debug": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
@@ -80,7 +80,7 @@
     "@types/jest": "^29.5.14",
     "@types/prop-types": "^15.7.14",
     "@types/react": "^19.1.4",
-    "@types/react-dom": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
     "autoprefixer": "^10.4.21",
@@ -107,19 +107,19 @@
     "prettier": "^3.5.3",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
-    "react-component-snapshot": "^0.0.57",
+    "react-component-snapshot": "^0.0.59",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.0",
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.88.0",
     "sass-loader": "^16.0.5",
     "shinkansen-cogs": "2.1.61",
-    "shinkansen-gears": "2.1.31",
-    "shinkansen-pantograph": "1.5.51",
-    "shinkansen-pinion": "2.1.70",
+    "shinkansen-gears": "2.1.32",
+    "shinkansen-pantograph": "1.5.52",
+    "shinkansen-pinion": "2.1.71",
     "shinkansen-rails": "1.1.38",
     "shinkansen-signals": "1.2.37",
-    "shinkansen-sprockets": "2.1.64",
+    "shinkansen-sprockets": "2.1.65",
     "shinkansen-transmission": "2.5.35",
     "sinon": "^20.0.0",
     "storybook": "^8.6.12",
