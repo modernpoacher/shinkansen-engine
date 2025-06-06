@@ -108,10 +108,10 @@
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.89.1",
     "sass-loader": "^16.0.5",
-    "shinkansen-cogs": "2.1.71",
+    "shinkansen-cogs": "2.1.72",
     "shinkansen-gears": "2.1.40",
     "shinkansen-pantograph": "1.5.64",
-    "shinkansen-pinion": "2.1.80",
+    "shinkansen-pinion": "2.1.81",
     "shinkansen-rails": "1.1.47",
     "shinkansen-signals": "1.2.46",
     "shinkansen-sprockets": "2.1.75",
@@ -133,6 +133,9 @@
     "shinkansen-signals": "1.2.x",
     "shinkansen-sprockets": "2.1.x",
     "shinkansen-transmission": "2.5.x"
+  },
+  "overrides": {
+    "storybook": "$storybook"
   },
   "imports": {
     "#engine": {
@@ -177,8 +180,5 @@
     "./engine": "./src/js/engine/index.cjs",
     "./transformers": "./src/js/transformers/index.mjs",
     "./transformers/*": "./src/js/transformers/*/index.mjs"
-  },
-  "overrides": {
-    "storybook": "$storybook"
   }
 }
