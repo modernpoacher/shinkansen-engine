@@ -12,6 +12,6 @@ describe('#engine/transformers/pinion/error-message', () => {
    */
   it('is a module', () => {
     expect(errorMessage)
-      .to.be.a('module')
+      .to.be.an('object')
   })
 })

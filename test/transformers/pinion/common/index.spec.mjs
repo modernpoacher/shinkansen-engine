@@ -12,6 +12,6 @@ describe('#engine/transformers/pinion/common', () => {
    */
   it('is a module', () => {
     expect(common)
-      .to.be.a('module')
+      .to.be.an('object')
   })
 })

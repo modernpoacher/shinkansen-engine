@@ -11,14 +11,14 @@ describe('#engine/transformers', () => {
   describe('`pinion`', () => {
     it('is a module', () => {
       expect(pinion)
-        .to.be.a('module')
+        .to.be.an('object')
     })
   })
 
   describe('`transmission`', () => {
     it('is a module', () => {
       expect(transmission)
-        .to.be.a('module')
+        .to.be.an('object')
     })
   })
 })
