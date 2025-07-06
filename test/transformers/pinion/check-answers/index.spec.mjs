@@ -10,7 +10,7 @@ describe('#engine/transformers/pinion/check-answers', () => {
    *
    *  (This project exports exactly what `shinkansen-pinion` exports)
    */
-  it('is a module', () => {
+  it('is an object', () => {
     expect(checkAnswers)
       .to.be.an('object')
   })

@@ -10,7 +10,7 @@ describe('#engine/transformers/pinion/common', () => {
    *
    *  (This project exports exactly what `shinkansen-pinion` exports)
    */
-  it('is a module', () => {
+  it('is an object', () => {
     expect(common)
       .to.be.an('object')
   })

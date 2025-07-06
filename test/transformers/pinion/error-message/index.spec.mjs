@@ -10,7 +10,7 @@ describe('#engine/transformers/pinion/error-message', () => {
    *
    *  (This project exports exactly what `shinkansen-pinion` exports)
    */
-  it('is a module', () => {
+  it('is an object', () => {
     expect(errorMessage)
       .to.be.an('object')
   })
