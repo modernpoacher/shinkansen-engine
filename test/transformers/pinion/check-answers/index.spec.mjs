@@ -12,6 +12,6 @@ describe('#engine/transformers/pinion/check-answers', () => {
    */
   it('is an object', () => {
     expect(checkAnswers)
-      .to.be.an('object')
+      .to.be.a('module') // an('object')
   })
 })

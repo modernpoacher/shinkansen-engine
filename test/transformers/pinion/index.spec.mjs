@@ -12,21 +12,21 @@ describe('#engine/transformers/pinion', () => {
   describe('`checkAnswers`', () => {
     it('is an object', () => {
       expect(checkAnswers)
-        .to.be.an('object')
+        .to.be.a('module') // an('object')
     })
   })
 
   describe('`common`', () => {
     it('is an object', () => {
       expect(common)
-        .to.be.an('object')
+        .to.be.a('module') // an('object')
     })
   })
 
   describe('`errorMessage`', () => {
     it('is an object', () => {
       expect(errorMessage)
-        .to.be.an('object')
+        .to.be.a('module') // an('object')
     })
   })
 })
