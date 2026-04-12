@@ -117,7 +117,7 @@
     "shinkansen-signals": "1.2.129",
     "shinkansen-sprockets": "2.1.151",
     "shinkansen-transmission": "2.5.96",
-    "sinon": "^21.1.1",
+    "sinon": "^21.1.2",
     "storybook": "^10.3.5",
     "stylelint": "^17.6.0",
     "stylelint-config-recommended-scss": "^17.0.1",
