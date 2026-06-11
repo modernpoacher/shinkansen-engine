@@ -8,35 +8,38 @@
     "strict": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "types": [
+      "jest",
+      "node"
+    ],
     "jsx": "react",
-    "baseUrl": ".",
     "paths": {
       "#engine": [
-        "src/js/index.cjs",
-        "src/js/index.mjs"
+        "./src/js/index.cjs",
+        "./src/js/index.mjs"
       ],
       "#engine/components": [
-        "src/js/components/index.cjs",
-        "src/js/components/index.mjs"
+        "./src/js/components/index.cjs",
+        "./src/js/components/index.mjs"
       ],
       "#engine/components/*": [
-        "src/js/components/*/index.cjs",
-        "src/js/components/*/index.mjs"
+        "./src/js/components/*/index.cjs",
+        "./src/js/components/*/index.mjs"
       ],
       "#engine/components/gears/forward": [
-        "src/js/components/gears/forward/index.cjs"
+        "./src/js/components/gears/forward/index.cjs"
       ],
       "#engine/components/gears/reverse": [
-        "src/js/components/gears/reverse/index.cjs"
+        "./src/js/components/gears/reverse/index.cjs"
       ],
       "#engine/engine": [
-        "src/js/engine/index.cjs"
+        "./src/js/engine/index.cjs"
       ],
       "#engine/transformers": [
-        "src/js/transformers/index.mjs"
+        "./src/js/transformers/index.mjs"
       ],
       "#engine/transformers/*": [
-        "src/js/transformers/*/index.mjs"
+        "./src/js/transformers/*/index.mjs"
       ]
     }
   },
