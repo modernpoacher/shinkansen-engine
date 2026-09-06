@@ -45,7 +45,7 @@
     "pretest": "npm run nvm",
     "prettier": "prettier src/sass/**/*.scss .storybook --write",
     "storybook": "storybook dev -p 6010",
-    "test": "npm run test:mocha # && npm run test:jest",
+    "test": "npm run test:mocha && npm run test:jest",
     "test:jest": "cross-env NODE_ENV=test jest",
     "test:mocha": "cross-env NODE_ENV=test mocha test --recursive",
     "transform": "cross-env DEBUG=shinkansen-engine* .storybook/transform.sh",
@@ -181,5 +181,11 @@
     "./engine": "./src/js/engine/index.cjs",
     "./transformers": "./src/js/transformers/index.mjs",
     "./transformers/*": "./src/js/transformers/*/index.mjs"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "core-js@3.50.0": true,
+    "esbuild@0.28.2": true,
+    "unrs-resolver@1.12.2": true
   }
 }
