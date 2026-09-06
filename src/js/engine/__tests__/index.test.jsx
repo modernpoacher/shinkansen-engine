@@ -101,14 +101,6 @@ jest.mock('react-router', () => {
 })
 
 describe('#engine/engine', () => {
-  beforeAll(() => {
-    jest.useFakeTimers()
-  })
-
-  afterAll(() => {
-    jest.useRealTimers()
-  })
-
   const MOCK_PINION = {
     meta: { type: 'MOCK', uri: '#/' },
     elements: { title: 'MOCK TITLE', field: { id: 'MOCK ID' } }
