@@ -51,6 +51,12 @@
     "transform": "cross-env DEBUG=shinkansen-engine* .storybook/transform.sh",
     "type-check": "tsc --noEmit"
   },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "core-js@3.50.0": true,
+    "esbuild@0.28.2": true,
+    "unrs-resolver@1.12.2": true
+  },
   "dependencies": {
     "debug": "^4.4.3"
   },
@@ -182,11 +188,5 @@
     "./engine": "./src/js/engine/index.cjs",
     "./transformers": "./src/js/transformers/index.mjs",
     "./transformers/*": "./src/js/transformers/*/index.mjs"
-  },
-  "allowScripts": {
-    "@parcel/watcher@2.6.0": true,
-    "core-js@3.50.0": true,
-    "esbuild@0.28.2": true,
-    "unrs-resolver@1.12.2": true
   }
 }
