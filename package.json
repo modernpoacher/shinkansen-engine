@@ -21,7 +21,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=22.11.0"
+    "node": ">=22.23.4"
   },
   "repository": {
     "type": "git",
@@ -116,14 +116,14 @@
     "remove-files-webpack-plugin": "^1.5.0",
     "sass": "^1.105.1",
     "sass-loader": "^17.0.1",
-    "shinkansen-cogs": "2.1.242",
-    "shinkansen-gears": "2.1.135",
-    "shinkansen-pantograph": "1.5.211",
-    "shinkansen-pinion": "2.1.175",
-    "shinkansen-rails": "1.1.186",
-    "shinkansen-signals": "1.2.181",
-    "shinkansen-sprockets": "2.1.245",
-    "shinkansen-transmission": "2.5.156",
+    "shinkansen-cogs": "2.1.243",
+    "shinkansen-gears": "2.1.136",
+    "shinkansen-pantograph": "1.5.212",
+    "shinkansen-pinion": "2.1.176",
+    "shinkansen-rails": "1.1.187",
+    "shinkansen-signals": "1.2.182",
+    "shinkansen-sprockets": "2.1.246",
+    "shinkansen-transmission": "2.5.157",
     "sinon": "^22.1.0",
     "storybook": "^10.6.1",
     "stylelint": "^17.16.0",
